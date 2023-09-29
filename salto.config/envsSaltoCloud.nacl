@@ -1,0 +1,8 @@
+envs {
+  envsCloud = [
+    {
+      uuid = "1bb9fdb6-969a-4060-b705-6f7739900e53"
+      folderName = "Prod-SFDC Zela"
+    },
+  ]
+}
