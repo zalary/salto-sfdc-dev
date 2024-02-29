@@ -1,0 +1,5 @@
+salesforce.CorsWhitelistOrigin https_zandytech_com {
+  fullName = "https_zandytech_com"
+  urlPattern = "https://zandytech.com"
+  _alias = "https_zandytech_com"
+}
