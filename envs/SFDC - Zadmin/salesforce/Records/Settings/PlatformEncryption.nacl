@@ -1,0 +1,11 @@
+salesforce.PlatformEncryptionSettings {
+  fullName = "PlatformEncryption"
+  canEncryptManagedPackageFields = false
+  enableDeterministicEncryption = "false"
+  enableEncryptFieldHistory = false
+  enableEncryptionSearchEnabled = "false"
+  enableEventBusEncryption = false
+  isMEKForEncryptionRequired = true
+  isUseHighAssuranceKeysRequired = false
+  _alias = "PlatformEncryption"
+}
