@@ -1,0 +1,15 @@
+salesforce.Queue Custom_Queue_View {
+  fullName = "Custom_Queue_View"
+  doesSendEmailToMembers = false
+  email = "zalary@hotmail.com"
+  name = "Custom Queue View"
+  queueMembers = {
+    users = {
+      user = "zalary@hotmail.com"
+    }
+  }
+  queueSobject = {
+    sobjectType = "Lead"
+  }
+  _alias = "Custom_Queue_View"
+}
