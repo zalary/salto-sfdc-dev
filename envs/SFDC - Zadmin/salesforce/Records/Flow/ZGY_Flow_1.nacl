@@ -59,21 +59,5 @@ salesforce.Flow ZGY_Flow_1 {
   }
   status = "InvalidDraft"
   _alias = "ZGY Flow 1"
-  assignments = [
-    {
-      name = "ZGY_Assign_Flow_Field"
-      label = "ZGY Assign Flow Field"
-      locationX = 721
-      locationY = 274
-      assignmentItems = [
-        {
-          assignToReference = "$Flow.CurrentRecord"
-          operator = "Assign"
-          value = {
-            stringValue = "zalary"
-          }
-        },
-      ]
-    },
-  ]
+  
 }
