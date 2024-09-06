@@ -31,18 +31,23 @@ type salesforce.BrandingSet {
         "b2b-storefront:branding",
         "b2b:branding-b2b",
         "b2c-lite-storefront:branding",
+        "b2c-lite-storefront:footer",
+        "b2c-lite-storefront:home-banner",
         "b2c-storefront-pay-now:branding",
         "benefitsManagement:branding-benefitsManagement",
         "citizen:branding-citizen",
         "cpt:branding-cpt",
         "cypress:branding-cypress",
+        "digitallending:branding-digitallending",
         "ember:branding-ember",
         "es-channel-menu",
         "es-messaging",
         "esw-template-frame:branding",
+        "euContractorPortal:branding-euContractorPortal",
         "grantmaking:branding-grantmaking",
         "helpCenter:branding-helpCenter",
         "identity:branding-identity",
+        "industriesBaseb2b:branding-industriesBaseb2b",
         "insurance:branding-insurance",
         "jepson:branding-jepson",
         "koa:branding-koa",
@@ -51,12 +56,15 @@ type salesforce.BrandingSet {
         "login:branding-login2",
         "loyalty:branding-loyalty",
         "lpi:branding-lpi",
+        "marketing-landing-template:branding",
         "mfg:branding-mfg",
         "microsite-template-marketing:branding",
+        "microsite-template-pay-now:branding",
         "mortgage:branding-mortgage",
         "napili:branding-napili",
         "napili:branding-napili-merged",
         "prm:branding-prm-merged",
+        "providerPortal:branding-providerPortal",
         "service:branding-service",
         "serviceSetupHelpCenter:branding-serviceSetupHelpCenter",
         "sna-aura-lwr-shell-template:branding",
@@ -64,7 +72,6 @@ type salesforce.BrandingSet {
         "stella:branding-stella",
         "survey",
         "talon-template-byo:branding",
-        "talon-template-uem:branding",
         "webster:branding-webster",
       ]
     }
@@ -79,4 +86,21 @@ type salesforce.BrandingSet {
   suffix = "brandingSet"
   dirName = "brandingSets"
   metadataType = "BrandingSet"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "masterLabel"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

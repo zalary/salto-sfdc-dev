@@ -2,9 +2,9 @@ salesforce.FlowSettings {
   fullName = "Flow"
   canDebugFlowAsAnotherUser = "false"
   doesEnforceApexCpuTimeLimit = "true"
-  doesFormulaEnforceDataAccess = false
+  doesFormulaEnforceDataAccess = true
   doesFormulaGenerateHtmlOutput = false
-  enableEmailSimpleRespectProfiles = "true"
+  enableEmailSimpleRespectProfiles = "false"
   enableFlowBREncodedFixEnabled = true
   enableFlowCustomPropertyEditor = "false"
   enableFlowDeployAsActiveEnabled = false
@@ -15,15 +15,17 @@ salesforce.FlowSettings {
   enableFlowPauseEnabled = false
   enableFlowReactiveScreens = "false"
   enableFlowUseApexExceptionEmail = false
-  enableFlowViaRestUsesUserCtxt = "false"
-  enableLightningRuntimeEnabled = true
-  isAccessToInvokedApexRequired = false
+  enableFlowViaRestUsesUserCtxt = "true"
+  enableLightningRuntimeEnabled = false
+  
   isApexPluginAccessModifierRespected = true
   isEnhancedFlowListViewVisible = true
-  isFlowApexContextRetired = "true"
+  
   isFlowBlockAccessToSessionIDEnabled = "true"
   isManageFlowRequiredForAutomationCharts = false
   isSupportRollbackOnErrorForApexInvocableActionsEnabled = "false"
-  isTimeResumedInSameRunContext = "true"
+  
   _alias = "Flow"
+  enableEmailsimpleSecureProfiles = "false"
+  enableFlowReactiveChoiceOptions = "false"
 }

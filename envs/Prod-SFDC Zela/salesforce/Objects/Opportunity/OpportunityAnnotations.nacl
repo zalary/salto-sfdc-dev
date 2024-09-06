@@ -201,9 +201,9 @@ type salesforce.Opportunity {
     },
   ]
   compactLayoutAssignment = "SYSTEM"
+  enableEnhancedLookup = true
   enableFeeds = true
   enableHistory = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
       "OPPORTUNITY.NAME",

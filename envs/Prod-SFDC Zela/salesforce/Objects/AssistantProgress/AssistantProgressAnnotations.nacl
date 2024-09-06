@@ -59,6 +59,5 @@ type salesforce.AssistantProgress {
   metadataType = "CustomObject"
   label = "AssistantProgress"
   enableFeeds = false
-  externalSharingModel = "Private"
   _alias = "AssistantProgress"
 }

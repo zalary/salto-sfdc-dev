@@ -2,14 +2,14 @@ salesforce.MyDomainSettings {
   fullName = "MyDomain"
   canOnlyLoginWithMyDomainUrl = false
   doesApiLoginRequireOrgDomain = false
-  domainPartition = "develop"
+  domainPartition = "none"
   enableEdgeDuringRollout = "true"
   enableNativeBrowserForAuthOnAndroid = false
   enableNativeBrowserForAuthOnIos = false
   enableShareBrowserSessionAndroidForAuth = "false"
   enableShareBrowserSessionIOSForAuth = "false"
   logRedirections = "false"
-  myDomainName = "saltoio-dev-ed"
+  myDomainName = "df4000004kfdheay-dev-ed"
   myDomainSuffix = "MySalesforce"
   redirectForceComSiteUrls = "true"
   redirectPriorMyDomain = "true"
@@ -19,4 +19,7 @@ salesforce.MyDomainSettings {
   useStabilizedMyDomainHostnames = true
   useStabilizedSandboxMyDomainHostnames = true
   _alias = "MyDomain"
+  doesWarnOnForceComRedirect = "false"
+  doesWarnOnRedirect = "false"
+  instancedUrlRedirectHandling = "Redirect"
 }

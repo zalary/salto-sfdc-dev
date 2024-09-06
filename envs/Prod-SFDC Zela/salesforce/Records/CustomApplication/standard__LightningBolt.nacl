@@ -5,6 +5,7 @@ salesforce.CustomApplication standard__LightningBolt {
   isNavAutoTempTabsDisabled = false
   isNavPersonalizationDisabled = false
   isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
   label = "LightningBolt"
   navType = "Standard"
   tabs = [

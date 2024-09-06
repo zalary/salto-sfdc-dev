@@ -1,6 +1,7 @@
 type salesforce.Contact {
   salesforce.Text Languages__c {
     apiName = "Contact.Languages__c"
+    encryptionScheme = "None"
     externalId = false
     label = "Languages"
     length = 100

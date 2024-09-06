@@ -9,6 +9,15 @@ salesforce.Profile Admin {
       object = "Account"
       viewAllRecords = true
     }
+    Account__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Account__c"
+      viewAllRecords = true
+    }
     AlternativePaymentMethod = {
       allowCreate = true
       allowDelete = true
@@ -25,42 +34,6 @@ salesforce.Profile Admin {
       allowRead = true
       modifyAllRecords = true
       object = "ApiAnomalyEventStore"
-      viewAllRecords = true
-    }
-    AppointmentCategory = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "AppointmentCategory"
-      viewAllRecords = true
-    }
-    AppointmentInvitation = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "AppointmentInvitation"
-      viewAllRecords = true
-    }
-    AppointmentScheduleLog = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "AppointmentScheduleLog"
-      viewAllRecords = true
-    }
-    AppointmentTopicTimeSlot = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "AppointmentTopicTimeSlot"
       viewAllRecords = true
     }
     Asset = {
@@ -169,15 +142,6 @@ salesforce.Profile Admin {
       allowRead = true
       modifyAllRecords = true
       object = "Case"
-      viewAllRecords = true
-    }
-    ChangeRequest = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "ChangeRequest"
       viewAllRecords = true
     }
     CommSubscription = {
@@ -297,24 +261,6 @@ salesforce.Profile Admin {
       object = "Contract"
       viewAllRecords = true
     }
-    ContractLineItem = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "ContractLineItem"
-      viewAllRecords = true
-    }
-    Coupon = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "Coupon"
-      viewAllRecords = true
-    }
     CredentialStuffingEventStore = {
       allowCreate = true
       allowDelete = true
@@ -358,6 +304,15 @@ salesforce.Profile Admin {
       allowRead = true
       modifyAllRecords = true
       object = "DandBCompany"
+      viewAllRecords = true
+    }
+    DataKitDeploymentLog = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataKitDeploymentLog"
       viewAllRecords = true
     }
     DataUseLegalBasis = {
@@ -405,24 +360,6 @@ salesforce.Profile Admin {
       object = "EngagementChannelType"
       viewAllRecords = true
     }
-    Entitlement = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "Entitlement"
-      viewAllRecords = true
-    }
-    EntitlementContact = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "EntitlementContact"
-      viewAllRecords = true
-    }
     FinanceBalanceSnapshot = {
       allowCreate = true
       allowDelete = true
@@ -439,6 +376,15 @@ salesforce.Profile Admin {
       allowRead = true
       modifyAllRecords = true
       object = "FinanceTransaction"
+      viewAllRecords = true
+    }
+    GuestUserAnomalyEventStore = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "GuestUserAnomalyEventStore"
       viewAllRecords = true
     }
     Idea = {
@@ -459,15 +405,6 @@ salesforce.Profile Admin {
       object = "Image"
       viewAllRecords = true
     }
-    Incident = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "Incident"
-      viewAllRecords = true
-    }
     Individual = {
       allowCreate = true
       allowDelete = true
@@ -484,15 +421,6 @@ salesforce.Profile Admin {
       allowRead = true
       modifyAllRecords = true
       object = "Invoice"
-      viewAllRecords = true
-    }
-    InvoiceLine = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "InvoiceLine"
       viewAllRecords = true
     }
     Lead = {
@@ -565,15 +493,6 @@ salesforce.Profile Admin {
       allowRead = true
       modifyAllRecords = true
       object = "MessagingSession"
-      viewAllRecords = true
-    }
-    OperatingHours = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "OperatingHours"
       viewAllRecords = true
     }
     Opportunity = {
@@ -666,13 +585,31 @@ salesforce.Profile Admin {
       object = "Pricebook2"
       viewAllRecords = true
     }
-    Problem = {
+    PrivacyJobSession = {
       allowCreate = true
       allowDelete = true
       allowEdit = true
       allowRead = true
       modifyAllRecords = true
-      object = "Problem"
+      object = "PrivacyJobSession"
+      viewAllRecords = true
+    }
+    PrivacyPolicy = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PrivacyPolicy"
+      viewAllRecords = true
+    }
+    PrivacyRTBFRequest = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PrivacyRTBFRequest"
       viewAllRecords = true
     }
     ProcessException = {
@@ -691,60 +628,6 @@ salesforce.Profile Admin {
       allowRead = true
       modifyAllRecords = true
       object = "Product2"
-      viewAllRecords = true
-    }
-    Promotion = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "Promotion"
-      viewAllRecords = true
-    }
-    PromotionMarketSegment = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "PromotionMarketSegment"
-      viewAllRecords = true
-    }
-    PromotionQualifier = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "PromotionQualifier"
-      viewAllRecords = true
-    }
-    PromotionSegment = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "PromotionSegment"
-      viewAllRecords = true
-    }
-    PromotionTarget = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "PromotionTarget"
-      viewAllRecords = true
-    }
-    PromotionTier = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "PromotionTier"
       viewAllRecords = true
     }
     QuickText = {
@@ -783,15 +666,6 @@ salesforce.Profile Admin {
       object = "ReportAnomalyEventStore"
       viewAllRecords = true
     }
-    ReturnOrder = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "ReturnOrder"
-      viewAllRecords = true
-    }
     Scorecard = {
       allowCreate = true
       allowDelete = true
@@ -828,51 +702,6 @@ salesforce.Profile Admin {
       object = "Seller"
       viewAllRecords = true
     }
-    ServiceAppointment = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "ServiceAppointment"
-      viewAllRecords = true
-    }
-    ServiceContract = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "ServiceContract"
-      viewAllRecords = true
-    }
-    ServiceResource = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "ServiceResource"
-      viewAllRecords = true
-    }
-    ServiceTerritory = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "ServiceTerritory"
-      viewAllRecords = true
-    }
-    ServiceTerritoryWorkType = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "ServiceTerritoryWorkType"
-      viewAllRecords = true
-    }
     SessionHijackingEventStore = {
       allowCreate = true
       allowDelete = true
@@ -880,15 +709,6 @@ salesforce.Profile Admin {
       allowRead = true
       modifyAllRecords = true
       object = "SessionHijackingEventStore"
-      viewAllRecords = true
-    }
-    Shift = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "Shift"
       viewAllRecords = true
     }
     SocialPersona = {
@@ -918,6 +738,15 @@ salesforce.Profile Admin {
       object = "StreamingChannel"
       viewAllRecords = true
     }
+    Tier__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Tier__c"
+      viewAllRecords = true
+    }
     UserExternalCredential = {
       allowCreate = true
       allowDelete = true
@@ -925,87 +754,6 @@ salesforce.Profile Admin {
       allowRead = true
       modifyAllRecords = true
       object = "UserExternalCredential"
-      viewAllRecords = true
-    }
-    Waitlist = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "Waitlist"
-      viewAllRecords = true
-    }
-    WebCart = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "WebCart"
-      viewAllRecords = true
-    }
-    WebStore = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "WebStore"
-      viewAllRecords = true
-    }
-    WorkOrder = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "WorkOrder"
-      viewAllRecords = true
-    }
-    WorkPlan = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "WorkPlan"
-      viewAllRecords = true
-    }
-    WorkPlanTemplate = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "WorkPlanTemplate"
-      viewAllRecords = true
-    }
-    WorkStepTemplate = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "WorkStepTemplate"
-      viewAllRecords = true
-    }
-    WorkType = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "WorkType"
-      viewAllRecords = true
-    }
-    WorkTypeGroup = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = true
-      object = "WorkTypeGroup"
       viewAllRecords = true
     }
   }

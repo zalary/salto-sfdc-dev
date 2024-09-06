@@ -160,7 +160,6 @@ type salesforce.Asset {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ControlledByParent"
   searchLayouts = {
     customTabListAdditionalFields = [
       "ASSET.NAME",

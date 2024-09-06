@@ -20,9 +20,19 @@ salesforce.Layout ContactPointEmail_Contact_Point_Email_Layout@bsss {
               behavior = "Edit"
               field = salesforce.ContactPointEmail.field.ParentId
             },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointEmail.field.PreferenceRank
+            },
           ]
         },
         {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointEmail.field.UsageType
+            },
+          ]
         },
       ]
       style = "TwoColumnsTopToBottom"

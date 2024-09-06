@@ -54,10 +54,6 @@ salesforce.AppMenu Salesforce1 {
       type = "StandardAppMenuItem"
     },
     {
-      name = "LightningSchedulerSetupAssistant"
-      type = "StandardAppMenuItem"
-    },
-    {
       name = "MobileHome"
       type = "StandardAppMenuItem"
     },

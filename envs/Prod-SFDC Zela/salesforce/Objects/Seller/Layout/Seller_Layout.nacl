@@ -9,7 +9,7 @@ salesforce.Layout Seller_Seller_Layout@bs {
         {
           layoutItems = [
             {
-              behavior = "Required"
+              behavior = "Edit"
               field = salesforce.Seller.field.PartyId
             },
             {

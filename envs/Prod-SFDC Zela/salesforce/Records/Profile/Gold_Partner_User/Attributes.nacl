@@ -3,4 +3,28 @@ salesforce.Profile Gold_Partner_User@s {
   userLicense = "Gold Partner"
   fullName = "Gold Partner User"
   _alias = "Gold Partner User"
+  flowAccesses = {
+    OppTask = {
+      enabled = false
+      flow = "OppTask"
+    }
+    ZGY_Flow_1 = {
+      enabled = false
+      flow = "ZGY_Flow_1"
+    }
+    ZGY_Flow_2 = {
+      enabled = false
+      flow = "ZGY_Flow_2"
+    }
+  }
+  classAccesses = {
+    RestLeadConvert = {
+      apexClass = "RestLeadConvert"
+      enabled = false
+    }
+    WebLeadConvert = {
+      apexClass = "WebLeadConvert"
+      enabled = false
+    }
+  }
 }

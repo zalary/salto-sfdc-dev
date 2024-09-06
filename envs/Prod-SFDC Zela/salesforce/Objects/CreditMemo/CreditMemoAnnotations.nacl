@@ -160,7 +160,7 @@ type salesforce.CreditMemo {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "Private"
+  
   searchLayouts = {
     customTabListAdditionalFields = [
       "BillingAccount",

@@ -3,6 +3,7 @@ salesforce.CustomApplication standard__Platform {
   isNavAutoTempTabsDisabled = false
   isNavPersonalizationDisabled = false
   isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
   tabs = [
     "standard-Chatter",
     "standard-Account",

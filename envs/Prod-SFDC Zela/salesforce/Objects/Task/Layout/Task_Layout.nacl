@@ -152,13 +152,25 @@ salesforce.Layout Task_Task_Layout@bs {
         quickActionName = salesforce.QuickAction.instance.Task_Defer@v
       },
       {
+        quickActionName = salesforce.QuickAction.instance.Task_Defer_0@vu
+      },
+      {
         quickActionName = salesforce.QuickAction.instance.Task_EditDescription@v
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.Task_EditDescription_0@vu
       },
       {
         quickActionName = salesforce.QuickAction.instance.Task_UpdatePriority@v
       },
       {
+        quickActionName = salesforce.QuickAction.instance.Task_UpdatePriority_0@vu
+      },
+      {
         quickActionName = salesforce.QuickAction.instance.Task_UpdateStatus@v
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.Task_UpdateStatus_0@vu
       },
     ]
   }

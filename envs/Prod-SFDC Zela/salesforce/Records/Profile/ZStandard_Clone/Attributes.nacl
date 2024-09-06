@@ -1,0 +1,6 @@
+salesforce.Profile ZStandard_Clone@s {
+  custom = true
+  userLicense = "Salesforce"
+  fullName = "ZStandard Clone"
+  _alias = "ZStandard Clone"
+}

@@ -217,7 +217,6 @@ type salesforce.Campaign {
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
   enableHistory = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
       "CAMPAIGN.NAME",

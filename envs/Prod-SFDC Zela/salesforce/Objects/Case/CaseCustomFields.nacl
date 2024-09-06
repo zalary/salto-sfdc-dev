@@ -1,6 +1,7 @@
 type salesforce.Case {
   salesforce.Text EngineeringReqNumber__c {
     apiName = "Case.EngineeringReqNumber__c"
+    encryptionScheme = "None"
     externalId = false
     label = "Engineering Req Number"
     length = 12

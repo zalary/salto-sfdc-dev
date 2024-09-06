@@ -7,6 +7,7 @@ salesforce.CustomApplication standard__LightningSales {
   isNavAutoTempTabsDisabled = false
   isNavPersonalizationDisabled = false
   isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
   label = "Sales"
   navType = "Standard"
   tabs = [
@@ -29,12 +30,6 @@ salesforce.CustomApplication standard__LightningSales {
     "standard-Forecasting3",
   ]
   uiType = "Lightning"
-  utilityBar = "LightningSales_UtilityBar"
   fullName = "standard__LightningSales"
-  _generated_dependencies = [
-    {
-      reference = salesforce.LightningPage.instance.LightningSales_UtilityBar
-    },
-  ]
   _alias = "Sales (standard)"
 }

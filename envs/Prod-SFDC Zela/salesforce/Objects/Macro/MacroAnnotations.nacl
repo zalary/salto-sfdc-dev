@@ -202,7 +202,6 @@ type salesforce.Macro {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
       "StartingContext",

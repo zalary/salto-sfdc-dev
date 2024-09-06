@@ -188,7 +188,6 @@ type salesforce.AuthorizationFormConsent {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
       "ConsentGiver",

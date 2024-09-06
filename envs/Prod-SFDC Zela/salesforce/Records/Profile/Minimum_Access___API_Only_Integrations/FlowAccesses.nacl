@@ -1,0 +1,16 @@
+salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
+  flowAccesses = {
+    OppTask = {
+      enabled = false
+      flow = "OppTask"
+    }
+    ZGY_Flow_1 = {
+      enabled = false
+      flow = "ZGY_Flow_1"
+    }
+    ZGY_Flow_2 = {
+      enabled = false
+      flow = "ZGY_Flow_2"
+    }
+  }
+}

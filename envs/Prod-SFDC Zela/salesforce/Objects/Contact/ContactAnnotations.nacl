@@ -383,9 +383,9 @@ type salesforce.Contact {
     },
   ]
   compactLayoutAssignment = "SYSTEM"
+  enableEnhancedLookup = true
   enableFeeds = true
   enableHistory = false
-  externalSharingModel = "ControlledByParent"
   searchLayouts = {
     customTabListAdditionalFields = [
       "FULL_NAME",

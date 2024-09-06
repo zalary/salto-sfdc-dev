@@ -13,6 +13,8 @@ type salesforce.FieldSetItem {
     string dirName {
     }
   }
+  string alternativeDisplayFormat {
+  }
   string field {
   }
   boolean isFieldManaged {

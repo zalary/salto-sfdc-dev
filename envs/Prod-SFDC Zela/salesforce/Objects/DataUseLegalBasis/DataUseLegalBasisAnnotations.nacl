@@ -188,7 +188,6 @@ type salesforce.DataUseLegalBasis {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
       "Source",

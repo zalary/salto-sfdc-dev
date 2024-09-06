@@ -3,4 +3,28 @@ salesforce.Profile Chatter_Free_User@s {
   userLicense = "Chatter Free"
   fullName = "Chatter Free User"
   _alias = "Chatter Free User"
+  flowAccesses = {
+    OppTask = {
+      enabled = false
+      flow = "OppTask"
+    }
+    ZGY_Flow_1 = {
+      enabled = false
+      flow = "ZGY_Flow_1"
+    }
+    ZGY_Flow_2 = {
+      enabled = false
+      flow = "ZGY_Flow_2"
+    }
+  }
+  classAccesses = {
+    RestLeadConvert = {
+      apexClass = "RestLeadConvert"
+      enabled = false
+    }
+    WebLeadConvert = {
+      apexClass = "WebLeadConvert"
+      enabled = false
+    }
+  }
 }

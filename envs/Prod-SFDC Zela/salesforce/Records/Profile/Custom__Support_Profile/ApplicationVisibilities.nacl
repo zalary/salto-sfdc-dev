@@ -30,6 +30,11 @@ salesforce.Profile Custom_3A_Support_Profile@pss {
       default = false
       visible = true
     }
+    standard__FlowsApp = {
+      application = "standard__FlowsApp"
+      default = false
+      visible = true
+    }
     standard__Insights = {
       application = "standard__Insights"
       default = false
@@ -55,11 +60,6 @@ salesforce.Profile Custom_3A_Support_Profile@pss {
       default = false
       visible = true
     }
-    standard__LightningScheduler = {
-      application = "standard__LightningScheduler"
-      default = false
-      visible = false
-    }
     standard__LightningService = {
       application = "standard__LightningService"
       default = false
@@ -74,16 +74,6 @@ salesforce.Profile Custom_3A_Support_Profile@pss {
       application = "standard__Platform"
       default = false
       visible = false
-    }
-    standard__QueueManagement = {
-      application = "standard__QueueManagement"
-      default = false
-      visible = true
-    }
-    standard__RevenueCloudConsole = {
-      application = "standard__RevenueCloudConsole"
-      default = false
-      visible = true
     }
     standard__Sales = {
       application = "standard__Sales"
@@ -109,6 +99,11 @@ salesforce.Profile Custom_3A_Support_Profile@pss {
       application = "standard__Sites"
       default = false
       visible = true
+    }
+    zalgoodco = {
+      application = "zalgoodco"
+      default = false
+      visible = false
     }
   }
 }

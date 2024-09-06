@@ -23,18 +23,23 @@ type salesforce.FlowRecordRollback {
     _restriction = {
       enforce_value = false
       values = [
+        "AddPromptInstructions",
         "BackgroundStep",
         "FilterCollectionProcessor",
         "InteractiveStep",
         "ManagedContentRoleInteractiveStep",
+        "ManagedContentVariantAutoPublishBackgroundStep",
+        "ManagedContentVariantAutoUnpublishBackgroundStep",
         "ManagedContentVariantSetLockBackgroundStep",
         "ManagedContentVariantSetReadyBackgroundStep",
         "MuleSoftStep",
         "RecommendationMapCollectionProcessor",
+        "ReviewAdvancedApprovalInteractiveStep",
         "SortCollectionProcessor",
         "WaitAttribute",
         "WaitDate",
         "WaitDuration",
+        "WaitUntilEvent",
       ]
     }
   }
@@ -47,4 +52,21 @@ type salesforce.FlowRecordRollback {
   salesforce.FlowConnector connector {
   }
   metadataType = "FlowRecordRollback"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

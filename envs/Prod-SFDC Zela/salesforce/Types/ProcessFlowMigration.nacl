@@ -17,7 +17,7 @@ type salesforce.ProcessFlowMigration {
   }
   string destinationFlowDefinition {
     foreignKeyDomain = [
-      "FlowDefinition",
+      salesforce.FlowDefinition,
     ]
   }
   string destinationFlowVersion {
@@ -45,4 +45,16 @@ type salesforce.ProcessFlowMigration {
   suffix = "processflowmigration"
   dirName = "processflowmigrations"
   metadataType = "ProcessFlowMigration"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "masterLabel"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

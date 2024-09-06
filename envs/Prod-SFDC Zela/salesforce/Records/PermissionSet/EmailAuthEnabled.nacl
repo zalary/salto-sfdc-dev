@@ -1,0 +1,13 @@
+salesforce.PermissionSet EmailAuthEnabled {
+  hasActivationRequired = false
+  label = "EmailAuthEnabled"
+  license = "Salesforce"
+  userPermissions = {
+    AllowEmailIC = {
+      enabled = true
+      name = "AllowEmailIC"
+    }
+  }
+  fullName = "EmailAuthEnabled"
+  _alias = "EmailAuthEnabled"
+}

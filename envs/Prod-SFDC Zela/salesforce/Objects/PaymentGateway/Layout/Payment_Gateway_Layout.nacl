@@ -13,14 +13,6 @@ salesforce.Layout PaymentGateway_Payment_Gateway_Layout@bss {
               field = salesforce.PaymentGateway.field.PaymentGatewayName
             },
             {
-              behavior = "Edit"
-              field = salesforce.PaymentGateway.field.PaymentGatewayProviderId
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.PaymentGateway.field.MerchantCredentialId
-            },
-            {
               behavior = "Required"
               field = salesforce.PaymentGateway.field.Status
             },
@@ -34,8 +26,20 @@ salesforce.Layout PaymentGateway_Payment_Gateway_Layout@bss {
             },
           ]
         },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.PaymentGateway.field.PaymentGatewayProviderId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PaymentGateway.field.MerchantCredentialId
+            },
+          ]
+        },
       ]
-      style = "OneColumn"
+      style = "TwoColumnsLeftToRight"
     },
     {
       customLabel = false

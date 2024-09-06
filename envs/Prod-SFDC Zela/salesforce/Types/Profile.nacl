@@ -67,4 +67,16 @@ type salesforce.Profile {
   suffix = "profile"
   dirName = "profiles"
   metadataType = "Profile"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

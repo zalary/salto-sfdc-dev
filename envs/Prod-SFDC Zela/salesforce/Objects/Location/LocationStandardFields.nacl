@@ -64,9 +64,6 @@ type salesforce.Location {
   salesforce.Lookup LogoId {
     apiName = "Location.LogoId"
     relationshipName = "Logo"
-    referenceTo = [
-      "ContentAsset",
-    ]
     label = "Asset File ID"
     createable = true
     updateable = true
@@ -90,10 +87,6 @@ type salesforce.Location {
   salesforce.Lookup OwnerId {
     apiName = "Location.OwnerId"
     relationshipName = "Owner"
-    referenceTo = [
-      salesforce.Group,
-      salesforce.User,
-    ]
     label = "Owner ID"
     createable = true
     updateable = true
@@ -119,9 +112,6 @@ type salesforce.Location {
   salesforce.Lookup RootLocationId {
     apiName = "Location.RootLocationId"
     relationshipName = "RootLocation"
-    referenceTo = [
-      salesforce.Location,
-    ]
     label = "Root Location ID"
     createable = false
     updateable = false
@@ -166,9 +156,6 @@ type salesforce.Location {
   salesforce.Lookup CreatedById {
     apiName = "Location.CreatedById"
     relationshipName = "CreatedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Created By ID"
     createable = false
     updateable = false
@@ -186,9 +173,6 @@ type salesforce.Location {
   salesforce.Lookup LastModifiedById {
     apiName = "Location.LastModifiedById"
     relationshipName = "LastModifiedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Last Modified By ID"
     createable = false
     updateable = false

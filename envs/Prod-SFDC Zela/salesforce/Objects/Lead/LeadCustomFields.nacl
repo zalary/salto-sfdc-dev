@@ -1,6 +1,7 @@
 type salesforce.Lead {
   salesforce.Text CurrentGenerators__c {
     apiName = "Lead.CurrentGenerators__c"
+    encryptionScheme = "None"
     externalId = false
     label = "Current Generator(s)"
     length = 100
@@ -72,6 +73,7 @@ type salesforce.Lead {
   }
   salesforce.Text SICCode__c {
     apiName = "Lead.SICCode__c"
+    encryptionScheme = "None"
     externalId = false
     label = "SIC Code"
     length = 15
@@ -81,41 +83,47 @@ type salesforce.Lead {
     caseSensitive = false
     queryable = true
   }
-  salesforce.Checkbox isPriority__c {
-    apiName = "Lead.isPriority__c"
-    defaultValue = false
-    description = "indicates whether the lead should be treated as a priority"
+  salesforce.Number Score__c {
+    apiName = "Lead.Score__c"
+    defaultValueFormula = "0"
+    description = "Lead Score"
     externalId = false
-    label = "isPriority"
+    label = "Score"
+    precision = 3
+    scale = 0
+    unique = false
     createable = true
     updateable = true
     queryable = true
-    businessStatus = "Active"
-    securityClassification = "Internal"
   }
-  salesforce.Picklist Priority__c {
-    apiName = "Lead.Priority__c"
+  salesforce.Checkbox isHot__c {
+    apiName = "Lead.isHot__c"
+    defaultValue = false
     externalId = false
-    label = "Priority"
-    valueSet = [
-      {
-        fullName = "High"
-        default = false
-        label = "High"
-      },
-      {
-        fullName = "Medium"
-        default = false
-        label = "Medium"
-      },
-      {
-        fullName = "Low"
-        default = false
-        label = "Low"
-      },
-    ]
-    sorted = false
-    restricted = true
+    label = "isHot"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text saltoQuickStartField__c {
+    apiName = "Lead.saltoQuickStartField__c"
+    encryptionScheme = "None"
+    externalId = false
+    label = "saltoQuickStartField"
+    length = 32
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Checkbox webformLead__c {
+    apiName = "Lead.webformLead__c"
+    defaultValue = false
+    description = "Is this lead from our webform?"
+    externalId = false
+    inlineHelpText = "should be left unchecked when creating a Lead in SFDC.  Used to auto-convert leads from our webform into Contact, Account, Opportunity and Task"
+    label = "Webform Lead"
     createable = true
     updateable = true
     queryable = true

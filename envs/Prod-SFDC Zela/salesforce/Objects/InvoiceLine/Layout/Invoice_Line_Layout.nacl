@@ -17,12 +17,12 @@ salesforce.Layout InvoiceLine_Invoice_Line_Layout@bss {
               field = salesforce.InvoiceLine.field.InvoiceLineStartDate
             },
             {
-              behavior = "Required"
-              field = salesforce.InvoiceLine.field.InvoiceLineEndDate
+              behavior = "Edit"
+              field = salesforce.InvoiceLine.field.ReferenceEntityItemId
             },
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.ReferenceEntityItemId
+              field = salesforce.InvoiceLine.field.ReferenceEntityItemType
             },
             {
               behavior = "Edit"
@@ -41,8 +41,8 @@ salesforce.Layout InvoiceLine_Invoice_Line_Layout@bss {
               field = salesforce.InvoiceLine.field.InvoiceId
             },
             {
-              behavior = "Edit"
-              field = salesforce.InvoiceLine.field.ReferenceEntityItemType
+              behavior = "Required"
+              field = salesforce.InvoiceLine.field.InvoiceLineEndDate
             },
             {
               behavior = "Edit"
@@ -86,6 +86,10 @@ salesforce.Layout InvoiceLine_Invoice_Line_Layout@bss {
               field = salesforce.InvoiceLine.field.AdjustmentAmount
             },
             {
+              behavior = "Readonly"
+              field = salesforce.InvoiceLine.field.LineAmount
+            },
+            {
               behavior = "Edit"
               field = salesforce.InvoiceLine.field.TaxAmount
             },
@@ -100,17 +104,24 @@ salesforce.Layout InvoiceLine_Invoice_Line_Layout@bss {
       customLabel = false
       detailHeading = true
       editHeading = true
+      label = "InvoiceLineAddressInformation"
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
       label = "TaxInformation"
       layoutColumns = [
         {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.TaxRate
+              field = salesforce.InvoiceLine.field.TaxName
             },
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.TaxName
+              field = salesforce.InvoiceLine.field.TaxEffectiveDate
             },
           ]
         },
@@ -118,7 +129,7 @@ salesforce.Layout InvoiceLine_Invoice_Line_Layout@bss {
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.InvoiceLine.field.TaxEffectiveDate
+              field = salesforce.InvoiceLine.field.TaxRate
             },
             {
               behavior = "Edit"

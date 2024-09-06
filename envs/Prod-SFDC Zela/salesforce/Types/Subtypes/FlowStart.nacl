@@ -23,18 +23,23 @@ type salesforce.FlowStart {
     _restriction = {
       enforce_value = false
       values = [
+        "AddPromptInstructions",
         "BackgroundStep",
         "FilterCollectionProcessor",
         "InteractiveStep",
         "ManagedContentRoleInteractiveStep",
+        "ManagedContentVariantAutoPublishBackgroundStep",
+        "ManagedContentVariantAutoUnpublishBackgroundStep",
         "ManagedContentVariantSetLockBackgroundStep",
         "ManagedContentVariantSetReadyBackgroundStep",
         "MuleSoftStep",
         "RecommendationMapCollectionProcessor",
+        "ReviewAdvancedApprovalInteractiveStep",
         "SortCollectionProcessor",
         "WaitAttribute",
         "WaitDate",
         "WaitDuration",
+        "WaitUntilEvent",
       ]
     }
   }
@@ -43,6 +48,8 @@ type salesforce.FlowStart {
   number locationX {
   }
   number locationY {
+  }
+  salesforce.FlowCapability capabilityTypes {
   }
   salesforce.FlowConnector connector {
   }
@@ -57,6 +64,8 @@ type salesforce.FlowStart {
   string object {
   }
   string objectContainer {
+  }
+  boolean publishSegment {
   }
   string recordTriggerType {
     _restriction = {
@@ -80,7 +89,10 @@ type salesforce.FlowStart {
     _restriction = {
       enforce_value = false
       values = [
+        "Capability",
+        "DataCloudDataChange",
         "EventDrivenJourney",
+        "FormSubmissionEvent",
         "None",
         "PlatformEvent",
         "RecordAfterSave",
@@ -92,4 +104,41 @@ type salesforce.FlowStart {
     }
   }
   metadataType = "FlowStart"
+  string entryType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AfterCompletion",
+        "Always",
+      ]
+    }
+  }
+  string flowRunAsUser {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "DefaultWorkflowUser",
+        "TriggeringUser",
+      ]
+    }
+  }
+  string form {
+  }
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

@@ -59,6 +59,5 @@ type salesforce.MacroUsage {
   metadataType = "CustomObject"
   label = "Macro Usage"
   enableFeeds = false
-  externalSharingModel = "Private"
   _alias = "Macro Usage"
 }

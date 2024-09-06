@@ -58,7 +58,7 @@ salesforce.Layout UserProvAccount_User_Provisioning_Account_Layout@bsss {
       style = "TwoColumnsTopToBottom"
     },
     {
-      customLabel = false
+      customLabel = true
       detailHeading = true
       editHeading = true
       label = "System Information"

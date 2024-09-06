@@ -30,6 +30,11 @@ salesforce.Profile Analytics_Cloud_Security_User@s {
       default = false
       visible = false
     }
+    standard__FlowsApp = {
+      application = "standard__FlowsApp"
+      default = false
+      visible = false
+    }
     standard__Insights = {
       application = "standard__Insights"
       default = false
@@ -55,11 +60,6 @@ salesforce.Profile Analytics_Cloud_Security_User@s {
       default = false
       visible = false
     }
-    standard__LightningScheduler = {
-      application = "standard__LightningScheduler"
-      default = false
-      visible = false
-    }
     standard__LightningService = {
       application = "standard__LightningService"
       default = false
@@ -74,16 +74,6 @@ salesforce.Profile Analytics_Cloud_Security_User@s {
       application = "standard__Platform"
       default = true
       visible = true
-    }
-    standard__QueueManagement = {
-      application = "standard__QueueManagement"
-      default = false
-      visible = false
-    }
-    standard__RevenueCloudConsole = {
-      application = "standard__RevenueCloudConsole"
-      default = false
-      visible = false
     }
     standard__Sales = {
       application = "standard__Sales"
@@ -107,6 +97,11 @@ salesforce.Profile Analytics_Cloud_Security_User@s {
     }
     standard__Sites = {
       application = "standard__Sites"
+      default = false
+      visible = false
+    }
+    zalgoodco = {
+      application = "zalgoodco"
       default = false
       visible = false
     }

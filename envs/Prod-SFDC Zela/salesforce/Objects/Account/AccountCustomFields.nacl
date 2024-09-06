@@ -61,6 +61,7 @@ type salesforce.Account {
   }
   salesforce.Date SLAExpirationDate__c {
     apiName = "Account.SLAExpirationDate__c"
+    encryptionScheme = "None"
     externalId = false
     label = "SLA Expiration Date"
     createable = true
@@ -69,6 +70,7 @@ type salesforce.Account {
   }
   salesforce.Text SLASerialNumber__c {
     apiName = "Account.SLASerialNumber__c"
+    encryptionScheme = "None"
     externalId = false
     label = "SLA Serial Number"
     length = 10

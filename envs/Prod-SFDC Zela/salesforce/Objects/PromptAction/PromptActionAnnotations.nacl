@@ -59,6 +59,5 @@ type salesforce.PromptAction {
   metadataType = "CustomObject"
   label = "Prompt Action"
   enableFeeds = false
-  externalSharingModel = "Private"
   _alias = "Prompt Action"
 }

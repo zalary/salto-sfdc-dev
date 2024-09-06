@@ -34,13 +34,17 @@ type salesforce.FlowApexPluginCallInputParameter {
         "EventNumber",
         "FaultMessage",
         "FaultStackTrace",
+        "Form",
         "FormFactor",
+        "Input",
         "InterviewGuid",
         "InterviewIdValue",
         "InterviewStartTime",
         "None",
         "NullNumberValue",
         "NullStringValue",
+        "Output",
+        "Prompt",
         "SpaceIdValue",
         "SparkIdValue",
         "StringOperationNumber",
@@ -57,15 +61,18 @@ type salesforce.FlowApexPluginCallInputParameter {
       "InteractionChoiceLookup",
       "InteractionCollectionProc",
       "InteractionConstant",
+      "InteractionCustomError",
       "InteractionDataInput",
       "InteractionDataOutput",
       "InteractionDecision",
+      "InteractionExperiment",
       "InteractionForm",
       "InteractionFormula",
       "InteractionLoop",
       "InteractionQuestion",
       "InteractionResource",
       "InteractionRollback",
+      "InteractionScreenAction",
       "InteractionStage",
       "InteractionStatement",
       "InteractionSteppedStage",
@@ -81,4 +88,11 @@ type salesforce.FlowApexPluginCallInputParameter {
     ]
   }
   metadataType = "FlowApexPluginCallInputParameter"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

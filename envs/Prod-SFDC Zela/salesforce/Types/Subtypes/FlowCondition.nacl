@@ -40,4 +40,14 @@ type salesforce.FlowCondition {
     }
   }
   metadataType = "FlowCondition"
+  string conditionType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Container",
+        "EntryCondition",
+        "ExitCondition",
+      ]
+    }
+  }
 }

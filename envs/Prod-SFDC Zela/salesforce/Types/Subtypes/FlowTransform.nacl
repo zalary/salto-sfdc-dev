@@ -20,6 +20,28 @@ type salesforce.FlowTransform {
   string name {
   }
   string elementSubtype {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AddPromptInstructions",
+        "BackgroundStep",
+        "FilterCollectionProcessor",
+        "InteractiveStep",
+        "ManagedContentRoleInteractiveStep",
+        "ManagedContentVariantAutoPublishBackgroundStep",
+        "ManagedContentVariantAutoUnpublishBackgroundStep",
+        "ManagedContentVariantSetLockBackgroundStep",
+        "ManagedContentVariantSetReadyBackgroundStep",
+        "MuleSoftStep",
+        "RecommendationMapCollectionProcessor",
+        "ReviewAdvancedApprovalInteractiveStep",
+        "SortCollectionProcessor",
+        "WaitAttribute",
+        "WaitDate",
+        "WaitDuration",
+        "WaitUntilEvent",
+      ]
+    }
   }
   string label {
   }
@@ -40,6 +62,7 @@ type salesforce.FlowTransform {
   string objectType {
     foreignKeyDomain = [
       "CustomObject",
+      "PlatformSchemaDefinition",
     ]
   }
   number scale {
@@ -47,4 +70,21 @@ type salesforce.FlowTransform {
   salesforce.FlowTransformValue transformValues {
   }
   metadataType = "FlowTransform"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

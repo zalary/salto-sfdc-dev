@@ -39,11 +39,19 @@ type salesforce.ConnectedAppOauthConfig {
   }
   boolean isNamedUserJwtEnabled {
   }
+  boolean isRefreshTokenRotationEnabled {
+  }
   boolean isSecretRequiredForRefreshToken {
+  }
+  boolean isSecretRequiredForTokenExchange {
+  }
+  boolean isTokenExchangeEnabled {
   }
   string oauthClientCredentialUser {
   }
   string singleLogoutUrl {
   }
   metadataType = "ConnectedAppOauthConfig"
+  boolean isPkceRequired {
+  }
 }

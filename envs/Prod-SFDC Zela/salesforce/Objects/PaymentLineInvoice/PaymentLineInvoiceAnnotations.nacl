@@ -160,6 +160,5 @@ type salesforce.PaymentLineInvoice {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ControlledByParent"
   _alias = "Payment Line Invoice"
 }

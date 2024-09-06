@@ -62,15 +62,19 @@ salesforce.AppMenu AppSwitcher {
       type = "CustomApplication"
     },
     {
+      name = salesforce.CustomApplication.instance.standard__LightningBolt
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.zalgoodco
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.ConnectedApp.instance.zalgoodco
+      type = "ConnectedApp"
+    },
+    {
       name = salesforce.CustomApplication.instance.standard__SalesforceCMS
-      type = "CustomApplication"
-    },
-    {
-      name = salesforce.CustomApplication.instance.standard__AllTabSet
-      type = "CustomApplication"
-    },
-    {
-      name = salesforce.CustomApplication.instance.standard__QueueManagement
       type = "CustomApplication"
     },
     {
@@ -78,15 +82,11 @@ salesforce.AppMenu AppSwitcher {
       type = "CustomApplication"
     },
     {
-      name = salesforce.CustomApplication.instance.standard__RevenueCloudConsole
+      name = salesforce.CustomApplication.instance.standard__AllTabSet
       type = "CustomApplication"
     },
     {
-      name = salesforce.CustomApplication.instance.standard__LightningScheduler
-      type = "CustomApplication"
-    },
-    {
-      name = salesforce.CustomApplication.instance.standard__LightningBolt
+      name = salesforce.CustomApplication.instance.standard__FlowsApp
       type = "CustomApplication"
     },
   ]

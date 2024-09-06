@@ -20,6 +20,10 @@ salesforce.Layout ContactPointAddress_Contact_Point_Address_Layout@bsss {
               behavior = "Edit"
               field = salesforce.ContactPointAddress.field.Address
             },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointAddress.field.PreferenceRank
+            },
           ]
         },
         {
@@ -31,6 +35,10 @@ salesforce.Layout ContactPointAddress_Contact_Point_Address_Layout@bsss {
             {
               behavior = "Edit"
               field = salesforce.ContactPointAddress.field.IsDefault
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointAddress.field.UsageType
             },
           ]
         },

@@ -60,7 +60,6 @@ type salesforce.UserProvisioningRequest {
   label = "User Provisioning Request"
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
       "ConnectedApp",

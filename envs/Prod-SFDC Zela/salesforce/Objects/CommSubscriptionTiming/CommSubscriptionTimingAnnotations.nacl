@@ -188,7 +188,6 @@ type salesforce.CommSubscriptionTiming {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ControlledByParent"
   searchLayouts = {
     customTabListAdditionalFields = [
       "Unit",

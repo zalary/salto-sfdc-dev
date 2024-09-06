@@ -98,7 +98,7 @@ type salesforce.CustomPageWebLink {
   string scontrol {
     foreignKeyDomain = [
       salesforce.ApexPage,
-      "FlowDefinition",
+      salesforce.FlowDefinition,
       salesforce.Scontrol,
     ]
   }
@@ -117,4 +117,21 @@ type salesforce.CustomPageWebLink {
   suffix = "weblink"
   dirName = "weblinks"
   metadataType = "CustomPageWebLink"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "masterLabel"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

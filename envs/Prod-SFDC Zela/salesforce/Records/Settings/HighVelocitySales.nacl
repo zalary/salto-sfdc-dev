@@ -1,7 +1,7 @@
 salesforce.HighVelocitySalesSettings {
   fullName = "HighVelocitySales"
   enableACAutoSendEmail = "false"
-  enableACChangeTargetAssignee = "false"
+  enableACChangeTargetAssignee = "true"
   enableACSkipWeekends = "false"
   enableBusinessHours = "false"
   enableChgTgtAssigneeUsrPermPref = "false"
@@ -12,4 +12,5 @@ salesforce.HighVelocitySalesSettings {
   enableOpportunityAttributionPermPref = "false"
   enableTaskLoggingPref = "false"
   _alias = "HighVelocitySales"
+  enableCadenceVariantTestingPref = "false"
 }

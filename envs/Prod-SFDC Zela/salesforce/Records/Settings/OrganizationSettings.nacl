@@ -2,13 +2,14 @@ salesforce.Organization {
   Address = {
     country = "US"
   }
-  PrimaryContact = "Zela Older"
+  PrimaryContact = "Zalary Young"
   DefaultLocaleSidKey = "en_US"
-  TimeZoneSidKey = "America/Los_Angeles"
+  TimeZoneSidKey = "America/El_Salvador"
   LanguageLocaleKey = "en_US"
-  ReceivesInfoEmails = true
+  ReceivesInfoEmails = false
   ReceivesAdminInfoEmails = true
   PreferencesRequireOpportunityProducts = false
+  PreferencesEmailSenderIdCompliance = false
   PreferencesTransactionSecurityPolicy = false
   PreferencesConsentManagementEnabled = true
   PreferencesAutoSelectIndividualOnMerge = false

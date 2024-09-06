@@ -25,16 +25,16 @@ salesforce.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
               field = salesforce.CreditMemoLine.field.EndDate
             },
             {
+              behavior = "Required"
+              field = salesforce.CreditMemoLine.field.Type
+            },
+            {
               behavior = "Edit"
               field = salesforce.CreditMemoLine.field.RelatedLineId
             },
             {
               behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.ReferenceEntityItemId
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.ReferenceEntityItemType
+              field = salesforce.CreditMemoLine.field.Status
             },
           ]
         },
@@ -43,14 +43,6 @@ salesforce.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
             {
               behavior = "Edit"
               field = salesforce.CreditMemoLine.field.Description
-            },
-            {
-              behavior = "Edit"
-              field = salesforce.CreditMemoLine.field.ReferenceEntityItemTypeCode
-            },
-            {
-              behavior = "Required"
-              field = salesforce.CreditMemoLine.field.Type
             },
           ]
         },
@@ -81,11 +73,22 @@ salesforce.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
               behavior = "Edit"
               field = salesforce.CreditMemoLine.field.TaxAmount
             },
+            {
+              behavior = "Readonly"
+              field = salesforce.CreditMemoLine.field.LineAmount
+            },
           ]
         },
         {
         },
       ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "CreditMemoLineAddressInformation"
       style = "TwoColumnsLeftToRight"
     },
     {
@@ -163,6 +166,17 @@ salesforce.Layout CreditMemoLine_Credit_Memo_Line_Layout@bsss {
         },
       ]
       style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Type",
+        "RelatedLine",
+        "LineAmount",
+      ]
+      relatedList = "RelatedCreditMemoLineList"
     },
   ]
   showEmailCheckbox = false

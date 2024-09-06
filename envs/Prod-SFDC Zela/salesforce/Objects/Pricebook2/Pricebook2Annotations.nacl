@@ -188,7 +188,6 @@ type salesforce.Pricebook2 {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ReadSelect"
   searchLayouts = {
     customTabListAdditionalFields = [
       "PRICEBOOK2.NAME",

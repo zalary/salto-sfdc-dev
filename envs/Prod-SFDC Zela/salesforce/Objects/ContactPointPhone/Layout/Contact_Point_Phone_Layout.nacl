@@ -36,6 +36,10 @@ salesforce.Layout ContactPointPhone_Contact_Point_Phone_Layout@bsss {
               behavior = "Edit"
               field = salesforce.ContactPointPhone.field.ParentId
             },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointPhone.field.PreferenceRank
+            },
           ]
         },
         {
@@ -51,6 +55,10 @@ salesforce.Layout ContactPointPhone_Contact_Point_Phone_Layout@bsss {
             {
               behavior = "Edit"
               field = salesforce.ContactPointPhone.field.IsFaxCapable
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointPhone.field.UsageType
             },
           ]
         },

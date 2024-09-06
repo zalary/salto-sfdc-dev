@@ -231,6 +231,31 @@ salesforce.Layout Payment_Payment_Layout@bs {
       style = "CustomLinks"
     },
   ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Invoice",
+        "Amount",
+        "Type",
+        "Date",
+      ]
+      relatedList = "PaymentLinesInvoice"
+    },
+    {
+      fields = [
+        "Name",
+        "Refund",
+        "Amount",
+        "Type",
+        "Date",
+      ]
+      relatedList = "RefundLinesPayment"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+  ]
   showEmailCheckbox = false
   showRunAssignmentRulesCheckbox = false
   showSubmitAndAttachButton = false

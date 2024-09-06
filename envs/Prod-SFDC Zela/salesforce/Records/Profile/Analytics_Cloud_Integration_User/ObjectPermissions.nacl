@@ -9,6 +9,15 @@ salesforce.Profile Analytics_Cloud_Integration_User@s {
       object = "Account"
       viewAllRecords = true
     }
+    Account__c = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Account__c"
+      viewAllRecords = true
+    }
     AlternativePaymentMethod = {
       allowCreate = false
       allowDelete = false
@@ -207,15 +216,6 @@ salesforce.Profile Analytics_Cloud_Integration_User@s {
       object = "Contract"
       viewAllRecords = true
     }
-    ContractLineItem = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ContractLineItem"
-      viewAllRecords = true
-    }
     CredentialStuffingEventStore = {
       allowCreate = false
       allowDelete = false
@@ -261,6 +261,15 @@ salesforce.Profile Analytics_Cloud_Integration_User@s {
       object = "DandBCompany"
       viewAllRecords = true
     }
+    DataKitDeploymentLog = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "DataKitDeploymentLog"
+      viewAllRecords = true
+    }
     DataUseLegalBasis = {
       allowCreate = false
       allowDelete = false
@@ -297,24 +306,6 @@ salesforce.Profile Analytics_Cloud_Integration_User@s {
       object = "DuplicateRecordSet"
       viewAllRecords = true
     }
-    Entitlement = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "Entitlement"
-      viewAllRecords = true
-    }
-    EntitlementContact = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "EntitlementContact"
-      viewAllRecords = true
-    }
     FinanceBalanceSnapshot = {
       allowCreate = false
       allowDelete = false
@@ -331,6 +322,15 @@ salesforce.Profile Analytics_Cloud_Integration_User@s {
       allowRead = true
       modifyAllRecords = false
       object = "FinanceTransaction"
+      viewAllRecords = true
+    }
+    GuestUserAnomalyEventStore = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "GuestUserAnomalyEventStore"
       viewAllRecords = true
     }
     Idea = {
@@ -385,15 +385,6 @@ salesforce.Profile Analytics_Cloud_Integration_User@s {
       allowRead = true
       modifyAllRecords = false
       object = "Macro"
-      viewAllRecords = true
-    }
-    OperatingHours = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "OperatingHours"
       viewAllRecords = true
     }
     Opportunity = {
@@ -477,6 +468,33 @@ salesforce.Profile Analytics_Cloud_Integration_User@s {
       object = "Pricebook2"
       viewAllRecords = true
     }
+    PrivacyJobSession = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "PrivacyJobSession"
+      viewAllRecords = true
+    }
+    PrivacyPolicy = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "PrivacyPolicy"
+      viewAllRecords = true
+    }
+    PrivacyRTBFRequest = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "PrivacyRTBFRequest"
+      viewAllRecords = true
+    }
     ProcessException = {
       allowCreate = false
       allowDelete = false
@@ -531,15 +549,6 @@ salesforce.Profile Analytics_Cloud_Integration_User@s {
       object = "ReportAnomalyEventStore"
       viewAllRecords = true
     }
-    ReturnOrder = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ReturnOrder"
-      viewAllRecords = true
-    }
     Seller = {
       allowCreate = false
       allowDelete = false
@@ -547,42 +556,6 @@ salesforce.Profile Analytics_Cloud_Integration_User@s {
       allowRead = true
       modifyAllRecords = false
       object = "Seller"
-      viewAllRecords = true
-    }
-    ServiceAppointment = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceAppointment"
-      viewAllRecords = true
-    }
-    ServiceContract = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceContract"
-      viewAllRecords = true
-    }
-    ServiceResource = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceResource"
-      viewAllRecords = true
-    }
-    ServiceTerritory = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceTerritory"
       viewAllRecords = true
     }
     SessionHijackingEventStore = {
@@ -621,49 +594,166 @@ salesforce.Profile Analytics_Cloud_Integration_User@s {
       object = "StreamingChannel"
       viewAllRecords = true
     }
-    WebCart = {
+    CommSubscription = {
       allowCreate = false
       allowDelete = false
       allowEdit = false
       allowRead = true
       modifyAllRecords = false
-      object = "WebCart"
+      object = "CommSubscription"
       viewAllRecords = true
     }
-    WebStore = {
+    CommSubscriptionChannelType = {
       allowCreate = false
       allowDelete = false
       allowEdit = false
       allowRead = true
       modifyAllRecords = false
-      object = "WebStore"
+      object = "CommSubscriptionChannelType"
       viewAllRecords = true
     }
-    WorkOrder = {
+    CommSubscriptionConsent = {
       allowCreate = false
       allowDelete = false
       allowEdit = false
       allowRead = true
       modifyAllRecords = false
-      object = "WorkOrder"
+      object = "CommSubscriptionConsent"
       viewAllRecords = true
     }
-    WorkType = {
+    CommSubscriptionTiming = {
       allowCreate = false
       allowDelete = false
       allowEdit = false
       allowRead = true
       modifyAllRecords = false
-      object = "WorkType"
+      object = "CommSubscriptionTiming"
       viewAllRecords = true
     }
-    WorkTypeGroup = {
+    ContactRequest = {
       allowCreate = false
       allowDelete = false
       allowEdit = false
       allowRead = true
       modifyAllRecords = false
-      object = "WorkTypeGroup"
+      object = "ContactRequest"
+      viewAllRecords = true
+    }
+    EngagementChannelType = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "EngagementChannelType"
+      viewAllRecords = true
+    }
+    Image = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Image"
+      viewAllRecords = true
+    }
+    Location = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Location"
+      viewAllRecords = true
+    }
+    LocationGroup = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "LocationGroup"
+      viewAllRecords = true
+    }
+    LocationGroupAssignment = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "LocationGroupAssignment"
+      viewAllRecords = true
+    }
+    MessagingEndUser = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "MessagingEndUser"
+      viewAllRecords = true
+    }
+    MessagingSession = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "MessagingSession"
+      viewAllRecords = true
+    }
+    PartyConsent = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "PartyConsent"
+      viewAllRecords = true
+    }
+    Scorecard = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Scorecard"
+      viewAllRecords = true
+    }
+    ScorecardAssociation = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "ScorecardAssociation"
+      viewAllRecords = true
+    }
+    ScorecardMetric = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "ScorecardMetric"
+      viewAllRecords = true
+    }
+    Tier__c = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Tier__c"
+      viewAllRecords = true
+    }
+    UserExternalCredential = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "UserExternalCredential"
       viewAllRecords = true
     }
   }

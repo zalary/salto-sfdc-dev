@@ -164,6 +164,7 @@ salesforce.CustomApplication standard__ServiceConsole {
   isNavAutoTempTabsDisabled = false
   isNavPersonalizationDisabled = false
   isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
   isServiceCloudConsole = true
   preferences = {
     enableCustomizeMyTabs = false

@@ -3,12 +3,11 @@ salesforce.SharingSettings {
   deferGroupMembership = false
   deferSharingRules = false
   enableAssetSharing = true
-  enableCommunityUserVisibility = false
-  enableExternalSharingModel = true
+  enableCommunityUserVisibility = true
+  enableExternalSharingModel = false
   enableManagerGroups = false
   enableManualUserRecordSharing = false
-  enablePortalUserCaseSharing = true
-  enablePortalUserVisibility = false
+  enablePortalUserVisibility = true
   enableRemoveTMGroupMembership = false
   enableRestrictAccessLookupRecords = false
   enableSecureGuestAccess = false

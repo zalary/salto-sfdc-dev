@@ -1,5 +1,15 @@
 salesforce.ListView Lead_AllOpenLeads {
   fullName = "Lead.AllOpenLeads"
+  columns = [
+    "FULL_NAME",
+    "LEAD.COMPANY",
+    "LEAD.STATE",
+    "LEAD.EMAIL",
+    "LEAD.STATUS",
+    "LEAD.CREATED_DATE",
+    "CORE.USERS.ALIAS",
+    "LEAD.UNREAD",
+  ]
   filterScope = "Everything"
   filters = [
     {

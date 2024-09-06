@@ -47,6 +47,8 @@ type salesforce.EmbeddedServiceConfig {
     _restriction = {
       enforce_value = false
       values = [
+        "API",
+        "InternalCopilot",
         "Mobile",
         "Web",
       ]
@@ -84,4 +86,20 @@ type salesforce.EmbeddedServiceConfig {
   suffix = "EmbeddedServiceConfig"
   dirName = "EmbeddedServiceConfig"
   metadataType = "EmbeddedServiceConfig"
+  boolean isTermsAndConditionsEnabled {
+  }
+  boolean isTermsAndConditionsRequired {
+  }
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "masterLabel"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

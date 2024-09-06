@@ -33,6 +33,7 @@ type salesforce.ProfileActionOverride {
   string pageOrSobjectType {
     foreignKeyDomain = [
       "CustomObject",
+      "PlatformSchemaDefinition",
     ]
   }
   string recordType {
@@ -54,4 +55,11 @@ type salesforce.ProfileActionOverride {
     }
   }
   metadataType = "ProfileActionOverride"
+  _important_values = [
+    {
+      value = "content"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

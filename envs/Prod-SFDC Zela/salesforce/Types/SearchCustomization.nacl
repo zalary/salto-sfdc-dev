@@ -13,11 +13,27 @@ type salesforce.SearchCustomization {
     string dirName {
     }
   }
+  string channel {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "GlobalSearch",
+        "KnowledgeComponentSearch",
+        "LWRExperienceSiteSearch",
+      ]
+    }
+  }
   serviceid fullName {
   }
-  boolean isProtected {
-  }
   string masterLabel {
+  }
+  salesforce.SearchCustomizationObjectOverride objectOverride {
+  }
+  string objectToAlwaysSearch {
+  }
+  string profile {
+  }
+  string selectedObject {
   }
   string internalId {
     _hidden_value = true
@@ -26,4 +42,16 @@ type salesforce.SearchCustomization {
   suffix = "searchCustomization"
   dirName = "searchCustomizations"
   metadataType = "SearchCustomization"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "masterLabel"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

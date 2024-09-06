@@ -25,6 +25,13 @@ salesforce.NotificationTypeConfig NotificationTypeConfig {
     {
       notificationChannels = {
         desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "bulk_action_plan_save"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
         mobileEnabled = true
       }
       notificationType = "chatter_comment_on_post"
@@ -59,6 +66,13 @@ salesforce.NotificationTypeConfig NotificationTypeConfig {
     },
     {
       notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "conversation_mining_notify"
+    },
+    {
+      notificationChannels = {
         desktopEnabled = false
         mobileEnabled = false
       }
@@ -77,6 +91,13 @@ salesforce.NotificationTypeConfig NotificationTypeConfig {
         mobileEnabled = true
       }
       notificationType = "direct_message"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "eacforfsc_async_notify"
     },
     {
       notificationChannels = {
@@ -122,17 +143,17 @@ salesforce.NotificationTypeConfig NotificationTypeConfig {
     },
     {
       notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "health_insights_notify"
+    },
+    {
+      notificationChannels = {
         desktopEnabled = false
         mobileEnabled = false
       }
       notificationType = "high_priority_case"
-    },
-    {
-      notificationChannels = {
-        desktopEnabled = true
-        mobileEnabled = false
-      }
-      notificationType = "mailapp_alert"
     },
     {
       notificationChannels = {

@@ -50,13 +50,17 @@ type salesforce.FieldRestrictionRule {
       enforce_value = false
       values = [
         "Account",
+        "Account__c",
         "Case",
         "Contact",
         "Contract",
         "Event",
         "Lead",
         "Opportunity",
+        "ProcessInstanceStep",
+        "ProcessInstanceWorkitem",
         "Task",
+        "Tier__c",
         "User",
       ]
     }
@@ -72,4 +76,26 @@ type salesforce.FieldRestrictionRule {
   suffix = "rule"
   dirName = "fieldRestrictionRules"
   metadataType = "FieldRestrictionRule"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "masterLabel"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "active"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

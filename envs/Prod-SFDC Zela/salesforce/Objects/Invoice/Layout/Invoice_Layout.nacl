@@ -92,6 +92,42 @@ salesforce.Layout Invoice_Invoice_Layout@bs {
       customLabel = false
       detailHeading = true
       editHeading = true
+      label = "PaymentInformation"
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "InvoiceSettlementInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Invoice.field.Balance
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Invoice.field.NetPaymentsApplied
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Invoice.field.NetCreditsApplied
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
       label = "SystemInformation"
       layoutColumns = [
         {
@@ -130,6 +166,33 @@ salesforce.Layout Invoice_Invoice_Layout@bs {
         },
       ]
       style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "LineAmount",
+        "Quantity",
+        "UnitPrice",
+        "InvoiceLineStartDate",
+        "InvoiceLineEndDate",
+        "Type",
+      ]
+      relatedList = "InvoiceLineList"
+    },
+    {
+      fields = [
+        "Name",
+        "Payment",
+        "Amount",
+        "Type",
+        "Date",
+      ]
+      relatedList = "PaymentLinesInvoice"
+    },
+    {
+      relatedList = "RelatedFileList"
     },
   ]
   showEmailCheckbox = false

@@ -59,6 +59,5 @@ type salesforce.QuickTextUsage {
   metadataType = "CustomObject"
   label = "Quick Text Usage"
   enableFeeds = false
-  externalSharingModel = "Private"
   _alias = "Quick Text Usage"
 }

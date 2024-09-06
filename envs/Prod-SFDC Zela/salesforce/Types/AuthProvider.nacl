@@ -75,6 +75,7 @@ type salesforce.AuthProvider {
       enforce_value = false
       values = [
         "Apple",
+        "Bitbucket",
         "Custom",
         "Evergreen",
         "Facebook",
@@ -119,4 +120,13 @@ type salesforce.AuthProvider {
   suffix = "authprovider"
   dirName = "authproviders"
   metadataType = "AuthProvider"
+  boolean isPkceEnabled {
+  }
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

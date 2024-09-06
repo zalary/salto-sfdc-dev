@@ -9,10 +9,6 @@ salesforce.Layout AssetAction_Asset_Action_Layout@bss {
         {
           layoutItems = [
             {
-              behavior = "Required"
-              field = salesforce.AssetAction.field.CategoryEnum
-            },
-            {
               behavior = "Readonly"
               field = salesforce.AssetAction.field.AssetActionNumber
             },
@@ -68,6 +64,10 @@ salesforce.Layout AssetAction_Asset_Action_Layout@bss {
               behavior = "Required"
               field = salesforce.AssetAction.field.MrrChange
             },
+            {
+              behavior = "Required"
+              field = salesforce.AssetAction.field.CategoryEnum
+            },
           ]
         },
       ]
@@ -117,11 +117,6 @@ salesforce.Layout AssetAction_Asset_Action_Layout@bss {
       style = "CustomLinks"
     },
   ]
-  miniLayout = {
-    fields = [
-      "CategoryEnum",
-    ]
-  }
   showEmailCheckbox = false
   showRunAssignmentRulesCheckbox = false
   showSubmitAndAttachButton = false

@@ -188,7 +188,6 @@ type salesforce.Seller {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
       "ActiveFromDate",

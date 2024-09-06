@@ -188,7 +188,6 @@ type salesforce.Recommendation {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ReadWrite"
   searchLayouts = {
     customTabListAdditionalFields = "Description"
     lookupDialogsAdditionalFields = "Description"

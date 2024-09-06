@@ -27,11 +27,6 @@ salesforce.StandardValueSet Salutation {
       default = false
       label = "Prof."
     },
-    {
-      fullName = "Mx."
-      default = false
-      label = "Mx."
-    },
   ]
   _alias = "Salutation"
 }

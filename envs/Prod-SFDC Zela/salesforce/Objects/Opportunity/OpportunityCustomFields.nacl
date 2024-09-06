@@ -1,6 +1,7 @@
 type salesforce.Opportunity {
   salesforce.Text CurrentGenerators__c {
     apiName = "Opportunity.CurrentGenerators__c"
+    encryptionScheme = "None"
     externalId = false
     label = "Current Generator(s)"
     length = 100
@@ -41,6 +42,7 @@ type salesforce.Opportunity {
   }
   salesforce.Text MainCompetitors__c {
     apiName = "Opportunity.MainCompetitors__c"
+    encryptionScheme = "None"
     externalId = false
     label = "Main Competitor(s)"
     length = 100
@@ -53,6 +55,7 @@ type salesforce.Opportunity {
   }
   salesforce.Text OrderNumber__c {
     apiName = "Opportunity.OrderNumber__c"
+    encryptionScheme = "None"
     externalId = false
     label = "Order Number"
     length = 8
@@ -65,6 +68,7 @@ type salesforce.Opportunity {
   }
   salesforce.Text TrackingNumber__c {
     apiName = "Opportunity.TrackingNumber__c"
+    encryptionScheme = "None"
     externalId = false
     label = "Tracking Number"
     length = 12

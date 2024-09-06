@@ -15,6 +15,8 @@ type salesforce.ConnectedAppOauthPolicy {
   }
   string ipRelaxation {
   }
+  boolean isTokenExchangeFlowEnabled {
+  }
   string refreshTokenPolicy {
   }
   string singleLogoutUrl {

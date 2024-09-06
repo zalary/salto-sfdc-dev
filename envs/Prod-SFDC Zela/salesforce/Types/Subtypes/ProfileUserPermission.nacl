@@ -19,4 +19,11 @@ type salesforce.ProfileUserPermission {
     _required = true
   }
   metadataType = "ProfileUserPermission"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

@@ -47,6 +47,7 @@ type salesforce.MLDataDefinition {
       enforce_value = false
       values = [
         "Candidate",
+        "Generative",
         "Interaction",
         "Prediction",
         "Recipient",
@@ -60,4 +61,11 @@ type salesforce.MLDataDefinition {
   suffix = "mlDataDefinition"
   dirName = "mlDataDefinitions"
   metadataType = "MLDataDefinition"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

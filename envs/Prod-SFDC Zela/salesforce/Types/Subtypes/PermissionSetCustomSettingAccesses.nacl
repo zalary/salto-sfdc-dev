@@ -19,4 +19,11 @@ type salesforce.PermissionSetCustomSettingAccesses {
     _required = true
   }
   metadataType = "PermissionSetCustomSettingAccesses"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

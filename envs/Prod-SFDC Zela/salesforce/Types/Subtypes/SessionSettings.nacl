@@ -116,4 +116,16 @@ type salesforce.SessionSettings {
   boolean useLocalStorageForLogoutUrl {
   }
   metadataType = "SessionSettings"
+  boolean enablePermissionsPolicy {
+  }
+  string grantCameraAccess {
+  }
+  string grantMicrophoneAccess {
+  }
+  boolean sendCspForUncommonClients {
+  }
+  boolean terminateUserSessionsWhenAdminResetsPassword {
+  }
+  boolean useEAPIRateLimitForConnectAPI {
+  }
 }

@@ -16,9 +16,6 @@ type salesforce.Product2 {
   }
   salesforce.Lookup ExternalDataSourceId {
     apiName = "Product2.ExternalDataSourceId"
-    referenceTo = [
-      salesforce.ExternalDataSource,
-    ]
     label = "External Data Source ID"
     createable = true
     updateable = true
@@ -62,48 +59,6 @@ type salesforce.Product2 {
     caseSensitive = false
     queryable = true
   }
-  salesforce.Picklist ProductClass {
-    apiName = "Product2.ProductClass"
-    valueSet = [
-      {
-        fullName = "Simple"
-        isActive = true
-        label = "Simple"
-        default = true
-      },
-      {
-        fullName = "VariationParent"
-        isActive = true
-        label = "Variation Parent"
-        default = false
-      },
-      {
-        fullName = "Variation"
-        isActive = true
-        label = "Variation"
-        default = false
-      },
-      {
-        fullName = "Bundle"
-        isActive = true
-        label = "Bundle"
-        default = false
-      },
-      {
-        fullName = "Set"
-        isActive = true
-        label = "Set"
-        default = false
-      },
-    ]
-    restricted = true
-    _required = true
-    label = "Product Class"
-    createable = false
-    updateable = false
-    queryable = true
-    _hidden_value = true
-  }
   salesforce.Text ProductCode {
     apiName = "Product2.ProductCode"
     length = 255
@@ -116,14 +71,6 @@ type salesforce.Product2 {
   }
   salesforce.Picklist QuantityUnitOfMeasure {
     apiName = "Product2.QuantityUnitOfMeasure"
-    valueSet = [
-      {
-        fullName = "Each"
-        isActive = true
-        label = "Each"
-        default = false
-      },
-    ]
     restricted = false
     label = "Quantity Unit Of Measure"
     createable = true
@@ -148,34 +95,6 @@ type salesforce.Product2 {
     caseSensitive = false
     queryable = true
   }
-  salesforce.Picklist Type {
-    apiName = "Product2.Type"
-    valueSet = [
-      {
-        fullName = "Base"
-        isActive = true
-        label = "Base"
-        default = false
-      },
-      {
-        fullName = "Bundle"
-        isActive = true
-        label = "Bundle"
-        default = false
-      },
-      {
-        fullName = "Set"
-        isActive = true
-        label = "Set"
-        default = false
-      },
-    ]
-    restricted = true
-    label = "Product Type"
-    createable = true
-    updateable = false
-    queryable = true
-  }
   serviceid Id {
     apiName = "Product2.Id"
     label = "Product ID"
@@ -193,9 +112,6 @@ type salesforce.Product2 {
   salesforce.Lookup CreatedById {
     apiName = "Product2.CreatedById"
     relationshipName = "CreatedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Created By ID"
     createable = false
     updateable = false
@@ -213,9 +129,6 @@ type salesforce.Product2 {
   salesforce.Lookup LastModifiedById {
     apiName = "Product2.LastModifiedById"
     relationshipName = "LastModifiedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Last Modified By ID"
     createable = false
     updateable = false

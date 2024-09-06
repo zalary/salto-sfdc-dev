@@ -15,13 +15,20 @@ type salesforce.FlowTransformValueAction {
   }
   salesforce.FlowMetadataValue processMetadataValues {
   }
+  salesforce.FlowTransformValueActionInputParameter inputParameters {
+  }
+  string name {
+  }
   string outputFieldApiName {
   }
   string transformType {
     _restriction = {
       enforce_value = false
       values = [
+        "Count",
+        "InnerJoin",
         "Map",
+        "Sum",
       ]
     }
     foreignKeyDomain = [
@@ -31,4 +38,11 @@ type salesforce.FlowTransformValueAction {
   salesforce.FlowElementReferenceOrValue value {
   }
   metadataType = "FlowTransformValueAction"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

@@ -188,6 +188,5 @@ type salesforce.ConsumptionRate {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ControlledByParent"
   _alias = "Consumption Rate"
 }

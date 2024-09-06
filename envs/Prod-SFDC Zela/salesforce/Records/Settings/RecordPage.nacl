@@ -1,6 +1,6 @@
 salesforce.RecordPageSettings {
   fullName = "RecordPage"
-  enableActivityRelatedList = false
-  enableFullRecordView = false
+  enableActivityRelatedList = true
+  enableFullRecordView = true
   _alias = "RecordPage"
 }

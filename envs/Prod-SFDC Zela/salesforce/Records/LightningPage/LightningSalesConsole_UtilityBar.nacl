@@ -15,12 +15,6 @@ salesforce.LightningPage LightningSalesConsole_UtilityBar {
             identifier = "notes_utilityBarNoteList"
           }
         },
-        {
-          componentInstance = {
-            componentName = "runtime_sales_todo_list:unifiedToDoListAuraWrapper"
-            identifier = "runtime_sales_todo_list_unifiedToDoListAuraWrapper"
-          }
-        },
       ]
       name = "utilityItems"
       type = "Region"

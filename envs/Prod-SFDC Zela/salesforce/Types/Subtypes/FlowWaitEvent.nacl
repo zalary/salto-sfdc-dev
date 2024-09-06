@@ -19,6 +19,8 @@ type salesforce.FlowWaitEvent {
   }
   string name {
   }
+  string associatedElement {
+  }
   string conditionLogic {
   }
   salesforce.FlowCondition conditions {
@@ -27,11 +29,17 @@ type salesforce.FlowWaitEvent {
   }
   string eventType {
   }
+  string filterLogic {
+  }
+  salesforce.FlowRecordFilter filters {
+  }
   salesforce.FlowWaitEventInputParameter inputParameters {
   }
   string label {
   }
   number maxBatchSize {
+  }
+  string object {
   }
   number offset {
   }
@@ -49,6 +57,18 @@ type salesforce.FlowWaitEvent {
   }
   salesforce.FlowWaitEventOutputParameter outputParameters {
   }
+  string recordTriggerType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Create",
+        "CreateAndUpdate",
+        "Delete",
+        "None",
+        "Update",
+      ]
+    }
+  }
   string resumeDate {
   }
   string resumeDateReference {
@@ -56,4 +76,21 @@ type salesforce.FlowWaitEvent {
   string resumeTime {
   }
   metadataType = "FlowWaitEvent"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

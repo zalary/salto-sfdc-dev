@@ -223,6 +223,18 @@ salesforce.Layout Refund_Refund_Layout@bs {
       style = "CustomLinks"
     },
   ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Payment",
+        "Amount",
+        "Type",
+        "Date",
+      ]
+      relatedList = "RefundLinesPayment"
+    },
+  ]
   showEmailCheckbox = false
   showRunAssignmentRulesCheckbox = false
   showSubmitAndAttachButton = false

@@ -43,10 +43,12 @@ type salesforce.AIApplication {
         "Discovery",
         "EPLite",
         "ForecastingPredictive",
+        "GenerativeIntelligence",
         "IntelligentOffers",
         "InvoiceLatePaymentRiskCalculation",
         "KeyAccountIdentification",
         "LeadScoring",
+        "OmOrderRouting",
         "OpportunityPushedOutInsight",
         "OpportunityScoring",
         "Platform",
@@ -70,4 +72,21 @@ type salesforce.AIApplication {
   suffix = "ai"
   dirName = "aiApplications"
   metadataType = "AIApplication"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "masterLabel"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "status"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

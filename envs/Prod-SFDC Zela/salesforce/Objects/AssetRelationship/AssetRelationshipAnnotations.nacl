@@ -188,7 +188,6 @@ type salesforce.AssetRelationship {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ControlledByParent"
   searchLayouts = {
     customTabListAdditionalFields = [
       "LastModifiedDate",

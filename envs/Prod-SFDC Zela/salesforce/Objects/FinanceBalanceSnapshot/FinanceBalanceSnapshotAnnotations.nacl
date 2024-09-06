@@ -118,7 +118,6 @@ type salesforce.FinanceBalanceSnapshot {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
       "Account",

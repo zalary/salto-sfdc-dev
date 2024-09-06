@@ -1,0 +1,6 @@
+salesforce.Profile Z_Custom_Support_Profile@s {
+  custom = true
+  userLicense = "Salesforce"
+  fullName = "Z Custom Support Profile"
+  _alias = "Z Custom Support Profile"
+}

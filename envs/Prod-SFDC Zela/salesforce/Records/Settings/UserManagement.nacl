@@ -6,7 +6,7 @@ salesforce.UserManagementSettings {
   enableEnhancedConcealPersonalInfo = "false"
   enableEnhancedPermsetMgmt = false
   enableEnhancedProfileMgmt = true
-  enableNewProfileUI = false
+  enableNewProfileUI = true
   enableProfileFiltering = "false"
   enableRestrictEmailDomains = "false"
   enableScrambleUserData = false
@@ -16,4 +16,5 @@ salesforce.UserManagementSettings {
   restrictedProfileCloning = "false"
   userAccessPoliciesEnabled = "false"
   _alias = "UserManagement"
+  enableEnhcUiUserAccessPolicies = "false"
 }

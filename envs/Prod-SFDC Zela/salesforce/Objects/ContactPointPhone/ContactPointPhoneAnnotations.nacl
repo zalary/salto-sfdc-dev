@@ -188,7 +188,6 @@ type salesforce.ContactPointPhone {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ControlledByParent"
   searchLayouts = {
     customTabListAdditionalFields = [
       "TelephoneNumber",

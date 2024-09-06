@@ -8,9 +8,6 @@ type salesforce.TopicAssignment {
   salesforce.Lookup TopicId {
     apiName = "TopicAssignment.TopicId"
     relationshipName = "Topic"
-    referenceTo = [
-      salesforce.Topic,
-    ]
     _required = true
     label = "Topic ID"
     createable = true
@@ -20,42 +17,6 @@ type salesforce.TopicAssignment {
   salesforce.Lookup EntityId {
     apiName = "TopicAssignment.EntityId"
     relationshipName = "Entity"
-    referenceTo = [
-      salesforce.Account,
-      salesforce.Asset,
-      salesforce.Campaign,
-      salesforce.Case,
-      salesforce.ChangeRequest,
-      salesforce.Contact,
-      "ContentDocument",
-      salesforce.Contract,
-      salesforce.Event,
-      salesforce.FeedItem,
-      salesforce.Incident,
-      salesforce.Lead,
-      salesforce.Opportunity,
-      salesforce.Order,
-      salesforce.Problem,
-      salesforce.ResourceAbsence,
-      salesforce.ResourcePreference,
-      salesforce.ReturnOrder,
-      salesforce.ReturnOrderLineItem,
-      salesforce.ServiceAppointment,
-      salesforce.ServiceResource,
-      salesforce.ServiceResourceSkill,
-      salesforce.ServiceTerritory,
-      salesforce.ServiceTerritoryMember,
-      salesforce.Shift,
-      salesforce.Solution,
-      salesforce.Task,
-      salesforce.WorkOrder,
-      salesforce.WorkOrderLineItem,
-      salesforce.WorkPlan,
-      salesforce.WorkPlanTemplate,
-      salesforce.WorkPlanTemplateEntry,
-      salesforce.WorkStep,
-      salesforce.WorkStepTemplate,
-    ]
     _required = true
     label = "Entity ID"
     createable = true
@@ -96,9 +57,6 @@ type salesforce.TopicAssignment {
   salesforce.Lookup CreatedById {
     apiName = "TopicAssignment.CreatedById"
     relationshipName = "CreatedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Created By ID"
     createable = false
     updateable = false

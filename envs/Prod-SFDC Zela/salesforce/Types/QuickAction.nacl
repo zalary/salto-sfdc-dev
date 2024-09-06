@@ -59,6 +59,7 @@ type salesforce.QuickAction {
     _restriction = {
       enforce_value = false
       values = [
+        "AcceptBroadcast",
         "AddMember",
         "AddRecord",
         "ChangeDueDate",
@@ -79,6 +80,7 @@ type salesforce.QuickAction {
         "New",
         "NewChild",
         "NewChildRecordType",
+        "NewQuote",
         "NewRecordType",
         "OfferFeedback",
         "PatientDetails",
@@ -89,10 +91,13 @@ type salesforce.QuickAction {
         "ReplyAll",
         "RequestFeedback",
         "ScheduleAppointment",
+        "SelectCoverage",
+        "SendConversationMessage",
         "SendEmail",
         "SocialPost",
         "Update",
         "UpdateRecordType",
+        "ViewCoverage",
       ]
     }
   }
@@ -116,6 +121,7 @@ type salesforce.QuickAction {
         "ChangeDueDate",
         "ChangePriority",
         "ChangeStatus",
+        "Copilot",
         "Create",
         "Email",
         "Flow",
@@ -127,6 +133,7 @@ type salesforce.QuickAction {
         "MobileSmartActions",
         "Post",
         "Quip",
+        "SendConversationMessage",
         "SendEmail",
         "SocialPost",
         "Update",
@@ -143,4 +150,21 @@ type salesforce.QuickAction {
   suffix = "quickAction"
   dirName = "quickActions"
   metadataType = "QuickAction"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

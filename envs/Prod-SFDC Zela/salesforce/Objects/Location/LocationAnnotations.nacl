@@ -188,7 +188,6 @@ type salesforce.Location {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = "LocationType"
     lookupDialogsAdditionalFields = "LocationType"

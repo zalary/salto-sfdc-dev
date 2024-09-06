@@ -2,9 +2,6 @@ type salesforce.AuthorizationFormDataUse {
   salesforce.Lookup AuthorizationFormId {
     apiName = "AuthorizationFormDataUse.AuthorizationFormId"
     relationshipName = "AuthorizationForm"
-    referenceTo = [
-      salesforce.AuthorizationForm,
-    ]
     _required = true
     label = "Authorization Form ID"
     createable = true
@@ -14,9 +11,6 @@ type salesforce.AuthorizationFormDataUse {
   salesforce.Lookup DataUsePurposeId {
     apiName = "AuthorizationFormDataUse.DataUsePurposeId"
     relationshipName = "DataUsePurpose"
-    referenceTo = [
-      salesforce.DataUsePurpose,
-    ]
     _required = true
     label = "Data Use Purpose ID"
     createable = true
@@ -25,6 +19,7 @@ type salesforce.AuthorizationFormDataUse {
   }
   salesforce.Text Name {
     apiName = "AuthorizationFormDataUse.Name"
+    encryptionScheme = "None"
     length = 255
     _required = true
     label = "Name"
@@ -37,10 +32,6 @@ type salesforce.AuthorizationFormDataUse {
   salesforce.Lookup OwnerId {
     apiName = "AuthorizationFormDataUse.OwnerId"
     relationshipName = "Owner"
-    referenceTo = [
-      salesforce.Group,
-      salesforce.User,
-    ]
     label = "Owner ID"
     createable = true
     updateable = true
@@ -73,9 +64,6 @@ type salesforce.AuthorizationFormDataUse {
   salesforce.Lookup CreatedById {
     apiName = "AuthorizationFormDataUse.CreatedById"
     relationshipName = "CreatedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Created By ID"
     createable = false
     updateable = false
@@ -93,9 +81,6 @@ type salesforce.AuthorizationFormDataUse {
   salesforce.Lookup LastModifiedById {
     apiName = "AuthorizationFormDataUse.LastModifiedById"
     relationshipName = "LastModifiedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Last Modified By ID"
     createable = false
     updateable = false

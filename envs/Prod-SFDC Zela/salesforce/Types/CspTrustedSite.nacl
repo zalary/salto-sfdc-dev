@@ -57,4 +57,20 @@ type salesforce.CspTrustedSite {
   suffix = "cspTrustedSite"
   dirName = "cspTrustedSites"
   metadataType = "CspTrustedSite"
+  boolean canAccessCamera {
+  }
+  boolean canAccessMicrophone {
+  }
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

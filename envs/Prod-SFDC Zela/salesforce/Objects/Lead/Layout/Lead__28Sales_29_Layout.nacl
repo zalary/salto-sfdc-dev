@@ -45,11 +45,15 @@ salesforce.Layout Lead_Lead__28Sales_29_Layout@bspps {
             },
             {
               behavior = "Edit"
-              field = salesforce.Lead.field.isPriority__c
+              field = salesforce.Lead.field.webformLead__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Lead.field.Score__c
             },
             {
               behavior = "Edit"
-              field = salesforce.Lead.field.Priority__c
+              field = salesforce.Lead.field.isHot__c
             },
           ]
         },
@@ -358,11 +362,6 @@ salesforce.Layout Lead_Lead__28Sales_29_Layout@bspps {
         layoutItem = {
           behavior = "Readonly"
           field = salesforce.Lead.field.CampaignId
-        }
-      },
-      {
-        layoutItem = {
-          component = "runtime_sales_social:socialPanel"
         }
       },
     ]

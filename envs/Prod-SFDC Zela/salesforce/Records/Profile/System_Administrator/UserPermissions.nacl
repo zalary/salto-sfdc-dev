@@ -264,6 +264,10 @@ salesforce.Profile Admin {
       enabled = true
       name = "ExportReport"
     }
+    FreezeUsers = {
+      enabled = true
+      name = "FreezeUsers"
+    }
     GiveRecognitionBadge = {
       enabled = true
       name = "GiveRecognitionBadge"
@@ -344,9 +348,10 @@ salesforce.Profile Admin {
       enabled = true
       name = "ManageContentTypes"
     }
-    ManageConvMiningReports = {
+    
+    ManageCustomDomains = {
       enabled = true
-      name = "ManageConvMiningReports"
+      name = "ManageCustomDomains"
     }
     ManageCustomPermissions = {
       enabled = true
@@ -368,6 +373,10 @@ salesforce.Profile Admin {
       enabled = true
       name = "ManageDataIntegrations"
     }
+    ManageDataMaskPolicies = {
+      enabled = true
+      name = "ManageDataMaskPolicies"
+    }
     ManageDynamicDashboards = {
       enabled = true
       name = "ManageDynamicDashboards"
@@ -375,10 +384,6 @@ salesforce.Profile Admin {
     ManageEmailClientConfig = {
       enabled = true
       name = "ManageEmailClientConfig"
-    }
-    ManageEntitlements = {
-      enabled = true
-      name = "ManageEntitlements"
     }
     ManageExchangeConfig = {
       enabled = true
@@ -524,6 +529,10 @@ salesforce.Profile Admin {
       enabled = true
       name = "ModifyMetadata"
     }
+    MonitorLoginHistory = {
+      enabled = true
+      name = "MonitorLoginHistory"
+    }
     NewReportBuilder = {
       enabled = true
       name = "NewReportBuilder"
@@ -620,6 +629,10 @@ salesforce.Profile Admin {
       enabled = true
       name = "SubscribeToLightningReports"
     }
+    TraceXdsQueries = {
+      enabled = true
+      name = "TraceXdsQueries"
+    }
     TransactionalEmailSend = {
       enabled = true
       name = "TransactionalEmailSend"
@@ -639,14 +652,6 @@ salesforce.Profile Admin {
     UseOmnichannelInventoryAPIs = {
       enabled = true
       name = "UseOmnichannelInventoryAPIs"
-    }
-    UseReturnOrder = {
-      enabled = true
-      name = "UseReturnOrder"
-    }
-    UseReturnOrderAPIs = {
-      enabled = true
-      name = "UseReturnOrderAPIs"
     }
     UseTeamReassignWizards = {
       enabled = true
@@ -735,6 +740,10 @@ salesforce.Profile Admin {
     WorkCalibrationUser = {
       enabled = true
       name = "WorkCalibrationUser"
+    }
+    AllowObjectDetectionTraining = {
+      enabled = true
+      name = "AllowObjectDetectionTraining"
     }
   }
 }

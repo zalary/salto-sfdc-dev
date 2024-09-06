@@ -161,7 +161,6 @@ type salesforce.SocialPersona {
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
   enableHistory = false
-  externalSharingModel = "ControlledByParent"
   searchLayouts = {
     customTabListAdditionalFields = "Provider"
     searchResultsAdditionalFields = "Provider"

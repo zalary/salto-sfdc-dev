@@ -23,18 +23,23 @@ type salesforce.FlowApexPluginCall {
     _restriction = {
       enforce_value = false
       values = [
+        "AddPromptInstructions",
         "BackgroundStep",
         "FilterCollectionProcessor",
         "InteractiveStep",
         "ManagedContentRoleInteractiveStep",
+        "ManagedContentVariantAutoPublishBackgroundStep",
+        "ManagedContentVariantAutoUnpublishBackgroundStep",
         "ManagedContentVariantSetLockBackgroundStep",
         "ManagedContentVariantSetReadyBackgroundStep",
         "MuleSoftStep",
         "RecommendationMapCollectionProcessor",
+        "ReviewAdvancedApprovalInteractiveStep",
         "SortCollectionProcessor",
         "WaitAttribute",
         "WaitDate",
         "WaitDuration",
+        "WaitUntilEvent",
       ]
     }
     foreignKeyDomain = [
@@ -61,4 +66,21 @@ type salesforce.FlowApexPluginCall {
   salesforce.FlowApexPluginCallOutputParameter outputParameters {
   }
   metadataType = "FlowApexPluginCall"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

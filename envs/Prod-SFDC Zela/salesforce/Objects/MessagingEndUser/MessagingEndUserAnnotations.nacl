@@ -160,7 +160,6 @@ type salesforce.MessagingEndUser {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
       "MessagingPlatformKey",

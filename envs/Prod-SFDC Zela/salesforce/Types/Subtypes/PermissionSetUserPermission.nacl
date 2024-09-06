@@ -19,4 +19,11 @@ type salesforce.PermissionSetUserPermission {
     _required = true
   }
   metadataType = "PermissionSetUserPermission"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

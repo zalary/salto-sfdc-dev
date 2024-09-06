@@ -19,4 +19,11 @@ type salesforce.ProfileCustomSettingAccess {
     _required = true
   }
   metadataType = "ProfileCustomSettingAccess"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

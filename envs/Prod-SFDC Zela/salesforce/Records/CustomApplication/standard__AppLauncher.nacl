@@ -6,6 +6,7 @@ salesforce.CustomApplication standard__AppLauncher {
   isNavAutoTempTabsDisabled = false
   isNavPersonalizationDisabled = false
   isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
   tabs = [
     "standard-AppLauncher",
   ]

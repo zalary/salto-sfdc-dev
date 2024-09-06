@@ -257,6 +257,7 @@ type salesforce.User {
     },
   ]
   compactLayoutAssignment = "SYSTEM"
+  enableEnhancedLookup = true
   enableFeeds = true
   externalSharingModel = "Private"
   searchLayouts = {
@@ -280,6 +281,7 @@ type salesforce.User {
   }
   _alias = "User"
   feedHistoryTrackedFields = {
+    Email = salesforce.User.field.Email
     ManagerId = salesforce.User.field.ManagerId
   }
 }

@@ -3,7 +3,7 @@ salesforce.Profile Silver_Partner_User@s {
     Account = {
       allowCreate = false
       allowDelete = false
-      allowEdit = false
+      allowEdit = true
       allowRead = true
       modifyAllRecords = false
       object = "Account"
@@ -34,33 +34,6 @@ salesforce.Profile Silver_Partner_User@s {
       allowRead = true
       modifyAllRecords = false
       object = "Contact"
-      viewAllRecords = false
-    }
-    ContractLineItem = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "ContractLineItem"
-      viewAllRecords = false
-    }
-    Entitlement = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "Entitlement"
-      viewAllRecords = false
-    }
-    EntitlementContact = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "EntitlementContact"
       viewAllRecords = false
     }
     Idea = {
@@ -108,51 +81,6 @@ salesforce.Profile Silver_Partner_User@s {
       object = "Product2"
       viewAllRecords = false
     }
-    ReturnOrder = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "ReturnOrder"
-      viewAllRecords = false
-    }
-    ServiceAppointment = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceAppointment"
-      viewAllRecords = false
-    }
-    ServiceContract = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceContract"
-      viewAllRecords = false
-    }
-    ServiceResource = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceResource"
-      viewAllRecords = false
-    }
-    ServiceTerritory = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceTerritory"
-      viewAllRecords = false
-    }
     SocialPersona = {
       allowCreate = false
       allowDelete = false
@@ -169,33 +97,6 @@ salesforce.Profile Silver_Partner_User@s {
       allowRead = true
       modifyAllRecords = false
       object = "Solution"
-      viewAllRecords = false
-    }
-    WorkOrder = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkOrder"
-      viewAllRecords = false
-    }
-    WorkType = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkType"
-      viewAllRecords = false
-    }
-    WorkTypeGroup = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkTypeGroup"
       viewAllRecords = false
     }
   }

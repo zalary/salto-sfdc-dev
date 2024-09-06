@@ -5,6 +5,7 @@ type salesforce.SocialPersona {
   }
   salesforce.Unknown ExternalPictureURL {
     apiName = "SocialPersona.ExternalPictureURL"
+    encryptionScheme = "None"
     _hidden_value = true
   }
   salesforce.Unknown Name {
@@ -17,6 +18,7 @@ type salesforce.SocialPersona {
   }
   salesforce.Unknown ProfileUrl {
     apiName = "SocialPersona.ProfileUrl"
+    encryptionScheme = "None"
     _hidden_value = true
   }
   salesforce.Unknown Provider {

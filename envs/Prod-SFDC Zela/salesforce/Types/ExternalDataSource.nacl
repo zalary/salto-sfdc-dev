@@ -67,6 +67,7 @@ type salesforce.ExternalDataSource {
       values = [
         "ApiKey",
         "AwsSv4",
+        "Basic",
         "C2c",
         "Certificate",
         "Custom",
@@ -76,6 +77,7 @@ type salesforce.ExternalDataSource {
         "NTLM",
         "NoAuthentication",
         "Oauth",
+        "OrgJwt",
         "Password",
       ]
     }
@@ -86,6 +88,7 @@ type salesforce.ExternalDataSource {
     _restriction = {
       enforce_value = false
       values = [
+        "ASPAttribute",
         "Activity",
         "ActivityInsight",
         "ActivityParticipant",
@@ -95,12 +98,15 @@ type salesforce.ExternalDataSource {
         "Alert",
         "AmazonAthena",
         "AmazonDynamoDb",
+        "ArchiveDataSource",
         "AssetAttribute",
         "BSE",
         "BTSuggestionFeedback",
+        "BigObjectZosId",
         "CalendarSharing",
         "CartService",
         "CdpData",
+        "CdpDataDlo",
         "CommerceOrder",
         "Conduit",
         "Consent",
@@ -119,19 +125,27 @@ type salesforce.ExternalDataSource {
         "CustomMetadata",
         "Datacloud",
         "Datajourney",
+        "DigitalWallet",
         "EnInsightsFeedback",
         "Engagement",
         "EngagementPerson",
         "EventLogOlapService",
         "ExternalEvent",
         "ExternalReference",
+        "FAAttribute",
+        "FLAttribute",
         "FieldChangeSnapshot",
         "ForecastingItemPivot",
         "Ftest",
         "FtestNearCore",
         "FtestNearCoreNested",
         "GraphQl",
+        "IAItemProdtAttr",
+        "IPAAttribute",
+        "IPCAttribute",
+        "IPPAttribute",
         "Identity",
+        "InsPolicyAttribute",
         "InterestTag",
         "Jigsaw",
         "Limits",
@@ -143,6 +157,7 @@ type salesforce.ExternalDataSource {
         "OData",
         "OData4",
         "OData401",
+        "OIAttribute",
         "OMS",
         "OpenSearch",
         "OpportunitySnapshot",
@@ -152,11 +167,15 @@ type salesforce.ExternalDataSource {
         "Payments",
         "Perms",
         "Pliny",
+        "PrivacyCenterOrArchiveDataStore",
+        "PromoRuleTempDS",
         "QLIAttribute",
         "RecentFieldChange",
+        "SAPAttribute",
         "Salesforce",
         "SalesforceContract",
         "SalesforceInvoice",
+        "SalesforcePayment",
         "SalesforceQuote",
         "SciApi",
         "SearchableField",
@@ -164,6 +183,7 @@ type salesforce.ExternalDataSource {
         "SetupNode",
         "SfdcOrg",
         "SimpleURL",
+        "Snowflake",
         "Trailhead",
         "TrailheadEdit",
         "TrailheadEditWithId",
@@ -204,7 +224,6 @@ type salesforce.ExternalDataSource {
         "userListPreference",
         "usermobileconfig",
         "usrconnectionstatus",
-        "zero",
       ]
     }
     foreignKeyDomain = [
@@ -222,4 +241,16 @@ type salesforce.ExternalDataSource {
   suffix = "dataSource"
   dirName = "dataSources"
   metadataType = "ExternalDataSource"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

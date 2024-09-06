@@ -188,7 +188,6 @@ type salesforce.ContactPointEmail {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ControlledByParent"
   searchLayouts = {
     customTabListAdditionalFields = [
       "EmailAddress",

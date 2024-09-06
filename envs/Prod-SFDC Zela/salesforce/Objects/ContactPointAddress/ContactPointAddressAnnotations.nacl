@@ -188,7 +188,6 @@ type salesforce.ContactPointAddress {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ControlledByParent"
   searchLayouts = {
     customTabListAdditionalFields = [
       "Parent",

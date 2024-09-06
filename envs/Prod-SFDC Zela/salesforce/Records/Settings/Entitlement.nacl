@@ -5,7 +5,7 @@ salesforce.EntitlementSettings {
   assetLookupLimitedToSameAccount = false
   assetLookupLimitedToSameContact = false
   enableEntitlementVersioning = false
-  enableEntitlements = true
+  enableEntitlements = false
   enableMilestoneFeedItem = false
   enableMilestoneStoppedTime = false
   entitlementLookupLimitedToActiveStatus = false

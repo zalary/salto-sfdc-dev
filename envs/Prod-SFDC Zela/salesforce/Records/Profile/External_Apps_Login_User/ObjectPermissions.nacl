@@ -18,14 +18,5 @@ salesforce.Profile External_Apps_Login_User@s {
       object = "Contact"
       viewAllRecords = false
     }
-    SocialPersona = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "SocialPersona"
-      viewAllRecords = false
-    }
   }
 }

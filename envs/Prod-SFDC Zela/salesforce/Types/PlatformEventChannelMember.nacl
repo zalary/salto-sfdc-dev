@@ -40,12 +40,15 @@ type salesforce.PlatformEventChannelMember {
         "FTestStandardInternalChannel",
         "FlowBuilderChangeData",
         "FlowRecordChangeListenerChannel",
+        "FtestStandardEventChannel",
+        "FtestStandardMonitoringChannel",
         "GlobalIdentityStandard",
         "HighVolumePriming",
         "IsotopeStandardChangeEvents",
         "LearningItemProgress",
         "Merchandising",
         "PardotSyncStdChannel",
+        "SchedulingEntitiesModifiedAttributesChannel",
         "SlackAlertsEventChannel",
         "VideoCall",
         "WorkPlansCDCEventChannel",
@@ -69,4 +72,11 @@ type salesforce.PlatformEventChannelMember {
   suffix = "platformEventChannelMember"
   dirName = "platformEventChannelMembers"
   metadataType = "PlatformEventChannelMember"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

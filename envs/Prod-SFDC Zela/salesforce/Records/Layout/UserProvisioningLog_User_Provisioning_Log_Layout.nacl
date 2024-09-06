@@ -34,7 +34,7 @@ salesforce.Layout UserProvisioningLog_User_Provisioning_Log_Layout@bsss {
       style = "TwoColumnsTopToBottom"
     },
     {
-      customLabel = false
+      customLabel = true
       detailHeading = true
       editHeading = true
       label = "System Information"

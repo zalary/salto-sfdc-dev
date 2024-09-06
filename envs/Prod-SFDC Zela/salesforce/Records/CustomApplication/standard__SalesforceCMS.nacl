@@ -5,6 +5,7 @@ salesforce.CustomApplication standard__SalesforceCMS {
   isNavAutoTempTabsDisabled = false
   isNavPersonalizationDisabled = false
   isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
   label = "Salesforce CMS"
   navType = "Console"
   tabs = [

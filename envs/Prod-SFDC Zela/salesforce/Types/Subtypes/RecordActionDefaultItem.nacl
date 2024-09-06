@@ -36,8 +36,11 @@ type salesforce.RecordActionDefaultItem {
       enforce_value = false
       values = [
         "Flow",
+        "LWC",
         "Omniscript",
         "QuickAction",
+        "SvcCatalogItemDef",
+        "WebLink",
       ]
     }
   }

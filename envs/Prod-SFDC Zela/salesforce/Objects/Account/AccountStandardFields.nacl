@@ -29,6 +29,7 @@ type salesforce.Account {
   }
   salesforce.Address BillingAddress {
     apiName = "Account.BillingAddress"
+    encryptionScheme = "None"
     label = "Billing Address"
     createable = false
     updateable = false
@@ -37,56 +38,6 @@ type salesforce.Account {
   }
   salesforce.Picklist CleanStatus {
     apiName = "Account.CleanStatus"
-    valueSet = [
-      {
-        fullName = "Matched"
-        isActive = true
-        label = "In Sync"
-        default = false
-      },
-      {
-        fullName = "Different"
-        isActive = true
-        label = "Different"
-        default = false
-      },
-      {
-        fullName = "Acknowledged"
-        isActive = true
-        label = "Reviewed"
-        default = false
-      },
-      {
-        fullName = "NotFound"
-        isActive = true
-        label = "Not Found"
-        default = false
-      },
-      {
-        fullName = "Inactive"
-        isActive = true
-        label = "Inactive"
-        default = false
-      },
-      {
-        fullName = "Pending"
-        isActive = true
-        label = "Not Compared"
-        default = false
-      },
-      {
-        fullName = "SelectMatch"
-        isActive = true
-        label = "Select Match"
-        default = false
-      },
-      {
-        fullName = "Skipped"
-        isActive = true
-        label = "Skipped"
-        default = false
-      },
-    ]
     restricted = true
     label = "Clean Status"
     createable = true
@@ -96,9 +47,6 @@ type salesforce.Account {
   salesforce.Lookup DandbCompanyId {
     apiName = "Account.DandbCompanyId"
     relationshipName = "DandbCompany"
-    referenceTo = [
-      salesforce.DandBCompany,
-    ]
     label = "D&B Company ID"
     createable = true
     updateable = true
@@ -106,6 +54,7 @@ type salesforce.Account {
   }
   salesforce.LongTextArea Description {
     apiName = "Account.Description"
+    encryptionScheme = "None"
     length = 32000
     label = "Account Description"
     createable = true
@@ -124,6 +73,7 @@ type salesforce.Account {
   }
   salesforce.Phone Fax {
     apiName = "Account.Fax"
+    encryptionScheme = "None"
     label = "Account Fax"
     createable = true
     updateable = true
@@ -170,6 +120,7 @@ type salesforce.Account {
   }
   salesforce.Text Name {
     apiName = "Account.Name"
+    encryptionScheme = "None"
     length = 255
     _required = true
     label = "Account Name"
@@ -189,23 +140,9 @@ type salesforce.Account {
     unique = false
     queryable = true
   }
-  salesforce.Lookup OperatingHoursId {
-    apiName = "Account.OperatingHoursId"
-    relationshipName = "OperatingHours"
-    referenceTo = [
-      salesforce.OperatingHours,
-    ]
-    label = "Operating Hour ID"
-    createable = true
-    updateable = true
-    queryable = true
-  }
   salesforce.Lookup OwnerId {
     apiName = "Account.OwnerId"
     relationshipName = "Owner"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Owner ID"
     createable = true
     updateable = true
@@ -224,9 +161,6 @@ type salesforce.Account {
   salesforce.Hierarchy ParentId {
     apiName = "Account.ParentId"
     relationshipName = "Parent"
-    referenceTo = [
-      salesforce.Account,
-    ]
     label = "Parent Account ID"
     createable = true
     updateable = true
@@ -234,6 +168,7 @@ type salesforce.Account {
   }
   salesforce.Phone Phone {
     apiName = "Account.Phone"
+    encryptionScheme = "None"
     label = "Account Phone"
     createable = true
     updateable = true
@@ -250,6 +185,7 @@ type salesforce.Account {
   }
   salesforce.Address ShippingAddress {
     apiName = "Account.ShippingAddress"
+    encryptionScheme = "None"
     label = "Shipping Address"
     createable = false
     updateable = false
@@ -278,6 +214,7 @@ type salesforce.Account {
   }
   salesforce.Text Site {
     apiName = "Account.Site"
+    encryptionScheme = "None"
     length = 80
     label = "Account Site"
     createable = true
@@ -321,6 +258,7 @@ type salesforce.Account {
   }
   salesforce.Url Website {
     apiName = "Account.Website"
+    encryptionScheme = "None"
     label = "Website"
     createable = true
     updateable = true
@@ -354,9 +292,6 @@ type salesforce.Account {
   salesforce.Lookup MasterRecordId {
     apiName = "Account.MasterRecordId"
     relationshipName = "MasterRecord"
-    referenceTo = [
-      salesforce.Account,
-    ]
     label = "Master Record ID"
     createable = false
     updateable = false
@@ -382,9 +317,6 @@ type salesforce.Account {
   salesforce.Lookup CreatedById {
     apiName = "Account.CreatedById"
     relationshipName = "CreatedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Created By ID"
     createable = false
     updateable = false
@@ -402,9 +334,6 @@ type salesforce.Account {
   salesforce.Lookup LastModifiedById {
     apiName = "Account.LastModifiedById"
     relationshipName = "LastModifiedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Last Modified By ID"
     createable = false
     updateable = false

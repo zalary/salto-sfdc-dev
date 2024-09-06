@@ -72,15 +72,6 @@ salesforce.Profile External_Identity_User@s {
       object = "Individual"
       viewAllRecords = false
     }
-    Promotion = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "Promotion"
-      viewAllRecords = false
-    }
     Seller = {
       allowCreate = false
       allowDelete = false

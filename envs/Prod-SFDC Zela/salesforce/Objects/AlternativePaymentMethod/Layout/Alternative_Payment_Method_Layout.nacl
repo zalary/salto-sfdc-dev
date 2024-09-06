@@ -10,7 +10,7 @@ salesforce.Layout AlternativePaymentMethod_Alternative_Payment_Method_Layout@bss
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.AlternativePaymentMethod.field.NickName
+              field = salesforce.AlternativePaymentMethod.field.BillingName
             },
             {
               behavior = "Edit"
@@ -35,6 +35,35 @@ salesforce.Layout AlternativePaymentMethod_Alternative_Payment_Method_Layout@bss
             {
               behavior = "Edit"
               field = salesforce.AlternativePaymentMethod.field.IsAutoPayEnabled
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "PaymentMethodTypeInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.AlternativePaymentMethod.field.PaymentMethodType
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.AlternativePaymentMethod.field.PaymentMethodDetails
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.AlternativePaymentMethod.field.PaymentMethodSubType
             },
           ]
         },

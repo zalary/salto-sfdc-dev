@@ -72,42 +72,6 @@ salesforce.Profile Read_Only@s {
       object = "Case"
       viewAllRecords = false
     }
-    CommSubscription = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "CommSubscription"
-      viewAllRecords = false
-    }
-    CommSubscriptionChannelType = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "CommSubscriptionChannelType"
-      viewAllRecords = false
-    }
-    CommSubscriptionConsent = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "CommSubscriptionConsent"
-      viewAllRecords = false
-    }
-    CommSubscriptionTiming = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "CommSubscriptionTiming"
-      viewAllRecords = false
-    }
     Contact = {
       allowCreate = false
       allowDelete = false
@@ -117,15 +81,6 @@ salesforce.Profile Read_Only@s {
       object = "Contact"
       viewAllRecords = false
     }
-    ContactPointAddress = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ContactPointAddress"
-      viewAllRecords = false
-    }
     ContactPointConsent = {
       allowCreate = false
       allowDelete = false
@@ -133,24 +88,6 @@ salesforce.Profile Read_Only@s {
       allowRead = true
       modifyAllRecords = false
       object = "ContactPointConsent"
-      viewAllRecords = false
-    }
-    ContactPointEmail = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ContactPointEmail"
-      viewAllRecords = false
-    }
-    ContactPointPhone = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ContactPointPhone"
       viewAllRecords = false
     }
     ContactPointTypeConsent = {
@@ -169,15 +106,6 @@ salesforce.Profile Read_Only@s {
       allowRead = true
       modifyAllRecords = false
       object = "Contract"
-      viewAllRecords = false
-    }
-    ContractLineItem = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ContractLineItem"
       viewAllRecords = false
     }
     DandBCompany = {
@@ -205,33 +133,6 @@ salesforce.Profile Read_Only@s {
       allowRead = true
       modifyAllRecords = false
       object = "DataUsePurpose"
-      viewAllRecords = false
-    }
-    EngagementChannelType = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "EngagementChannelType"
-      viewAllRecords = false
-    }
-    Entitlement = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "Entitlement"
-      viewAllRecords = false
-    }
-    EntitlementContact = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "EntitlementContact"
       viewAllRecords = false
     }
     Idea = {
@@ -279,15 +180,6 @@ salesforce.Profile Read_Only@s {
       object = "Macro"
       viewAllRecords = false
     }
-    OperatingHours = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "OperatingHours"
-      viewAllRecords = false
-    }
     Opportunity = {
       allowCreate = false
       allowDelete = false
@@ -304,15 +196,6 @@ salesforce.Profile Read_Only@s {
       allowRead = true
       modifyAllRecords = false
       object = "Order"
-      viewAllRecords = false
-    }
-    PartyConsent = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "PartyConsent"
       viewAllRecords = false
     }
     Pricebook2 = {
@@ -342,60 +225,6 @@ salesforce.Profile Read_Only@s {
       object = "QuickText"
       viewAllRecords = false
     }
-    ReturnOrder = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ReturnOrder"
-      viewAllRecords = false
-    }
-    ServiceAppointment = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceAppointment"
-      viewAllRecords = false
-    }
-    ServiceContract = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceContract"
-      viewAllRecords = false
-    }
-    ServiceResource = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceResource"
-      viewAllRecords = false
-    }
-    ServiceTerritory = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceTerritory"
-      viewAllRecords = false
-    }
-    Shift = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "Shift"
-      viewAllRecords = false
-    }
     SocialPersona = {
       allowCreate = false
       allowDelete = false
@@ -412,78 +241,6 @@ salesforce.Profile Read_Only@s {
       allowRead = true
       modifyAllRecords = false
       object = "Solution"
-      viewAllRecords = false
-    }
-    WebCart = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "WebCart"
-      viewAllRecords = false
-    }
-    WebStore = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "WebStore"
-      viewAllRecords = false
-    }
-    WorkOrder = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkOrder"
-      viewAllRecords = false
-    }
-    WorkPlan = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkPlan"
-      viewAllRecords = false
-    }
-    WorkPlanTemplate = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkPlanTemplate"
-      viewAllRecords = false
-    }
-    WorkStepTemplate = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkStepTemplate"
-      viewAllRecords = false
-    }
-    WorkType = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkType"
-      viewAllRecords = false
-    }
-    WorkTypeGroup = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkTypeGroup"
       viewAllRecords = false
     }
   }

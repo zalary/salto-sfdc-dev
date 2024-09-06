@@ -1,6 +1,30 @@
 salesforce.Profile Salesforce_API_Only_System_Integrations@s {
-  custom = false
+  custom = true
   userLicense = "Salesforce Integration"
   fullName = "Salesforce API Only System Integrations"
   _alias = "Salesforce API Only System Integrations"
+  flowAccesses = {
+    OppTask = {
+      enabled = false
+      flow = "OppTask"
+    }
+    ZGY_Flow_1 = {
+      enabled = false
+      flow = "ZGY_Flow_1"
+    }
+    ZGY_Flow_2 = {
+      enabled = false
+      flow = "ZGY_Flow_2"
+    }
+  }
+  classAccesses = {
+    RestLeadConvert = {
+      apexClass = "RestLeadConvert"
+      enabled = false
+    }
+    WebLeadConvert = {
+      apexClass = "WebLeadConvert"
+      enabled = false
+    }
+  }
 }

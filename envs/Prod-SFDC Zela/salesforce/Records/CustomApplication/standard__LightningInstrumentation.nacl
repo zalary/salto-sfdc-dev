@@ -5,6 +5,7 @@ salesforce.CustomApplication standard__LightningInstrumentation {
   isNavAutoTempTabsDisabled = false
   isNavPersonalizationDisabled = false
   isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
   label = "LightningInstrumentation"
   navType = "Standard"
   tabs = [

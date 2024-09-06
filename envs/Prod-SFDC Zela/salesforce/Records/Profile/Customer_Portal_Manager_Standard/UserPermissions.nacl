@@ -16,10 +16,6 @@ salesforce.Profile Customer_Portal_Manager_Standard@s {
       enabled = true
       name = "ApexRestServices"
     }
-    ApiEnabled = {
-      enabled = true
-      name = "ApiEnabled"
-    }
     AssignTopics = {
       enabled = true
       name = "AssignTopics"

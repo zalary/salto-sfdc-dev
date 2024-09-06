@@ -1,6 +1,7 @@
 type salesforce.Lead {
   salesforce.Address Address {
     apiName = "Lead.Address"
+    encryptionScheme = "None"
     label = "Address"
     createable = false
     updateable = false
@@ -22,56 +23,6 @@ type salesforce.Lead {
   }
   salesforce.Picklist CleanStatus {
     apiName = "Lead.CleanStatus"
-    valueSet = [
-      {
-        fullName = "Matched"
-        isActive = true
-        label = "In Sync"
-        default = false
-      },
-      {
-        fullName = "Different"
-        isActive = true
-        label = "Different"
-        default = false
-      },
-      {
-        fullName = "Acknowledged"
-        isActive = true
-        label = "Reviewed"
-        default = false
-      },
-      {
-        fullName = "NotFound"
-        isActive = true
-        label = "Not Found"
-        default = false
-      },
-      {
-        fullName = "Inactive"
-        isActive = true
-        label = "Inactive"
-        default = false
-      },
-      {
-        fullName = "Pending"
-        isActive = true
-        label = "Not Compared"
-        default = false
-      },
-      {
-        fullName = "SelectMatch"
-        isActive = true
-        label = "Select Match"
-        default = false
-      },
-      {
-        fullName = "Skipped"
-        isActive = true
-        label = "Skipped"
-        default = false
-      },
-    ]
     restricted = true
     label = "Clean Status"
     createable = true
@@ -80,6 +31,7 @@ type salesforce.Lead {
   }
   salesforce.Text Company {
     apiName = "Lead.Company"
+    encryptionScheme = "None"
     length = 255
     _required = true
     label = "Company"
@@ -102,9 +54,6 @@ type salesforce.Lead {
   salesforce.Lookup DandbCompanyId {
     apiName = "Lead.DandbCompanyId"
     relationshipName = "DandbCompany"
-    referenceTo = [
-      salesforce.DandBCompany,
-    ]
     label = "D&B Company ID"
     createable = true
     updateable = true
@@ -112,6 +61,7 @@ type salesforce.Lead {
   }
   salesforce.LongTextArea Description {
     apiName = "Lead.Description"
+    encryptionScheme = "None"
     length = 32000
     label = "Description"
     createable = true
@@ -124,6 +74,7 @@ type salesforce.Lead {
   }
   salesforce.Email Email {
     apiName = "Lead.Email"
+    encryptionScheme = "None"
     label = "Email"
     createable = true
     updateable = true
@@ -132,6 +83,7 @@ type salesforce.Lead {
   }
   salesforce.Phone Fax {
     apiName = "Lead.Fax"
+    encryptionScheme = "None"
     label = "Fax"
     createable = true
     updateable = true
@@ -152,9 +104,6 @@ type salesforce.Lead {
   salesforce.Lookup IndividualId {
     apiName = "Lead.IndividualId"
     relationshipName = "Individual"
-    referenceTo = [
-      salesforce.Individual,
-    ]
     label = "Individual ID"
     createable = true
     updateable = true
@@ -194,6 +143,7 @@ type salesforce.Lead {
   }
   salesforce.Phone MobilePhone {
     apiName = "Lead.MobilePhone"
+    encryptionScheme = "None"
     label = "Mobile Phone"
     createable = true
     updateable = true
@@ -201,6 +151,7 @@ type salesforce.Lead {
   }
   salesforce.Name Name {
     apiName = "Lead.Name"
+    encryptionScheme = "None"
     _required = true
     label = "Full Name"
     createable = false
@@ -221,10 +172,6 @@ type salesforce.Lead {
   salesforce.Lookup OwnerId {
     apiName = "Lead.OwnerId"
     relationshipName = "Owner"
-    referenceTo = [
-      salesforce.Group,
-      salesforce.User,
-    ]
     label = "Owner ID"
     createable = true
     updateable = true
@@ -233,6 +180,7 @@ type salesforce.Lead {
   }
   salesforce.Phone Phone {
     apiName = "Lead.Phone"
+    encryptionScheme = "None"
     label = "Phone"
     createable = true
     updateable = true
@@ -263,6 +211,7 @@ type salesforce.Lead {
   }
   salesforce.Text Title {
     apiName = "Lead.Title"
+    encryptionScheme = "None"
     length = 128
     label = "Title"
     createable = true
@@ -273,6 +222,7 @@ type salesforce.Lead {
   }
   salesforce.Url Website {
     apiName = "Lead.Website"
+    encryptionScheme = "None"
     label = "Website"
     createable = true
     updateable = true
@@ -296,9 +246,6 @@ type salesforce.Lead {
   salesforce.Lookup MasterRecordId {
     apiName = "Lead.MasterRecordId"
     relationshipName = "MasterRecord"
-    referenceTo = [
-      salesforce.Lead,
-    ]
     label = "Master Record ID"
     createable = false
     updateable = false
@@ -332,9 +279,6 @@ type salesforce.Lead {
   salesforce.Lookup ConvertedAccountId {
     apiName = "Lead.ConvertedAccountId"
     relationshipName = "ConvertedAccount"
-    referenceTo = [
-      salesforce.Account,
-    ]
     label = "Converted Account ID"
     createable = false
     updateable = false
@@ -344,9 +288,6 @@ type salesforce.Lead {
   salesforce.Lookup ConvertedContactId {
     apiName = "Lead.ConvertedContactId"
     relationshipName = "ConvertedContact"
-    referenceTo = [
-      salesforce.Contact,
-    ]
     label = "Converted Contact ID"
     createable = false
     updateable = false
@@ -356,9 +297,6 @@ type salesforce.Lead {
   salesforce.Lookup ConvertedOpportunityId {
     apiName = "Lead.ConvertedOpportunityId"
     relationshipName = "ConvertedOpportunity"
-    referenceTo = [
-      salesforce.Opportunity,
-    ]
     label = "Converted Opportunity ID"
     createable = false
     updateable = false
@@ -384,9 +322,6 @@ type salesforce.Lead {
   salesforce.Lookup CreatedById {
     apiName = "Lead.CreatedById"
     relationshipName = "CreatedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Created By ID"
     createable = false
     updateable = false
@@ -404,9 +339,6 @@ type salesforce.Lead {
   salesforce.Lookup LastModifiedById {
     apiName = "Lead.LastModifiedById"
     relationshipName = "LastModifiedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Last Modified By ID"
     createable = false
     updateable = false
@@ -456,5 +388,14 @@ type salesforce.Lead {
     createable = false
     updateable = true
     queryable = true
+  }
+  salesforce.Checkbox IsPriorityRecord {
+    apiName = "Lead.IsPriorityRecord"
+    defaultValue = false
+    label = "Important"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
   }
 }

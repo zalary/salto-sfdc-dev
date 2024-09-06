@@ -36,6 +36,7 @@ type salesforce.FlowDynamicChoiceSet {
   string picklistObject {
     foreignKeyDomain = [
       "CustomObject",
+      "PlatformSchemaDefinition",
     ]
   }
   salesforce.FlowMetadataValue processMetadataValues {
@@ -59,4 +60,16 @@ type salesforce.FlowDynamicChoiceSet {
     }
   }
   metadataType = "FlowDynamicChoiceSet"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

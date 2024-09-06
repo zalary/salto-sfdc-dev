@@ -60,5 +60,25 @@ salesforce.Profile Analytics_Cloud_Security_User@s {
       enabled = true
       name = "ViewSetup"
     }
+    AddDirectMessageMembers = {
+      enabled = true
+      name = "AddDirectMessageMembers"
+    }
+    RemoveDirectMessageMembers = {
+      enabled = true
+      name = "RemoveDirectMessageMembers"
+    }
+    ViewAllProfiles = {
+      enabled = true
+      name = "ViewAllProfiles"
+    }
+    ViewAllUsers = {
+      enabled = true
+      name = "ViewAllUsers"
+    }
+    ViewDeveloperName = {
+      enabled = true
+      name = "ViewDeveloperName"
+    }
   }
 }

@@ -23,18 +23,23 @@ type salesforce.FlowAssignment {
     _restriction = {
       enforce_value = false
       values = [
+        "AddPromptInstructions",
         "BackgroundStep",
         "FilterCollectionProcessor",
         "InteractiveStep",
         "ManagedContentRoleInteractiveStep",
+        "ManagedContentVariantAutoPublishBackgroundStep",
+        "ManagedContentVariantAutoUnpublishBackgroundStep",
         "ManagedContentVariantSetLockBackgroundStep",
         "ManagedContentVariantSetReadyBackgroundStep",
         "MuleSoftStep",
         "RecommendationMapCollectionProcessor",
+        "ReviewAdvancedApprovalInteractiveStep",
         "SortCollectionProcessor",
         "WaitAttribute",
         "WaitDate",
         "WaitDuration",
+        "WaitUntilEvent",
       ]
     }
     foreignKeyDomain = [
@@ -52,4 +57,21 @@ type salesforce.FlowAssignment {
   salesforce.FlowConnector connector {
   }
   metadataType = "FlowAssignment"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

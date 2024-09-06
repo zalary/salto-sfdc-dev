@@ -118,7 +118,6 @@ type salesforce.Idea {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ControlledByParent"
   searchLayouts = {
     customTabListAdditionalFields = [
       "IDEA.TITLE",

@@ -4,4 +4,6 @@ salesforce.EncryptionKeySettings {
   enableCacheOnlyKeys = false
   enableReplayDetection = false
   _alias = "EncryptionKey"
+  dataCloudEncryption = "false"
+  enableBringYourOwnkms = "false"
 }

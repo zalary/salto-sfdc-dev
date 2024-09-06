@@ -3,4 +3,28 @@ salesforce.Profile Partner_App_Subscription_User@s {
   userLicense = "Partner App Subscription"
   fullName = "Partner App Subscription User"
   _alias = "Partner App Subscription User"
+  flowAccesses = {
+    OppTask = {
+      enabled = false
+      flow = "OppTask"
+    }
+    ZGY_Flow_1 = {
+      enabled = false
+      flow = "ZGY_Flow_1"
+    }
+    ZGY_Flow_2 = {
+      enabled = false
+      flow = "ZGY_Flow_2"
+    }
+  }
+  classAccesses = {
+    RestLeadConvert = {
+      apexClass = "RestLeadConvert"
+      enabled = false
+    }
+    WebLeadConvert = {
+      apexClass = "WebLeadConvert"
+      enabled = false
+    }
+  }
 }

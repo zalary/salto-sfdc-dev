@@ -146,7 +146,6 @@ type salesforce.DandBCompany {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ReadWrite"
   searchLayouts = {
     customTabListAdditionalFields = [
       "LocationStatus",

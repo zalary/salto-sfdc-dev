@@ -8,6 +8,16 @@ salesforce.SecuritySettings {
   enableCoopHeader = "false"
   enableRequireHttpsConnection = true
   networkAccess = {
+    ipRanges = [
+      {
+        end = "76.210.191.255"
+        start = "76.210.191.0"
+      },
+      {
+        end = "76.210.255.255"
+        start = "76.210.0.0"
+      },
+    ]
   }
   passwordPolicies = {
     complexity = "AlphaNumeric"
@@ -46,29 +56,34 @@ salesforce.SecuritySettings {
     enablePostForSessions = false
     enableSMSIdentity = true
     enableU2F = false
-    enableXssProtection = true
     enforceIpRangesEveryRequest = false
     enforceUserDeviceRevoked = false
-    forceLogoutOnSessionTimeout = true
+    forceLogoutOnSessionTimeout = false
     forceRelogin = true
-    hasRetainedLoginHints = false
+    hasRetainedLoginHints = true
     hasUserSwitching = true
     identityConfirmationOnEmailChange = false
     identityConfirmationOnTwoFactorRegistrationEnabled = true
     lockSessionsToDomain = true
     lockSessionsToIp = false
-    lockerServiceCSP = true
-    lockerServiceNext = true
+    lockerServiceCSP = false
+    lockerServiceNext = false
     lockerServiceNextControl = false
     redirectBlockModeEnabled = false
     redirectionWarning = true
     referrerPolicy = true
     referrerPolicyDirective = "origin-when-cross-origin"
     requireHttpOnly = false
-    sessionTimeout = "TwoHours"
+    sessionTimeout = "TwentyFourHours"
     sidToken3rdPartyAuraApp = false
     skipSFAWhenMFADirectUILogin = false
     useLocalStorageForLogoutUrl = false
+    enablePermissionsPolicy = false
+    grantCameraAccess = "TrustedUrls"
+    grantMicrophoneAccess = "TrustedUrls"
+    sendCspForUncommonClients = false
+    useEAPIRateLimitForConnectAPI = false
+    terminateUserSessionsWhenAdminResetsPassword = false
   }
   singleSignOnSettings = {
     enableCaseInsensitiveFederationID = false
@@ -78,4 +93,7 @@ salesforce.SecuritySettings {
     isLoginWithSalesforceCredentialsDisabled = false
   }
   _alias = "Security"
+  enableCrossOrgRedirects = "false"
+  enablePermissionsPolicy = "false"
+  sendCspForUncommonClients = "false"
 }

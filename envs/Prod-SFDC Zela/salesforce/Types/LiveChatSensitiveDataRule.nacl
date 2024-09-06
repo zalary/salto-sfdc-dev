@@ -34,7 +34,25 @@ type salesforce.LiveChatSensitiveDataRule {
   }
   number priority {
   }
+  string processingType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Persist",
+        "RealTime",
+      ]
+    }
+  }
   string replacement {
+  }
+  string version {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "ONE",
+        "TWO",
+      ]
+    }
   }
   string internalId {
     _hidden_value = true
@@ -43,4 +61,16 @@ type salesforce.LiveChatSensitiveDataRule {
   suffix = "liveChatSensitiveDataRule"
   dirName = "liveChatSensitiveDataRule"
   metadataType = "LiveChatSensitiveDataRule"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

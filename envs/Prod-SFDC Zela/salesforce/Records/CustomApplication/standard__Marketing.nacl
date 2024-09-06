@@ -6,6 +6,7 @@ salesforce.CustomApplication standard__Marketing {
   isNavAutoTempTabsDisabled = false
   isNavPersonalizationDisabled = false
   isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
   tabs = [
     "standard-Chatter",
     "standard-Campaign",

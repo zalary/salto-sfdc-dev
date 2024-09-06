@@ -98,208 +98,6 @@ salesforce.ForecastingSettings {
   ]
   forecastingTypeSettings = [
     {
-      active = false
-      displayedCategoryApiNames = [
-        "closedonly",
-        "commitonly",
-        "bestcaseonly",
-        "pipelineonly",
-      ]
-      forecastedCategoryApiNames = [
-        "commitonly",
-        "closedonly",
-        "pipelineonly",
-        "bestcaseonly",
-      ]
-      forecastingDateType = "OpportunityCloseDate"
-      hasProductFamily = true
-      isAmount = false
-      isAvailable = true
-      isQuantity = true
-      masterLabel = "Product Families"
-      name = "OpportunityLineItemQuantity"
-      opportunityListFieldsLabelMappings = [
-        {
-          field = "OPPORTUNITY.NAME"
-          label = "Opportunity Name"
-        },
-        {
-          field = "ACCOUNT.NAME"
-          label = "Account Name"
-        },
-        {
-          field = "OPPORTUNITY.QUANTITY"
-          label = "Quantity"
-        },
-        {
-          field = "OPPORTUNITY.CLOSE_DATE"
-          label = "Close Date"
-        },
-        {
-          field = "OPPORTUNITY.STAGE_NAME"
-          label = "Stage"
-        },
-        {
-          field = "OPPORTUNITY.PROBABILITY"
-          label = "Probability (%)"
-        },
-        {
-          field = "FORECAST_CATEGORY"
-          label = "Forecast Category"
-        },
-        {
-          field = "FULL_NAME"
-          label = "Owner Full Name"
-        },
-        {
-          field = "OPPORTUNITY.AMOUNT"
-          label = "Amount"
-        },
-        {
-          field = "CORE.USERS.ALIAS"
-          label = "Opportunity Owner Alias"
-        },
-        {
-          field = "CORE.USERS.FIRST_NAME"
-          label = "Owner First Name"
-        },
-        {
-          field = "CORE.USERS.LAST_NAME"
-          label = "Owner Last Name"
-        },
-        {
-          field = "DESCRIPTION"
-          label = "Description"
-        },
-        {
-          field = "OPPORTUNITY.EXP_AMOUNT"
-          label = "Expected Revenue"
-        },
-        {
-          field = "OPPORTUNITY.LEAD_SOURCE"
-          label = "Lead Source"
-        },
-        {
-          field = "OPPORTUNITY.NEXT_STEP"
-          label = "Next Step"
-        },
-        {
-          field = "OPPORTUNITY.PRIVATE"
-          label = "Private"
-        },
-        {
-          field = "OPPORTUNITY.TYPE"
-          label = "Type"
-        },
-        {
-          field = "UPDATEDBY_USER.ALIAS"
-          label = "Last Modified By Alias"
-        },
-        {
-          field = "CREATEDBY_USER.ALIAS"
-          label = "Created By Alias"
-        },
-        {
-          field = "OPPORTUNITY.CLOSED"
-          label = "Closed"
-        },
-        {
-          field = "OPPORTUNITY.WON"
-          label = "Won"
-        },
-        {
-          field = "ACCOUNT.SITE"
-          label = "Account Site"
-        },
-        {
-          field = "OPPORTUNITY.FISCAL_YEAR"
-          label = "Fiscal Year"
-        },
-        {
-          field = "OPPORTUNITY.FISCAL_QUARTER"
-          label = "Fiscal Quarter"
-        },
-        {
-          field = "OPPORTUNITY.FISCAL_PERIOD"
-          label = "Fiscal Period"
-        },
-        {
-          field = "OPPORTUNITY.LAST_ACTIVITY"
-          label = "Last Activity"
-        },
-        {
-          field = "OPPORTUNITY.CREATED_DATE"
-          label = "Created Date"
-        },
-        {
-          field = "OPPORTUNITY.LAST_UPDATE"
-          label = "Last Modified Date"
-        },
-        {
-          field = "Opportunity.CurrentGenerators__c"
-          label = "Current Generator(s)"
-        },
-        {
-          field = "Opportunity.DeliveryInstallationStatus__c"
-          label = "Delivery/Installation Status"
-        },
-        {
-          field = "Opportunity.MainCompetitors__c"
-          label = "Main Competitor(s)"
-        },
-        {
-          field = "Opportunity.OrderNumber__c"
-          label = "Order Number"
-        },
-        {
-          field = "Opportunity.TrackingNumber__c"
-          label = "Tracking Number"
-        },
-      ]
-      opportunityListFieldsSelectedSettings = {
-        field = [
-          "OPPORTUNITY.NAME",
-          "ACCOUNT.NAME",
-          "OPPORTUNITY.QUANTITY",
-          "OPPORTUNITY.CLOSE_DATE",
-          "OPPORTUNITY.STAGE_NAME",
-          "OPPORTUNITY.PROBABILITY",
-          "FORECAST_CATEGORY",
-          "FULL_NAME",
-        ]
-      }
-      opportunityListFieldsUnselectedSettings = {
-        field = [
-          "OPPORTUNITY.AMOUNT",
-          "CORE.USERS.ALIAS",
-          "CORE.USERS.FIRST_NAME",
-          "CORE.USERS.LAST_NAME",
-          "DESCRIPTION",
-          "OPPORTUNITY.EXP_AMOUNT",
-          "OPPORTUNITY.LEAD_SOURCE",
-          "OPPORTUNITY.NEXT_STEP",
-          "OPPORTUNITY.PRIVATE",
-          "OPPORTUNITY.TYPE",
-          "UPDATEDBY_USER.ALIAS",
-          "CREATEDBY_USER.ALIAS",
-          "OPPORTUNITY.CLOSED",
-          "OPPORTUNITY.WON",
-          "ACCOUNT.SITE",
-          "OPPORTUNITY.FISCAL_YEAR",
-          "OPPORTUNITY.FISCAL_QUARTER",
-          "OPPORTUNITY.FISCAL_PERIOD",
-          "OPPORTUNITY.LAST_ACTIVITY",
-          "OPPORTUNITY.CREATED_DATE",
-          "OPPORTUNITY.LAST_UPDATE",
-          "Opportunity.CurrentGenerators__c",
-          "Opportunity.DeliveryInstallationStatus__c",
-          "Opportunity.MainCompetitors__c",
-          "Opportunity.OrderNumber__c",
-          "Opportunity.TrackingNumber__c",
-        ]
-      }
-    },
-    {
       active = true
       displayedCategoryApiNames = [
         "closedonly",
@@ -457,6 +255,14 @@ salesforce.ForecastingSettings {
           field = "Opportunity.TrackingNumber__c"
           label = "Tracking Number"
         },
+        {
+          field = "OPPORTUNITY.LAST_STAGE_CHANGE"
+          label = "Last Stage Change Date"
+        },
+        {
+          field = "OPPORTUNITY.PUSH_COUNT"
+          label = "Push Count"
+        },
       ]
       opportunityListFieldsSelectedSettings = {
         field = [
@@ -498,6 +304,8 @@ salesforce.ForecastingSettings {
           "Opportunity.MainCompetitors__c",
           "Opportunity.OrderNumber__c",
           "Opportunity.TrackingNumber__c",
+          "OPPORTUNITY.LAST_STAGE_CHANGE",
+          "OPPORTUNITY.PUSH_COUNT",
         ]
       }
     },
@@ -659,6 +467,14 @@ salesforce.ForecastingSettings {
           field = "Opportunity.TrackingNumber__c"
           label = "Tracking Number"
         },
+        {
+          field = "OPPORTUNITY.LAST_STAGE_CHANGE"
+          label = "Last Stage Change Date"
+        },
+        {
+          field = "OPPORTUNITY.PUSH_COUNT"
+          label = "Push Count"
+        },
       ]
       opportunityListFieldsSelectedSettings = {
         field = [
@@ -700,6 +516,8 @@ salesforce.ForecastingSettings {
           "Opportunity.MainCompetitors__c",
           "Opportunity.OrderNumber__c",
           "Opportunity.TrackingNumber__c",
+          "OPPORTUNITY.LAST_STAGE_CHANGE",
+          "OPPORTUNITY.PUSH_COUNT",
         ]
       }
     },
@@ -865,6 +683,14 @@ salesforce.ForecastingSettings {
           field = "Opportunity.TrackingNumber__c"
           label = "Tracking Number"
         },
+        {
+          field = "OPPORTUNITY.LAST_STAGE_CHANGE"
+          label = "Last Stage Change Date"
+        },
+        {
+          field = "OPPORTUNITY.PUSH_COUNT"
+          label = "Push Count"
+        },
       ]
       opportunityListFieldsSelectedSettings = {
         field = [
@@ -907,6 +733,220 @@ salesforce.ForecastingSettings {
           "Opportunity.MainCompetitors__c",
           "Opportunity.OrderNumber__c",
           "Opportunity.TrackingNumber__c",
+          "OPPORTUNITY.LAST_STAGE_CHANGE",
+          "OPPORTUNITY.PUSH_COUNT",
+        ]
+      }
+    },
+    {
+      active = false
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "OpportunityCloseDate"
+      hasProductFamily = true
+      isAmount = false
+      isAvailable = true
+      isQuantity = true
+      masterLabel = "Product Families"
+      name = "OpportunityLineItemQuantity"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "OPPORTUNITY.LAST_STAGE_CHANGE"
+          label = "Last Stage Change Date"
+        },
+        {
+          field = "OPPORTUNITY.PUSH_COUNT"
+          label = "Push Count"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "OPPORTUNITY.AMOUNT",
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "Opportunity.MainCompetitors__c",
+          "Opportunity.OrderNumber__c",
+          "Opportunity.TrackingNumber__c",
+          "OPPORTUNITY.LAST_STAGE_CHANGE",
+          "OPPORTUNITY.PUSH_COUNT",
         ]
       }
     },
@@ -1072,6 +1112,14 @@ salesforce.ForecastingSettings {
           field = "Opportunity.TrackingNumber__c"
           label = "Tracking Number"
         },
+        {
+          field = "OPPORTUNITY.LAST_STAGE_CHANGE"
+          label = "Last Stage Change Date"
+        },
+        {
+          field = "OPPORTUNITY.PUSH_COUNT"
+          label = "Push Count"
+        },
       ]
       opportunityListFieldsSelectedSettings = {
         field = [
@@ -1114,6 +1162,8 @@ salesforce.ForecastingSettings {
           "Opportunity.MainCompetitors__c",
           "Opportunity.OrderNumber__c",
           "Opportunity.TrackingNumber__c",
+          "OPPORTUNITY.LAST_STAGE_CHANGE",
+          "OPPORTUNITY.PUSH_COUNT",
         ]
       }
     },
@@ -1275,6 +1325,14 @@ salesforce.ForecastingSettings {
           field = "Opportunity.TrackingNumber__c"
           label = "Tracking Number"
         },
+        {
+          field = "OPPORTUNITY.LAST_STAGE_CHANGE"
+          label = "Last Stage Change Date"
+        },
+        {
+          field = "OPPORTUNITY.PUSH_COUNT"
+          label = "Push Count"
+        },
       ]
       opportunityListFieldsSelectedSettings = {
         field = [
@@ -1316,6 +1374,8 @@ salesforce.ForecastingSettings {
           "Opportunity.MainCompetitors__c",
           "Opportunity.OrderNumber__c",
           "Opportunity.TrackingNumber__c",
+          "OPPORTUNITY.LAST_STAGE_CHANGE",
+          "OPPORTUNITY.PUSH_COUNT",
         ]
       }
     },
@@ -1481,6 +1541,14 @@ salesforce.ForecastingSettings {
           field = "Opportunity.TrackingNumber__c"
           label = "Tracking Number"
         },
+        {
+          field = "OPPORTUNITY.LAST_STAGE_CHANGE"
+          label = "Last Stage Change Date"
+        },
+        {
+          field = "OPPORTUNITY.PUSH_COUNT"
+          label = "Push Count"
+        },
       ]
       opportunityListFieldsSelectedSettings = {
         field = [
@@ -1523,6 +1591,8 @@ salesforce.ForecastingSettings {
           "Opportunity.MainCompetitors__c",
           "Opportunity.OrderNumber__c",
           "Opportunity.TrackingNumber__c",
+          "OPPORTUNITY.LAST_STAGE_CHANGE",
+          "OPPORTUNITY.PUSH_COUNT",
         ]
       }
     },
@@ -1684,6 +1754,14 @@ salesforce.ForecastingSettings {
           field = "Opportunity.TrackingNumber__c"
           label = "Tracking Number"
         },
+        {
+          field = "OPPORTUNITY.LAST_STAGE_CHANGE"
+          label = "Last Stage Change Date"
+        },
+        {
+          field = "OPPORTUNITY.PUSH_COUNT"
+          label = "Push Count"
+        },
       ]
       opportunityListFieldsSelectedSettings = {
         field = [
@@ -1725,6 +1803,8 @@ salesforce.ForecastingSettings {
           "Opportunity.MainCompetitors__c",
           "Opportunity.OrderNumber__c",
           "Opportunity.TrackingNumber__c",
+          "OPPORTUNITY.LAST_STAGE_CHANGE",
+          "OPPORTUNITY.PUSH_COUNT",
         ]
       }
     },
@@ -1890,6 +1970,14 @@ salesforce.ForecastingSettings {
           field = "Opportunity.TrackingNumber__c"
           label = "Tracking Number"
         },
+        {
+          field = "OPPORTUNITY.LAST_STAGE_CHANGE"
+          label = "Last Stage Change Date"
+        },
+        {
+          field = "OPPORTUNITY.PUSH_COUNT"
+          label = "Push Count"
+        },
       ]
       opportunityListFieldsSelectedSettings = {
         field = [
@@ -1932,6 +2020,8 @@ salesforce.ForecastingSettings {
           "Opportunity.MainCompetitors__c",
           "Opportunity.OrderNumber__c",
           "Opportunity.TrackingNumber__c",
+          "OPPORTUNITY.LAST_STAGE_CHANGE",
+          "OPPORTUNITY.PUSH_COUNT",
         ]
       }
     },
@@ -2093,6 +2183,14 @@ salesforce.ForecastingSettings {
           field = "Opportunity.TrackingNumber__c"
           label = "Tracking Number"
         },
+        {
+          field = "OPPORTUNITY.LAST_STAGE_CHANGE"
+          label = "Last Stage Change Date"
+        },
+        {
+          field = "OPPORTUNITY.PUSH_COUNT"
+          label = "Push Count"
+        },
       ]
       opportunityListFieldsSelectedSettings = {
         field = [
@@ -2134,6 +2232,8 @@ salesforce.ForecastingSettings {
           "Opportunity.MainCompetitors__c",
           "Opportunity.OrderNumber__c",
           "Opportunity.TrackingNumber__c",
+          "OPPORTUNITY.LAST_STAGE_CHANGE",
+          "OPPORTUNITY.PUSH_COUNT",
         ]
       }
     },
@@ -2299,6 +2399,14 @@ salesforce.ForecastingSettings {
           field = "Opportunity.TrackingNumber__c"
           label = "Tracking Number"
         },
+        {
+          field = "OPPORTUNITY.LAST_STAGE_CHANGE"
+          label = "Last Stage Change Date"
+        },
+        {
+          field = "OPPORTUNITY.PUSH_COUNT"
+          label = "Push Count"
+        },
       ]
       opportunityListFieldsSelectedSettings = {
         field = [
@@ -2341,6 +2449,8 @@ salesforce.ForecastingSettings {
           "Opportunity.MainCompetitors__c",
           "Opportunity.OrderNumber__c",
           "Opportunity.TrackingNumber__c",
+          "OPPORTUNITY.LAST_STAGE_CHANGE",
+          "OPPORTUNITY.PUSH_COUNT",
         ]
       }
     },
@@ -2502,6 +2612,14 @@ salesforce.ForecastingSettings {
           field = "Opportunity.TrackingNumber__c"
           label = "Tracking Number"
         },
+        {
+          field = "OPPORTUNITY.LAST_STAGE_CHANGE"
+          label = "Last Stage Change Date"
+        },
+        {
+          field = "OPPORTUNITY.PUSH_COUNT"
+          label = "Push Count"
+        },
       ]
       opportunityListFieldsSelectedSettings = {
         field = [
@@ -2543,6 +2661,8 @@ salesforce.ForecastingSettings {
           "Opportunity.MainCompetitors__c",
           "Opportunity.OrderNumber__c",
           "Opportunity.TrackingNumber__c",
+          "OPPORTUNITY.LAST_STAGE_CHANGE",
+          "OPPORTUNITY.PUSH_COUNT",
         ]
       }
     },
@@ -2550,6 +2670,7 @@ salesforce.ForecastingSettings {
   globalAdjustmentsSettings = {
     enableAdjustments = false
     enableOwnerAdjustments = false
+    allowExpandedColumns = false
   }
   globalForecastRangeSettings = {
     beginning = 0

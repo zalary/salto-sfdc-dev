@@ -1,0 +1,276 @@
+salesforce.Profile ZStandard_Clone@s {
+  userPermissions = {
+    ActivitiesAccess = {
+      enabled = true
+      name = "ActivitiesAccess"
+    }
+    AddDirectMessageMembers = {
+      enabled = true
+      name = "AddDirectMessageMembers"
+    }
+    AllowUniversalSearch = {
+      enabled = true
+      name = "AllowUniversalSearch"
+    }
+    AllowViewKnowledge = {
+      enabled = true
+      name = "AllowViewKnowledge"
+    }
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    AssignTopics = {
+      enabled = true
+      name = "AssignTopics"
+    }
+    CanAccessCE = {
+      enabled = true
+      name = "CanAccessCE"
+    }
+    ChatterEditOwnPost = {
+      enabled = true
+      name = "ChatterEditOwnPost"
+    }
+    ChatterFileLink = {
+      enabled = true
+      name = "ChatterFileLink"
+    }
+    ChatterInternalUser = {
+      enabled = true
+      name = "ChatterInternalUser"
+    }
+    ChatterInviteExternalUsers = {
+      enabled = true
+      name = "ChatterInviteExternalUsers"
+    }
+    ChatterOwnGroups = {
+      enabled = true
+      name = "ChatterOwnGroups"
+    }
+    ConnectOrgToEnvironmentHub = {
+      enabled = true
+      name = "ConnectOrgToEnvironmentHub"
+    }
+    ContentWorkspaces = {
+      enabled = true
+      name = "ContentWorkspaces"
+    }
+    ConvertLeads = {
+      enabled = true
+      name = "ConvertLeads"
+    }
+    CreateCustomizeDashboards = {
+      enabled = true
+      name = "CreateCustomizeDashboards"
+    }
+    CreateCustomizeFilters = {
+      enabled = true
+      name = "CreateCustomizeFilters"
+    }
+    CreateCustomizeReports = {
+      enabled = true
+      name = "CreateCustomizeReports"
+    }
+    CreateDashboardFolders = {
+      enabled = true
+      name = "CreateDashboardFolders"
+    }
+    CreateReportFolders = {
+      enabled = true
+      name = "CreateReportFolders"
+    }
+    CreateTopics = {
+      enabled = true
+      name = "CreateTopics"
+    }
+    DeleteTopics = {
+      enabled = true
+      name = "DeleteTopics"
+    }
+    DistributeFromPersWksp = {
+      enabled = true
+      name = "DistributeFromPersWksp"
+    }
+    EditEvent = {
+      enabled = true
+      name = "EditEvent"
+    }
+    EditMyDashboards = {
+      enabled = true
+      name = "EditMyDashboards"
+    }
+    EditMyReports = {
+      enabled = true
+      name = "EditMyReports"
+    }
+    EditOppLineItemUnitPrice = {
+      enabled = true
+      name = "EditOppLineItemUnitPrice"
+    }
+    EditPublicDocuments = {
+      enabled = true
+      name = "EditPublicDocuments"
+    }
+    EditPublicFilters = {
+      enabled = true
+      name = "EditPublicFilters"
+    }
+    EditPublicTemplates = {
+      enabled = true
+      name = "EditPublicTemplates"
+    }
+    EditTask = {
+      enabled = true
+      name = "EditTask"
+    }
+    EditTopics = {
+      enabled = true
+      name = "EditTopics"
+    }
+    EmailMass = {
+      enabled = true
+      name = "EmailMass"
+    }
+    EmailSingle = {
+      enabled = true
+      name = "EmailSingle"
+    }
+    EnableCommunityAppLauncher = {
+      enabled = true
+      name = "EnableCommunityAppLauncher"
+    }
+    EnableNotifications = {
+      enabled = true
+      name = "EnableNotifications"
+    }
+    ExportReport = {
+      enabled = true
+      name = "ExportReport"
+    }
+    ImportPersonal = {
+      enabled = true
+      name = "ImportPersonal"
+    }
+    LightningConsoleAllowedForUser = {
+      enabled = true
+      name = "LightningConsoleAllowedForUser"
+    }
+    LightningExperienceUser = {
+      enabled = true
+      name = "LightningExperienceUser"
+    }
+    ListEmailSend = {
+      enabled = true
+      name = "ListEmailSend"
+    }
+    ManageDashbdsInPubFolders = {
+      enabled = true
+      name = "ManageDashbdsInPubFolders"
+    }
+    ManageNetworks = {
+      enabled = true
+      name = "ManageNetworks"
+    }
+    ManageReportsInPubFolders = {
+      enabled = true
+      name = "ManageReportsInPubFolders"
+    }
+    MassInlineEdit = {
+      enabled = true
+      name = "MassInlineEdit"
+    }
+    ModifyDataClassification = {
+      enabled = true
+      name = "ModifyDataClassification"
+    }
+    ModifyMetadata = {
+      enabled = true
+      name = "ModifyMetadata"
+    }
+    RemoveDirectMessageMembers = {
+      enabled = true
+      name = "RemoveDirectMessageMembers"
+    }
+    RunReports = {
+      enabled = true
+      name = "RunReports"
+    }
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+    SendSitRequests = {
+      enabled = true
+      name = "SendSitRequests"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    SubmitMacrosAllowed = {
+      enabled = true
+      name = "SubmitMacrosAllowed"
+    }
+    SubscribeToLightningReports = {
+      enabled = true
+      name = "SubscribeToLightningReports"
+    }
+    TransactionalEmailSend = {
+      enabled = true
+      name = "TransactionalEmailSend"
+    }
+    TransferAnyEntity = {
+      enabled = true
+      name = "TransferAnyEntity"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+    ViewAllData = {
+      enabled = true
+      name = "ViewAllData"
+    }
+    ViewDataLeakageEvents = {
+      enabled = true
+      name = "ViewDataLeakageEvents"
+    }
+    ViewDeveloperName = {
+      enabled = true
+      name = "ViewDeveloperName"
+    }
+    ViewEventLogFiles = {
+      enabled = true
+      name = "ViewEventLogFiles"
+    }
+    ViewHelpLink = {
+      enabled = true
+      name = "ViewHelpLink"
+    }
+    ViewPlatformEvents = {
+      enabled = true
+      name = "ViewPlatformEvents"
+    }
+    ViewPublicDashboards = {
+      enabled = true
+      name = "ViewPublicDashboards"
+    }
+    ViewPublicReports = {
+      enabled = true
+      name = "ViewPublicReports"
+    }
+    ViewRoles = {
+      enabled = true
+      name = "ViewRoles"
+    }
+    ViewSetup = {
+      enabled = true
+      name = "ViewSetup"
+    }
+  }
+}

@@ -53,7 +53,15 @@ type salesforce.AppActionOverride {
   string pageOrSobjectType {
     foreignKeyDomain = [
       "CustomObject",
+      "PlatformSchemaDefinition",
     ]
   }
   metadataType = "AppActionOverride"
+  _important_values = [
+    {
+      value = "content"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

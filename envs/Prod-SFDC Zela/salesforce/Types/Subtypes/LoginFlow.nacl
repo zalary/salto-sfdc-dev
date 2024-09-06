@@ -15,7 +15,7 @@ type salesforce.LoginFlow {
   }
   string flow {
     foreignKeyDomain = [
-      "FlowDefinition",
+      salesforce.FlowDefinition,
     ]
   }
   string friendlyName {

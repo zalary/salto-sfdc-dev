@@ -60,6 +60,20 @@ type salesforce.PricebookEntry {
   label = "Price Book Entry"
   actionOverrides = [
     {
+      actionName = "AddPricebookEntry"
+      type = "Default"
+    },
+    {
+      actionName = "AddPricebookEntry"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "AddPricebookEntry"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
       actionName = "AddPricebookEntryOnPricebook"
       type = "Default"
     },
@@ -144,6 +158,20 @@ type salesforce.PricebookEntry {
       type = "Default"
     },
     {
+      actionName = "List"
+      type = "Default"
+    },
+    {
+      actionName = "List"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "List"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
       actionName = "SaveEdit"
       type = "Default"
     },
@@ -154,6 +182,20 @@ type salesforce.PricebookEntry {
     },
     {
       actionName = "SaveEdit"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "createDerivedPriceAttributes"
+      type = "Default"
+    },
+    {
+      actionName = "createDerivedPriceAttributes"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "createDerivedPriceAttributes"
       formFactor = "Small"
       type = "Default"
     },

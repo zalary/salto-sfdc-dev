@@ -9,7 +9,7 @@ salesforce.ChatterSettings {
   enableFeedPinning = true
   enableFeedsDraftPosts = true
   enableFeedsRichText = true
-  enableInviteCsnUsers = true
+  enableInviteCsnUsers = false
   enableOutOfOfficeEnabledPref = false
   enableRichLinkPreviewsInFeed = true
   enableTodayRecsInFeed = true

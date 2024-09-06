@@ -3,7 +3,7 @@ salesforce.ActivitiesSettings {
   allowUsersToRelateMultipleContactsToTasksAndEvents = false
   autoRelateEventAttendees = false
   enableActivityReminders = true
-  enableCalendarHomeLWC = true
+  enableCalendarHomeLWC = false
   enableClickCreateEvents = false
   enableDragAndDropScheduling = true
   enableEmailTracking = true

@@ -9,33 +9,6 @@ salesforce.Profile Standard {
       object = "Account"
       viewAllRecords = false
     }
-    AppointmentCategory = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "AppointmentCategory"
-      viewAllRecords = false
-    }
-    AppointmentInvitation = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "AppointmentInvitation"
-      viewAllRecords = false
-    }
-    AppointmentTopicTimeSlot = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "AppointmentTopicTimeSlot"
-      viewAllRecords = false
-    }
     Asset = {
       allowCreate = true
       allowDelete = true
@@ -216,15 +189,6 @@ salesforce.Profile Standard {
       object = "Contract"
       viewAllRecords = false
     }
-    ContractLineItem = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ContractLineItem"
-      viewAllRecords = false
-    }
     Customer = {
       allowCreate = true
       allowDelete = true
@@ -268,24 +232,6 @@ salesforce.Profile Standard {
       allowRead = true
       modifyAllRecords = false
       object = "EngagementChannelType"
-      viewAllRecords = false
-    }
-    Entitlement = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "Entitlement"
-      viewAllRecords = false
-    }
-    EntitlementContact = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "EntitlementContact"
       viewAllRecords = false
     }
     Idea = {
@@ -333,15 +279,6 @@ salesforce.Profile Standard {
       object = "Macro"
       viewAllRecords = false
     }
-    OperatingHours = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "OperatingHours"
-      viewAllRecords = false
-    }
     Opportunity = {
       allowCreate = true
       allowDelete = true
@@ -387,15 +324,6 @@ salesforce.Profile Standard {
       object = "Product2"
       viewAllRecords = false
     }
-    Promotion = {
-      allowCreate = true
-      allowDelete = true
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "Promotion"
-      viewAllRecords = false
-    }
     QuickText = {
       allowCreate = false
       allowDelete = false
@@ -405,15 +333,6 @@ salesforce.Profile Standard {
       object = "QuickText"
       viewAllRecords = false
     }
-    ReturnOrder = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "ReturnOrder"
-      viewAllRecords = false
-    }
     Seller = {
       allowCreate = true
       allowDelete = true
@@ -421,51 +340,6 @@ salesforce.Profile Standard {
       allowRead = true
       modifyAllRecords = false
       object = "Seller"
-      viewAllRecords = false
-    }
-    ServiceAppointment = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceAppointment"
-      viewAllRecords = false
-    }
-    ServiceContract = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceContract"
-      viewAllRecords = false
-    }
-    ServiceResource = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceResource"
-      viewAllRecords = false
-    }
-    ServiceTerritory = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceTerritory"
-      viewAllRecords = false
-    }
-    Shift = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "Shift"
       viewAllRecords = false
     }
     SocialPersona = {
@@ -493,87 +367,6 @@ salesforce.Profile Standard {
       allowRead = true
       modifyAllRecords = false
       object = "StreamingChannel"
-      viewAllRecords = false
-    }
-    Waitlist = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "Waitlist"
-      viewAllRecords = false
-    }
-    WebCart = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "WebCart"
-      viewAllRecords = false
-    }
-    WebStore = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "WebStore"
-      viewAllRecords = false
-    }
-    WorkOrder = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkOrder"
-      viewAllRecords = false
-    }
-    WorkPlan = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkPlan"
-      viewAllRecords = false
-    }
-    WorkPlanTemplate = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkPlanTemplate"
-      viewAllRecords = true
-    }
-    WorkStepTemplate = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkStepTemplate"
-      viewAllRecords = true
-    }
-    WorkType = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkType"
-      viewAllRecords = false
-    }
-    WorkTypeGroup = {
-      allowCreate = true
-      allowDelete = false
-      allowEdit = true
-      allowRead = true
-      modifyAllRecords = false
-      object = "WorkTypeGroup"
       viewAllRecords = false
     }
   }

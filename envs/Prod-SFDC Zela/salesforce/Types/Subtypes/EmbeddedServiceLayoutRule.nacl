@@ -14,18 +14,6 @@ type salesforce.EmbeddedServiceLayoutRule {
     }
   }
   string appointmentStatus {
-    _restriction = {
-      enforce_value = false
-      values = [
-        "Canceled",
-        "Cannot Complete",
-        "Completed",
-        "Dispatched",
-        "In Progress",
-        "None",
-        "Scheduled",
-      ]
-    }
   }
   metadataType = "EmbeddedServiceLayoutRule"
 }

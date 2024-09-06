@@ -92,7 +92,7 @@ salesforce.Layout PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentLineInvoice.field.UnappliedDate
+              field = salesforce.PaymentLineInvoice.field.AppliedDate
             },
           ]
         },
@@ -104,7 +104,11 @@ salesforce.Layout PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss {
             },
             {
               behavior = "Edit"
-              field = salesforce.PaymentLineInvoice.field.AppliedDate
+              field = salesforce.PaymentLineInvoice.field.EffectiveDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PaymentLineInvoice.field.UnappliedDate
             },
           ]
         },

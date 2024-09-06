@@ -7,7 +7,6 @@ salesforce.SearchSettings {
   enableEinsteinSearchNLSFilters = "false"
   enableEinsteinSearchNaturalLanguage = "true"
   enableEinsteinSearchPersonalization = true
-  enableEinsteinSearchQA = "false"
   enablePersonalTagging = false
   enablePublicTagging = false
   enableQuerySuggestionPigOn = "false"
@@ -19,21 +18,21 @@ salesforce.SearchSettings {
   searchSettingsByObject = {
     searchSettingsByObject = [
       {
-        enhancedLookupEnabled = false
+        enhancedLookupEnabled = true
         lookupAutoCompleteEnabled = false
         name = salesforce.Account
+        resultsPerPageCount = 25
+      },
+      {
+        enhancedLookupEnabled = true
+        lookupAutoCompleteEnabled = false
+        name = salesforce.Account__c
         resultsPerPageCount = 25
       },
       {
         enhancedLookupEnabled = false
         lookupAutoCompleteEnabled = false
         name = salesforce.Activity
-        resultsPerPageCount = 25
-      },
-      {
-        enhancedLookupEnabled = false
-        lookupAutoCompleteEnabled = false
-        name = salesforce.AppointmentInvitation
         resultsPerPageCount = 25
       },
       {
@@ -151,7 +150,7 @@ salesforce.SearchSettings {
         resultsPerPageCount = 25
       },
       {
-        enhancedLookupEnabled = false
+        enhancedLookupEnabled = true
         lookupAutoCompleteEnabled = false
         name = salesforce.Contact
         resultsPerPageCount = 25
@@ -201,18 +200,6 @@ salesforce.SearchSettings {
       {
         enhancedLookupEnabled = false
         lookupAutoCompleteEnabled = false
-        name = salesforce.ContractLineItem
-        resultsPerPageCount = 25
-      },
-      {
-        enhancedLookupEnabled = false
-        lookupAutoCompleteEnabled = false
-        name = salesforce.Coupon
-        resultsPerPageCount = 25
-      },
-      {
-        enhancedLookupEnabled = false
-        lookupAutoCompleteEnabled = false
         name = salesforce.CreditMemo
         resultsPerPageCount = 25
       },
@@ -255,19 +242,7 @@ salesforce.SearchSettings {
       {
         enhancedLookupEnabled = false
         lookupAutoCompleteEnabled = false
-        name = salesforce.EngagementChannelWorkType
-        resultsPerPageCount = 25
-      },
-      {
-        enhancedLookupEnabled = false
-        lookupAutoCompleteEnabled = false
         name = "EnhancedLetterhead"
-        resultsPerPageCount = 25
-      },
-      {
-        enhancedLookupEnabled = false
-        lookupAutoCompleteEnabled = false
-        name = salesforce.Entitlement
         resultsPerPageCount = 25
       },
       {
@@ -337,7 +312,7 @@ salesforce.SearchSettings {
         resultsPerPageCount = 25
       },
       {
-        enhancedLookupEnabled = false
+        enhancedLookupEnabled = true
         lookupAutoCompleteEnabled = false
         name = salesforce.Opportunity
         resultsPerPageCount = 25
@@ -375,24 +350,6 @@ salesforce.SearchSettings {
       {
         enhancedLookupEnabled = false
         lookupAutoCompleteEnabled = false
-        name = salesforce.Promotion
-        resultsPerPageCount = 25
-      },
-      {
-        enhancedLookupEnabled = false
-        lookupAutoCompleteEnabled = false
-        name = salesforce.PromotionMarketSegment
-        resultsPerPageCount = 25
-      },
-      {
-        enhancedLookupEnabled = false
-        lookupAutoCompleteEnabled = false
-        name = salesforce.PromotionSegment
-        resultsPerPageCount = 25
-      },
-      {
-        enhancedLookupEnabled = false
-        lookupAutoCompleteEnabled = false
         name = salesforce.QuickText
         resultsPerPageCount = 25
       },
@@ -411,50 +368,26 @@ salesforce.SearchSettings {
       {
         enhancedLookupEnabled = false
         lookupAutoCompleteEnabled = false
-        name = salesforce.ServiceContract
-        resultsPerPageCount = 25
-      },
-      {
-        enhancedLookupEnabled = false
-        lookupAutoCompleteEnabled = false
-        name = salesforce.ShiftEngagementChannel
-        resultsPerPageCount = 25
-      },
-      {
-        enhancedLookupEnabled = false
-        lookupAutoCompleteEnabled = false
         name = salesforce.Solution
         resultsPerPageCount = 25
       },
       {
         enhancedLookupEnabled = false
         lookupAutoCompleteEnabled = false
+        name = salesforce.Tier__c
+        resultsPerPageCount = 0
+      },
+      {
+        enhancedLookupEnabled = true
+        lookupAutoCompleteEnabled = false
         name = salesforce.User
-        resultsPerPageCount = 25
-      },
-      {
-        enhancedLookupEnabled = false
-        lookupAutoCompleteEnabled = false
-        name = salesforce.Waitlist
-        resultsPerPageCount = 25
-      },
-      {
-        enhancedLookupEnabled = false
-        lookupAutoCompleteEnabled = false
-        name = salesforce.WorkOrder
-        resultsPerPageCount = 25
-      },
-      {
-        enhancedLookupEnabled = false
-        lookupAutoCompleteEnabled = false
-        name = salesforce.WorkOrderLineItem
         resultsPerPageCount = 25
       },
     ]
   }
   sidebarAutoCompleteEnabled = true
   sidebarDropDownListEnabled = true
-  sidebarLimitToItemsIOwnCheckboxEnabled = true
+  sidebarLimitToItemsIOwnCheckboxEnabled = false
   singleSearchResultShortcutEnabled = true
   spellCorrectKnowledgeSearchEnabled = false
   _alias = "Search"

@@ -136,6 +136,12 @@ settings salesforce.Organization {
         isActive = true
       },
       {
+        fullName = "ar_SD"
+        default = false
+        label = "Arabic (Sudan)"
+        isActive = true
+      },
+      {
         fullName = "ar_TN"
         default = false
         label = "Arabic (Tunisia)"
@@ -475,6 +481,12 @@ settings salesforce.Organization {
         fullName = "en_IL"
         default = false
         label = "English (Israel)"
+        isActive = true
+      },
+      {
+        fullName = "en_IT"
+        default = false
+        label = "English (Italy)"
         isActive = true
       },
       {
@@ -1461,27 +1473,9 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "Pacific/Chatham"
-        default = false
-        label = "(GMT+13:45) Chatham Daylight Time (Pacific/Chatham)"
-        isActive = true
-      },
-      {
-        fullName = "Antarctica/McMurdo"
-        default = false
-        label = "(GMT+13:00) New Zealand Daylight Time (Antarctica/McMurdo)"
-        isActive = true
-      },
-      {
         fullName = "Pacific/Apia"
         default = false
         label = "(GMT+13:00) Apia Standard Time (Pacific/Apia)"
-        isActive = true
-      },
-      {
-        fullName = "Pacific/Auckland"
-        default = false
-        label = "(GMT+13:00) New Zealand Daylight Time (Pacific/Auckland)"
         isActive = true
       },
       {
@@ -1503,6 +1497,18 @@ settings salesforce.Organization {
         isActive = true
       },
       {
+        fullName = "Pacific/Chatham"
+        default = false
+        label = "(GMT+12:45) Chatham Standard Time (Pacific/Chatham)"
+        isActive = true
+      },
+      {
+        fullName = "Antarctica/McMurdo"
+        default = false
+        label = "(GMT+12:00) New Zealand Standard Time (Antarctica/McMurdo)"
+        isActive = true
+      },
+      {
         fullName = "Asia/Anadyr"
         default = false
         label = "(GMT+12:00) Anadyr Standard Time (Asia/Anadyr)"
@@ -1512,6 +1518,12 @@ settings salesforce.Organization {
         fullName = "Asia/Kamchatka"
         default = false
         label = "(GMT+12:00) Petropavlovsk-Kamchatski Standard Time (Asia/Kamchatka)"
+        isActive = true
+      },
+      {
+        fullName = "Pacific/Auckland"
+        default = false
+        label = "(GMT+12:00) New Zealand Standard Time (Pacific/Auckland)"
         isActive = true
       },
       {
@@ -1545,12 +1557,6 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "Pacific/Norfolk"
-        default = false
-        label = "(GMT+12:00) Norfolk Island Daylight Time (Pacific/Norfolk)"
-        isActive = true
-      },
-      {
         fullName = "Pacific/Tarawa"
         default = false
         label = "(GMT+12:00) Gilbert Islands Time (Pacific/Tarawa)"
@@ -1569,18 +1575,6 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "Antarctica/Casey"
-        default = false
-        label = "(GMT+11:00) Casey Time (Antarctica/Casey)"
-        isActive = true
-      },
-      {
-        fullName = "Antarctica/Macquarie"
-        default = false
-        label = "(GMT+11:00) Australian Eastern Daylight Time (Antarctica/Macquarie)"
-        isActive = true
-      },
-      {
         fullName = "Asia/Magadan"
         default = false
         label = "(GMT+11:00) Magadan Standard Time (Asia/Magadan)"
@@ -1596,36 +1590,6 @@ settings salesforce.Organization {
         fullName = "Asia/Srednekolymsk"
         default = false
         label = "(GMT+11:00) Magadan Standard Time (Asia/Srednekolymsk)"
-        isActive = true
-      },
-      {
-        fullName = "Australia/Currie"
-        default = false
-        label = "(GMT+11:00) Australian Eastern Daylight Time (Australia/Currie)"
-        isActive = true
-      },
-      {
-        fullName = "Australia/Hobart"
-        default = false
-        label = "(GMT+11:00) Australian Eastern Daylight Time (Australia/Hobart)"
-        isActive = true
-      },
-      {
-        fullName = "Australia/Lord_Howe"
-        default = false
-        label = "(GMT+11:00) Lord Howe Daylight Time (Australia/Lord_Howe)"
-        isActive = true
-      },
-      {
-        fullName = "Australia/Melbourne"
-        default = false
-        label = "(GMT+11:00) Australian Eastern Daylight Time (Australia/Melbourne)"
-        isActive = true
-      },
-      {
-        fullName = "Australia/Sydney"
-        default = false
-        label = "(GMT+11:00) Australian Eastern Daylight Time (Australia/Sydney)"
         isActive = true
       },
       {
@@ -1653,6 +1617,12 @@ settings salesforce.Organization {
         isActive = true
       },
       {
+        fullName = "Pacific/Norfolk"
+        default = false
+        label = "(GMT+11:00) Norfolk Island Standard Time (Pacific/Norfolk)"
+        isActive = true
+      },
+      {
         fullName = "Pacific/Noumea"
         default = false
         label = "(GMT+11:00) New Caledonia Standard Time (Pacific/Noumea)"
@@ -1665,21 +1635,21 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "Australia/Adelaide"
+        fullName = "Australia/Lord_Howe"
         default = false
-        label = "(GMT+10:30) Australian Central Daylight Time (Australia/Adelaide)"
-        isActive = true
-      },
-      {
-        fullName = "Australia/Broken_Hill"
-        default = false
-        label = "(GMT+10:30) Australian Central Daylight Time (Australia/Broken_Hill)"
+        label = "(GMT+10:30) Lord Howe Standard Time (Australia/Lord_Howe)"
         isActive = true
       },
       {
         fullName = "Antarctica/DumontDUrville"
         default = false
         label = "(GMT+10:00) Dumont-d’Urville Time (Antarctica/DumontDUrville)"
+        isActive = true
+      },
+      {
+        fullName = "Antarctica/Macquarie"
+        default = false
+        label = "(GMT+10:00) Australian Eastern Standard Time (Antarctica/Macquarie)"
         isActive = true
       },
       {
@@ -1701,9 +1671,33 @@ settings salesforce.Organization {
         isActive = true
       },
       {
+        fullName = "Australia/Currie"
+        default = false
+        label = "(GMT+10:00) Australian Eastern Standard Time (Australia/Currie)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Hobart"
+        default = false
+        label = "(GMT+10:00) Australian Eastern Standard Time (Australia/Hobart)"
+        isActive = true
+      },
+      {
         fullName = "Australia/Lindeman"
         default = false
         label = "(GMT+10:00) Australian Eastern Standard Time (Australia/Lindeman)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Melbourne"
+        default = false
+        label = "(GMT+10:00) Australian Eastern Standard Time (Australia/Melbourne)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Sydney"
+        default = false
+        label = "(GMT+10:00) Australian Eastern Standard Time (Australia/Sydney)"
         isActive = true
       },
       {
@@ -1728,6 +1722,18 @@ settings salesforce.Organization {
         fullName = "Pacific/Truk"
         default = false
         label = "(GMT+10:00) Chuuk Time (Pacific/Truk)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Adelaide"
+        default = false
+        label = "(GMT+09:30) Australian Central Standard Time (Australia/Adelaide)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Broken_Hill"
+        default = false
+        label = "(GMT+09:30) Australian Central Standard Time (Australia/Broken_Hill)"
         isActive = true
       },
       {
@@ -1788,6 +1794,12 @@ settings salesforce.Organization {
         fullName = "Australia/Eucla"
         default = false
         label = "(GMT+08:45) Australian Central Western Standard Time (Australia/Eucla)"
+        isActive = true
+      },
+      {
+        fullName = "Antarctica/Casey"
+        default = false
+        label = "(GMT+08:00) Casey Time (Antarctica/Casey)"
         isActive = true
       },
       {
@@ -1971,18 +1983,6 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "Antarctica/Vostok"
-        default = false
-        label = "(GMT+06:00) Vostok Time (Antarctica/Vostok)"
-        isActive = true
-      },
-      {
-        fullName = "Asia/Almaty"
-        default = false
-        label = "(GMT+06:00) East Kazakhstan Time (Asia/Almaty)"
-        isActive = true
-      },
-      {
         fullName = "Asia/Bishkek"
         default = false
         label = "(GMT+06:00) Kyrgyzstan Time (Asia/Bishkek)"
@@ -1998,12 +1998,6 @@ settings salesforce.Organization {
         fullName = "Asia/Omsk"
         default = false
         label = "(GMT+06:00) Omsk Standard Time (Asia/Omsk)"
-        isActive = true
-      },
-      {
-        fullName = "Asia/Qostanay"
-        default = false
-        label = "(GMT+06:00) East Kazakhstan Time (Asia/Qostanay)"
         isActive = true
       },
       {
@@ -2049,6 +2043,18 @@ settings salesforce.Organization {
         isActive = true
       },
       {
+        fullName = "Antarctica/Vostok"
+        default = false
+        label = "(GMT+05:00) Vostok Time (Antarctica/Vostok)"
+        isActive = true
+      },
+      {
+        fullName = "Asia/Almaty"
+        default = false
+        label = "(GMT+05:00) East Kazakhstan Time (Asia/Almaty)"
+        isActive = true
+      },
+      {
         fullName = "Asia/Aqtau"
         default = false
         label = "(GMT+05:00) West Kazakhstan Time (Asia/Aqtau)"
@@ -2088,6 +2094,12 @@ settings salesforce.Organization {
         fullName = "Asia/Oral"
         default = false
         label = "(GMT+05:00) West Kazakhstan Time (Asia/Oral)"
+        isActive = true
+      },
+      {
+        fullName = "Asia/Qostanay"
+        default = false
+        label = "(GMT+05:00) East Kazakhstan Time (Asia/Qostanay)"
         isActive = true
       },
       {
@@ -2496,6 +2508,12 @@ settings salesforce.Organization {
         fullName = "Africa/Juba"
         default = false
         label = "(GMT+02:00) Central Africa Time (Africa/Juba)"
+        isActive = true
+      },
+      {
+        fullName = "Africa/Khartoum"
+        default = false
+        label = "(GMT+02:00) Central Africa Time (Africa/Khartoum)"
         isActive = true
       },
       {
@@ -2979,12 +2997,6 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "America/Scoresbysund"
-        default = false
-        label = "(GMT+00:00) East Greenland Summer Time (America/Scoresbysund)"
-        isActive = true
-      },
-      {
         fullName = "Atlantic/Azores"
         default = false
         label = "(GMT+00:00) Azores Summer Time (Atlantic/Azores)"
@@ -3009,15 +3021,21 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "Atlantic/Cape_Verde"
+        fullName = "America/Godthab"
         default = false
-        label = "(GMT-01:00) Cape Verde Standard Time (Atlantic/Cape_Verde)"
+        label = "(GMT-01:00) West Greenland Summer Time (America/Godthab)"
         isActive = true
       },
       {
-        fullName = "America/Godthab"
+        fullName = "America/Scoresbysund"
         default = false
-        label = "(GMT-02:00) West Greenland Summer Time (America/Godthab)"
+        label = "(GMT-01:00) East Greenland Summer Time (America/Scoresbysund)"
+        isActive = true
+      },
+      {
+        fullName = "Atlantic/Cape_Verde"
+        default = false
+        label = "(GMT-01:00) Cape Verde Standard Time (Atlantic/Cape_Verde)"
         isActive = true
       },
       {
@@ -3096,12 +3114,6 @@ settings salesforce.Organization {
         fullName = "America/Argentina/Ushuaia"
         default = false
         label = "(GMT-03:00) Argentina Standard Time (America/Argentina/Ushuaia)"
-        isActive = true
-      },
-      {
-        fullName = "America/Asuncion"
-        default = false
-        label = "(GMT-03:00) Paraguay Summer Time (America/Asuncion)"
         isActive = true
       },
       {
@@ -3213,12 +3225,6 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "America/Santiago"
-        default = false
-        label = "(GMT-03:00) Chile Summer Time (America/Santiago)"
-        isActive = true
-      },
-      {
         fullName = "America/Sao_Paulo"
         default = false
         label = "(GMT-03:00) Brasilia Standard Time (America/Sao_Paulo)"
@@ -3270,6 +3276,12 @@ settings salesforce.Organization {
         fullName = "America/Aruba"
         default = false
         label = "(GMT-04:00) Atlantic Standard Time (America/Aruba)"
+        isActive = true
+      },
+      {
+        fullName = "America/Asuncion"
+        default = false
+        label = "(GMT-04:00) Paraguay Standard Time (America/Asuncion)"
         isActive = true
       },
       {
@@ -3501,6 +3513,12 @@ settings salesforce.Organization {
         isActive = true
       },
       {
+        fullName = "America/Santiago"
+        default = false
+        label = "(GMT-04:00) Chile Standard Time (America/Santiago)"
+        isActive = true
+      },
+      {
         fullName = "America/Santo_Domingo"
         default = false
         label = "(GMT-04:00) Atlantic Standard Time (America/Santo_Domingo)"
@@ -3693,12 +3711,6 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "Pacific/Easter"
-        default = false
-        label = "(GMT-05:00) Easter Island Summer Time (Pacific/Easter)"
-        isActive = true
-      },
-      {
         fullName = "America/Bahia_Banderas"
         default = false
         label = "(GMT-06:00) Central Standard Time (America/Bahia_Banderas)"
@@ -3810,6 +3822,12 @@ settings salesforce.Organization {
         fullName = "America/Yellowknife"
         default = false
         label = "(GMT-06:00) Mountain Daylight Time (America/Yellowknife)"
+        isActive = true
+      },
+      {
+        fullName = "Pacific/Easter"
+        default = false
+        label = "(GMT-06:00) Easter Island Standard Time (Pacific/Easter)"
         isActive = true
       },
       {
@@ -4136,6 +4154,13 @@ settings salesforce.Organization {
   salesforce.Checkbox PreferencesRequireOpportunityProducts {
     apiName = "Organization.PreferencesRequireOpportunityProducts"
     label = "RequireOpportunityProducts"
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox PreferencesEmailSenderIdCompliance {
+    apiName = "Organization.PreferencesEmailSenderIdCompliance"
+    label = "EmailSenderIdCompliance"
     createable = false
     updateable = true
     queryable = true

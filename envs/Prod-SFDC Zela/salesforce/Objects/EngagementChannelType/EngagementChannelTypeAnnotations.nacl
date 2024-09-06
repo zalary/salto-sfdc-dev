@@ -188,18 +188,9 @@ type salesforce.EngagementChannelType {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "Private"
   searchLayouts = {
-    customTabListAdditionalFields = [
-      "ContactPointType",
-      "IsActive",
-      "UsageType",
-    ]
-    searchResultsAdditionalFields = [
-      "ContactPointType",
-      "IsActive",
-      "UsageType",
-    ]
+    customTabListAdditionalFields = "ContactPointType"
+    searchResultsAdditionalFields = "ContactPointType"
   }
   _alias = "Engagement Channel Type"
 }

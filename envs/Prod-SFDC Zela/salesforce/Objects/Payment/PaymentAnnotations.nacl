@@ -174,6 +174,5 @@ type salesforce.Payment {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ReadWrite"
   _alias = "Payment"
 }

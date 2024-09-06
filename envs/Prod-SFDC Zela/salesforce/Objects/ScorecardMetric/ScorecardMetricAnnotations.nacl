@@ -188,6 +188,5 @@ type salesforce.ScorecardMetric {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ControlledByParent"
   _alias = "Scorecard Metric"
 }

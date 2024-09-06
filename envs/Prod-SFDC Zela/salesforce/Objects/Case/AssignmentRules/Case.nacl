@@ -5,7 +5,7 @@ salesforce.AssignmentRules Case {
       active = true
       ruleEntry = [
         {
-          assignedTo = "zela@salto.io"
+          assignedTo = "zalary@hotmail.com"
           assignedToType = "User"
           criteriaItems = [
             {
@@ -26,7 +26,7 @@ salesforce.AssignmentRules Case {
           ]
         },
         {
-          assignedTo = "zela@salto.io"
+          assignedTo = "zalary@hotmail.com"
           assignedToType = "User"
           criteriaItems = [
             {
@@ -47,7 +47,7 @@ salesforce.AssignmentRules Case {
           ]
         },
         {
-          assignedTo = "zela@salto.io"
+          assignedTo = "zalary@hotmail.com"
           assignedToType = "User"
           criteriaItems = [
             {
@@ -68,7 +68,7 @@ salesforce.AssignmentRules Case {
           ]
         },
         {
-          assignedTo = "zela@salto.io"
+          assignedTo = "zalary@hotmail.com"
           assignedToType = "User"
           criteriaItems = [
             {
@@ -89,7 +89,7 @@ salesforce.AssignmentRules Case {
           ]
         },
         {
-          assignedTo = "zela@salto.io"
+          assignedTo = "zalary@hotmail.com"
           assignedToType = "User"
           criteriaItems = [
             {

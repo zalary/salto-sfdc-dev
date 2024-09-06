@@ -59,6 +59,5 @@ type salesforce.LeadCleanInfo {
   metadataType = "CustomObject"
   label = "Lead Clean Info"
   enableFeeds = false
-  externalSharingModel = "ReadWrite"
   _alias = "Lead Clean Info"
 }

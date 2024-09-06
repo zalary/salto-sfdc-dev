@@ -30,6 +30,11 @@ salesforce.Profile Customer_Community_Plus_Login_User@s {
       default = false
       visible = true
     }
+    standard__FlowsApp = {
+      application = "standard__FlowsApp"
+      default = false
+      visible = true
+    }
     standard__Insights = {
       application = "standard__Insights"
       default = false
@@ -55,11 +60,6 @@ salesforce.Profile Customer_Community_Plus_Login_User@s {
       default = false
       visible = true
     }
-    standard__LightningScheduler = {
-      application = "standard__LightningScheduler"
-      default = false
-      visible = false
-    }
     standard__LightningService = {
       application = "standard__LightningService"
       default = false
@@ -75,16 +75,6 @@ salesforce.Profile Customer_Community_Plus_Login_User@s {
       default = false
       visible = false
     }
-    standard__QueueManagement = {
-      application = "standard__QueueManagement"
-      default = false
-      visible = true
-    }
-    standard__RevenueCloudConsole = {
-      application = "standard__RevenueCloudConsole"
-      default = false
-      visible = true
-    }
     standard__Sales = {
       application = "standard__Sales"
       default = false
@@ -93,7 +83,7 @@ salesforce.Profile Customer_Community_Plus_Login_User@s {
     standard__SalesforceCMS = {
       application = "standard__SalesforceCMS"
       default = false
-      visible = true
+      visible = false
     }
     standard__Service = {
       application = "standard__Service"
@@ -109,6 +99,11 @@ salesforce.Profile Customer_Community_Plus_Login_User@s {
       application = "standard__Sites"
       default = false
       visible = true
+    }
+    zalgoodco = {
+      application = "zalgoodco"
+      default = false
+      visible = false
     }
   }
 }

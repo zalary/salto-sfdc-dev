@@ -13,6 +13,8 @@ settings salesforce.EventSettings {
     string dirName {
     }
   }
+  boolean enableEventLogGeneration {
+  }
   serviceid fullName {
   }
   boolean enableDeleteMonitoringData {
@@ -38,4 +40,11 @@ settings salesforce.EventSettings {
   suffix = "settings"
   dirName = "settings"
   metadataType = "EventSettings"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

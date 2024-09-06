@@ -1,0 +1,11 @@
+salesforce.Profile ZStandard_Clone@s {
+  recordTypeVisibilities = {
+    Idea = {
+      InternalIdeasIdeaRecordType = {
+        default = false
+        recordType = "Idea.InternalIdeasIdeaRecordType"
+        visible = false
+      }
+    }
+  }
+}

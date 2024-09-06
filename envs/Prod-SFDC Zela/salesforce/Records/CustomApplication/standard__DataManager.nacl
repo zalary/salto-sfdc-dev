@@ -5,6 +5,7 @@ salesforce.CustomApplication standard__DataManager {
   isNavAutoTempTabsDisabled = false
   isNavPersonalizationDisabled = false
   isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
   label = "Data Manager"
   navType = "Standard"
   tabs = [

@@ -258,7 +258,6 @@ type salesforce.Order {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ControlledByParent"
   searchLayouts = {
     customTabListAdditionalFields = [
       "ORDERS.ORDER_NUMBER",

@@ -188,7 +188,6 @@ type salesforce.CommSubscription {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = "DataUsePurpose"
     searchResultsAdditionalFields = "DataUsePurpose"

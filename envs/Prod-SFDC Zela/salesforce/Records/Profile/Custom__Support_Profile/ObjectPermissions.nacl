@@ -54,33 +54,6 @@ salesforce.Profile Custom_3A_Support_Profile@pss {
       object = "Contract"
       viewAllRecords = false
     }
-    ContractLineItem = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ContractLineItem"
-      viewAllRecords = false
-    }
-    Entitlement = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "Entitlement"
-      viewAllRecords = false
-    }
-    EntitlementContact = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "EntitlementContact"
-      viewAllRecords = false
-    }
     Lead = {
       allowCreate = true
       allowDelete = true
@@ -124,15 +97,6 @@ salesforce.Profile Custom_3A_Support_Profile@pss {
       allowRead = true
       modifyAllRecords = false
       object = "QuickText"
-      viewAllRecords = false
-    }
-    ServiceContract = {
-      allowCreate = false
-      allowDelete = false
-      allowEdit = false
-      allowRead = true
-      modifyAllRecords = false
-      object = "ServiceContract"
       viewAllRecords = false
     }
     Solution = {

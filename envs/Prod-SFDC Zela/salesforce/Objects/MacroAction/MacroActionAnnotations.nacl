@@ -59,6 +59,5 @@ type salesforce.MacroAction {
   metadataType = "CustomObject"
   label = "MacroAction"
   enableFeeds = false
-  externalSharingModel = "ControlledByParent"
   _alias = "MacroAction"
 }

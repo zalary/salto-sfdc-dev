@@ -44,6 +44,8 @@ type salesforce.Flow {
       ]
     }
   }
+  salesforce.FlowExitRule exitRules {
+  }
   "List<salesforce.FlowFormula>" formulas {
   }
   string interviewLabel {
@@ -77,7 +79,9 @@ type salesforce.Flow {
         "omnichannel_messaging__MsgRouting",
         "omnichannel_voice__VoiceRouting",
         "opencti__SCV_Basic_Routing_Flow",
+        "runtime_appointmentbooking__AddAttnd",
         "runtime_appointmentbooking__Create_WL",
+        "runtime_appointmentbooking__EnrlAttnd",
         "runtime_appointmentbooking__Flow",
         "runtime_appointmentbooking__Guest_Flow",
         "runtime_appointmentbooking__In_Cancel",
@@ -85,30 +89,27 @@ type salesforce.Flow {
         "runtime_appointmentbooking__In_New",
         "runtime_appointmentbooking__Inv_Book",
         "runtime_appointmentbooking__Inv_Gen",
+        "runtime_appointmentbooking__ModGstAppt",
         "runtime_appointmentbooking__Out_Modify",
-        "runtime_commerce_adj__Discount_Item",
-        "runtime_commerce_exc__Exchange_Flow",
-        "runtime_commerce_oe__Order_Entry",
+        "runtime_appointmentbooking__Rasgn_Appt",
+        "runtime_appointmentbooking__send_Invt",
         "runtime_commerce_oms__Cancel_Item",
         "runtime_commerce_oms__Create_OS",
         "runtime_commerce_oms__Create_PE",
         "runtime_commerce_oms__Return_Item",
-        "runtime_commerce_rma__Create_CO",
-        "runtime_commerce_rma__Return_Item_RMA",
-        "runtime_commerce_rs__Reship_FO",
-        "runtime_industries_epc__SimpleProduct",
         "runtime_industries_recurrence__Orch",
         "runtime_industries_recurrence__Schdlr",
-        "runtime_service_incident_mgmt__CCOIO",
-        "runtime_service_incident_mgmt__CRRI",
+        "runtime_payments__GeneratePaymentLink",
         "setup_service_experience__Create_Case",
         "setup_service_experience__Reset_Pwd",
         "setup_service_experience__Verify_Cust",
         "setup_service_folmessaging__MSContact",
+        "sfdc_fieldservice__CreateLeadAndOpp",
+        "sfdc_fieldservice__GenPreWorkBrief",
       ]
     }
     foreignKeyDomain = [
-      "FlowDefinition",
+      salesforce.FlowDefinition,
     ]
   }
   "List<salesforce.FlowMetadataValue>" processMetadataValues {
@@ -121,6 +122,7 @@ type salesforce.Flow {
         "ActionCadenceFlow",
         "ActionCadenceStepFlow",
         "ActionPlan",
+        "AdvancedApproval",
         "Appointments",
         "AutoLaunchedFlow",
         "CartAsyncFlow",
@@ -128,12 +130,14 @@ type salesforce.Flow {
         "ContactRequestFlow",
         "CustomEvent",
         "CustomerLifecycle",
+        "DataCaptureFlow",
         "DigitalForm",
         "EvaluationFlow",
         "FSCLending",
         "FieldServiceMobile",
         "FieldServiceWeb",
         "Flow",
+        "IndicatorResultFlow",
         "IndividualObjectLinkingFlow",
         "InvocableProcess",
         "Journey",
@@ -142,9 +146,9 @@ type salesforce.Flow {
         "LoyaltyManagementFlow",
         "ManagedContentAuthoringWorkflow",
         "ManagedContentFlow",
-        "OfflineFlow",
         "OrchestrationFlow",
         "Orchestrator",
+        "PromptFlow",
         "RecommendationStrategy",
         "RoutingFlow",
         "ServiceCatalogItemFlow",
@@ -193,7 +197,9 @@ type salesforce.Flow {
         "omnichannel_messaging__MsgRouting",
         "omnichannel_voice__VoiceRouting",
         "opencti__SCV_Basic_Routing_Flow",
+        "runtime_appointmentbooking__AddAttnd",
         "runtime_appointmentbooking__Create_WL",
+        "runtime_appointmentbooking__EnrlAttnd",
         "runtime_appointmentbooking__Flow",
         "runtime_appointmentbooking__Guest_Flow",
         "runtime_appointmentbooking__In_Cancel",
@@ -201,30 +207,27 @@ type salesforce.Flow {
         "runtime_appointmentbooking__In_New",
         "runtime_appointmentbooking__Inv_Book",
         "runtime_appointmentbooking__Inv_Gen",
+        "runtime_appointmentbooking__ModGstAppt",
         "runtime_appointmentbooking__Out_Modify",
-        "runtime_commerce_adj__Discount_Item",
-        "runtime_commerce_exc__Exchange_Flow",
-        "runtime_commerce_oe__Order_Entry",
+        "runtime_appointmentbooking__Rasgn_Appt",
+        "runtime_appointmentbooking__send_Invt",
         "runtime_commerce_oms__Cancel_Item",
         "runtime_commerce_oms__Create_OS",
         "runtime_commerce_oms__Create_PE",
         "runtime_commerce_oms__Return_Item",
-        "runtime_commerce_rma__Create_CO",
-        "runtime_commerce_rma__Return_Item_RMA",
-        "runtime_commerce_rs__Reship_FO",
-        "runtime_industries_epc__SimpleProduct",
         "runtime_industries_recurrence__Orch",
         "runtime_industries_recurrence__Schdlr",
-        "runtime_service_incident_mgmt__CCOIO",
-        "runtime_service_incident_mgmt__CRRI",
+        "runtime_payments__GeneratePaymentLink",
         "setup_service_experience__Create_Case",
         "setup_service_experience__Reset_Pwd",
         "setup_service_experience__Verify_Cust",
         "setup_service_folmessaging__MSContact",
+        "sfdc_fieldservice__CreateLeadAndOpp",
+        "sfdc_fieldservice__GenPreWorkBrief",
       ]
     }
     foreignKeyDomain = [
-      "FlowDefinition",
+      salesforce.FlowDefinition,
     ]
   }
   salesforce.FlowStage stages {
@@ -701,4 +704,38 @@ type salesforce.Flow {
   suffix = "flow"
   dirName = "flows"
   metadataType = "Flow"
+  salesforce.FlowCustomError customErrors {
+  }
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "processType"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "apiVersion"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "status"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

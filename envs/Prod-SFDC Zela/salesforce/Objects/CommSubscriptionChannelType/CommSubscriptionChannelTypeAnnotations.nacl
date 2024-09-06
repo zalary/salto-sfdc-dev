@@ -188,7 +188,6 @@ type salesforce.CommSubscriptionChannelType {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
       "CommunicationSubscription",

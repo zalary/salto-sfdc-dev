@@ -118,7 +118,6 @@ type salesforce.InvoiceLine {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "ControlledByParent"
   searchLayouts = {
     searchResultsAdditionalFields = [
       "Type",

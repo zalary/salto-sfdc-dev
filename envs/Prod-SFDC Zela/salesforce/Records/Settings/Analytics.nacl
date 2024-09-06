@@ -28,10 +28,10 @@ salesforce.AnalyticsSettings {
   enableNullDimension = false
   enableOrgCanSeeLivePreviews = "false"
   enableOrgCanViewTableau = "false"
-  enableOrgCanViewThumbnailForOA = "true"
+  enableOrgCanViewThumbnailForOA = "false"
   enableOrgHasMobileOfflineEnabled = "true"
   enableOrgHasWatchlistEnabled = "true"
-  enableQueryLiveConnectors = true
+  enableQueryLiveConnectors = false
   enableRemoveFooterForRepDisplay = false
   enableRemoveFooterFromRepExp = false
   enableReportHideXlsExportPref = "false"
@@ -64,4 +64,8 @@ salesforce.AnalyticsSettings {
   replaceBlankMeasuresWithNulls = false
   turnOnTimeZones = false
   _alias = "Analytics"
+  enableDataCloudReportingPref = "true"
+  queryCachingOptOut = "false"
+  concurrencyLimitSharing = "false"
+  enableSummaryFilterOrgPref = "false"
 }

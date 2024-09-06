@@ -15,11 +15,17 @@ type salesforce.EmailToCaseSettings {
   }
   boolean enableE2CAttachmentAsFile {
   }
+  boolean enableE2CDeduplicateAttachments {
+  }
+  boolean enableE2CExternalServer {
+  }
   boolean enableE2CSourceTracking {
   }
   boolean enableEmailToCase {
   }
   boolean enableHtmlEmail {
+  }
+  boolean enableNewToReadTriggers {
   }
   boolean enableOnDemandEmailToCase {
   }
@@ -27,11 +33,21 @@ type salesforce.EmailToCaseSettings {
   }
   boolean enableThreadIDInSubject {
   }
+  boolean enableThreadTokenInBody {
+  }
+  boolean enableThreadTokenInSubject {
+  }
   boolean notifyOwnerOnNewCaseEmail {
   }
   boolean preQuoteSignature {
   }
+  boolean replyWithNewContentOnly {
+  }
   salesforce.EmailToCaseRoutingAddress routingAddresses {
   }
   metadataType = "EmailToCaseSettings"
+  boolean showGeneratedEmailCheckbox {
+  }
+  boolean useEmailHeadersForThreading {
+  }
 }

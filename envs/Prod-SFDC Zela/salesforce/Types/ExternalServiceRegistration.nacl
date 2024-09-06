@@ -36,7 +36,9 @@ type salesforce.ExternalServiceRegistration {
       values = [
         "Custom",
         "MuleSoft",
+        "SchemaDefinition",
         "SchemaInferred",
+        "Standard",
       ]
     }
   }
@@ -48,6 +50,7 @@ type salesforce.ExternalServiceRegistration {
     _restriction = {
       enforce_value = false
       values = [
+        "InterpretedConnectivity",
         "OpenApi",
         "OpenApi3",
       ]
@@ -79,4 +82,28 @@ type salesforce.ExternalServiceRegistration {
   suffix = "externalServiceRegistration"
   dirName = "externalServiceRegistrations"
   metadataType = "ExternalServiceRegistration"
+  string serviceDescriptor {
+  }
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "status"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

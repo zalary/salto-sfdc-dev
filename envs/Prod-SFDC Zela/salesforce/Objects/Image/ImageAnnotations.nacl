@@ -188,7 +188,6 @@ type salesforce.Image {
   ]
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
       "LastModifiedBy",
