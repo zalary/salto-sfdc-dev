@@ -14,7 +14,6 @@ type salesforce.Case {
   }
   salesforce.Picklist PotentialLiability__c {
     apiName = "Case.PotentialLiability__c"
-    externalId = false
     label = "Potential Liability"
     trackTrending = false
     valueSet = [
@@ -37,7 +36,6 @@ type salesforce.Case {
   }
   salesforce.Picklist Product__c {
     apiName = "Case.Product__c"
-    externalId = false
     label = "Product"
     trackTrending = false
     valueSet = [
@@ -95,7 +93,6 @@ type salesforce.Case {
   }
   salesforce.Picklist SLAViolation__c {
     apiName = "Case.SLAViolation__c"
-    externalId = false
     label = "SLA Violation"
     trackTrending = false
     valueSet = [

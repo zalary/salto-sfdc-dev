@@ -14,7 +14,6 @@ type salesforce.Opportunity {
   }
   salesforce.Picklist DeliveryInstallationStatus__c {
     apiName = "Opportunity.DeliveryInstallationStatus__c"
-    externalId = false
     label = "Delivery/Installation Status"
     trackTrending = false
     valueSet = [

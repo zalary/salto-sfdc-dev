@@ -1,4 +1,4 @@
-type salesforce.Task {
+type salesforce.OrgMetricScanResult {
   annotations {
     serviceid apiName {
     }
@@ -55,9 +55,9 @@ type salesforce.Task {
     hidden_string internalId {
     }
   }
-  apiName = "Task"
+  apiName = "OrgMetricScanResult"
   metadataType = "CustomObject"
-  label = "Task"
+  label = "Org Metric Scan Result"
   actionOverrides = [
     {
       actionName = "CancelEdit"
@@ -74,16 +74,16 @@ type salesforce.Task {
       type = "Default"
     },
     {
-      actionName = "Close"
+      actionName = "Clone"
       type = "Default"
     },
     {
-      actionName = "Close"
+      actionName = "Clone"
       formFactor = "Large"
       type = "Default"
     },
     {
-      actionName = "Close"
+      actionName = "Clone"
       formFactor = "Small"
       type = "Default"
     },
@@ -102,20 +102,6 @@ type salesforce.Task {
       type = "Default"
     },
     {
-      actionName = "DeleteSeries"
-      type = "Default"
-    },
-    {
-      actionName = "DeleteSeries"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "DeleteSeries"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
       actionName = "Edit"
       type = "Default"
     },
@@ -130,30 +116,30 @@ type salesforce.Task {
       type = "Default"
     },
     {
-      actionName = "LaunchFlowForManualTask"
+      actionName = "List"
       type = "Default"
     },
     {
-      actionName = "LaunchFlowForManualTask"
+      actionName = "List"
       formFactor = "Large"
       type = "Default"
     },
     {
-      actionName = "LaunchFlowForManualTask"
+      actionName = "List"
       formFactor = "Small"
       type = "Default"
     },
     {
-      actionName = "NewTask"
+      actionName = "New"
       type = "Default"
     },
     {
-      actionName = "NewTask"
+      actionName = "New"
       formFactor = "Large"
       type = "Default"
     },
     {
-      actionName = "NewTask"
+      actionName = "New"
       formFactor = "Small"
       type = "Default"
     },
@@ -168,6 +154,20 @@ type salesforce.Task {
     },
     {
       actionName = "SaveEdit"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
       formFactor = "Small"
       type = "Default"
     },
@@ -186,14 +186,6 @@ type salesforce.Task {
       type = "Default"
     },
   ]
-  compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
-  searchLayouts = {
-  }
-  _alias = "Task"
-  topicsForObjects = {
-    enableTopics = true
-  }
-  historyTrackedFields = {
-  }
+  _alias = "Org Metric Scan Result"
 }

@@ -1,4 +1,45 @@
 salesforce.MatchingRules Lead {
   fullName = "Lead"
   _alias = "Lead"
+  matchingRules = [
+    {
+      fullName = "ZGY2_LeadMatch"
+      label = "ZGY2 LeadMatch"
+      matchingRuleItems = [
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "LastName"
+          matchingMethod = "Exact"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "Pronouns"
+          matchingMethod = "Exact"
+        },
+      ]
+      ruleStatus = "Active"
+    },
+    {
+      fullName = "ZGY_MatchLead"
+      label = "ZGY MatchLead"
+      matchingRuleItems = [
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "FirstName"
+          matchingMethod = "Exact"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "GenderIdentity"
+          matchingMethod = "Exact"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "Phone"
+          matchingMethod = "Exact"
+        },
+      ]
+      ruleStatus = "Active"
+    },
+  ]
 }
