@@ -22,4 +22,5 @@ salesforce.MyDomainSettings {
   useStabilizedMyDomainHostnames = true
   useStabilizedSandboxMyDomainHostnames = true
   _alias = "MyDomain"
+  isFirstPartyCookieUseRequired = "false"
 }

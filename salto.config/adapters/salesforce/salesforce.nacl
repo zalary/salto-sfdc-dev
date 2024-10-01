@@ -1,10 +1,4 @@
 salesforce {
-  maxItemsInRetrieveRequest = 1500
-  client = {
-    polling = {
-      fetchTimeout = 2400000
-    }
-  }
   fetch = {
     metadata = {
       include = [
@@ -13,8 +7,22 @@ salesforce {
           namespace = ""
           name = ".*"
         },
+        {
+          metadataType = ".*"
+          namespace = "RTSK"
+          name = ".*"
+        }
       ]
       exclude = [
+        {
+          metadataType = "Automations"
+        },
+        {
+          metadataType = "Translations"
+        },
+        {
+          metadataType = "SharingRules"
+        },
         {
           metadataType = "Report"
         },
@@ -37,7 +45,7 @@ salesforce {
           metadataType = "DocumentFolder"
         },
         {
-          metadataType = "Profile"
+          metadataType =  "Profile"
         },
         {
           metadataType = "PermissionSet"
@@ -73,9 +81,24 @@ salesforce {
           metadataType = "Layout"
           name = "CaseInteraction-Case Feed Layout"
         },
+        {
+          metadataType = "ExternalAIModel"
+        },
+        {
+          metadataType = "ServiceAISetupDefinition"
+        },
+        {
+          metadataType = "ServiceAISetupField"
+        },
       ]
     }
     fetchAllCustomSettings = false
     maxInstancesPerType = 5000
+  }
+  maxItemsInRetrieveRequest = 1500
+  client = {
+    polling = {
+      fetchTimeout = 2400000
+    }
   }
 }

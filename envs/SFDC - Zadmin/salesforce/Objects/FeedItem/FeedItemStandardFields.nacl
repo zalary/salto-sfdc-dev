@@ -8,60 +8,6 @@ type salesforce.FeedItem {
   salesforce.Lookup ParentId {
     apiName = "FeedItem.ParentId"
     relationshipName = "Parent"
-    referenceTo = [
-      salesforce.Account,
-      salesforce.Account__c,
-      salesforce.ApiAnomalyEventStore,
-      salesforce.Asset,
-      salesforce.AssetRelationship,
-      salesforce.AuthorizationFormText,
-      salesforce.Campaign,
-      salesforce.Case,
-      salesforce.CollaborationGroup,
-      salesforce.CommSubscription,
-      salesforce.CommSubscriptionChannelType,
-      salesforce.CommSubscriptionConsent,
-      salesforce.CommSubscriptionTiming,
-      salesforce.ConsumptionSchedule,
-      salesforce.Contact,
-      "ContentDocument",
-      salesforce.Contract,
-      salesforce.CredentialStuffingEventStore,
-      salesforce.CreditMemo,
-      salesforce.CreditMemoInvApplication,
-      salesforce.CreditMemoLine,
-      "Dashboard",
-      "DashboardComponent",
-      salesforce.EngagementChannelType,
-      "EnhancedLetterhead",
-      salesforce.Event,
-      salesforce.GuestUserAnomalyEventStore,
-      salesforce.Image,
-      salesforce.Invoice,
-      salesforce.InvoiceLine,
-      salesforce.Lead,
-      salesforce.LegalEntity,
-      salesforce.Location,
-      salesforce.LocationGroup,
-      salesforce.MessagingSession,
-      salesforce.Opportunity,
-      salesforce.Order,
-      salesforce.OrderItem,
-      salesforce.PartyConsent,
-      salesforce.Payment,
-      salesforce.PrivacyRTBFRequest,
-      salesforce.Product2,
-      "Report",
-      salesforce.ReportAnomalyEventStore,
-      salesforce.SessionHijackingEventStore,
-      salesforce.Site,
-      salesforce.Solution,
-      salesforce.Task,
-      "ThreatDetectionFeedback",
-      salesforce.Tier__c,
-      salesforce.Topic,
-      salesforce.User,
-    ]
     _required = true
     label = "Parent ID"
     createable = true
@@ -70,182 +16,6 @@ type salesforce.FeedItem {
   }
   salesforce.Picklist Type {
     apiName = "FeedItem.Type"
-    valueSet = [
-      {
-        fullName = "TrackedChange"
-        isActive = true
-        label = "Tracked Change"
-        default = false
-      },
-      {
-        fullName = "UserStatus"
-        isActive = true
-        label = "User Status"
-        default = false
-      },
-      {
-        fullName = "TextPost"
-        isActive = true
-        label = "Text Post"
-        default = false
-      },
-      {
-        fullName = "AdvancedTextPost"
-        isActive = true
-        label = "Advanced Text Post"
-        default = false
-      },
-      {
-        fullName = "LinkPost"
-        isActive = true
-        label = "Link Post"
-        default = false
-      },
-      {
-        fullName = "ContentPost"
-        isActive = true
-        label = "Content Post"
-        default = false
-      },
-      {
-        fullName = "PollPost"
-        isActive = true
-        label = "Poll"
-        default = false
-      },
-      {
-        fullName = "RypplePost"
-        isActive = true
-        label = "WDC Thanks"
-        default = false
-      },
-      {
-        fullName = "ProfileSkillPost"
-        isActive = true
-        label = "Profile Skill Post"
-        default = false
-      },
-      {
-        fullName = "DashboardComponentSnapshot"
-        isActive = true
-        label = "Dashboard Component Snapshot"
-        default = false
-      },
-      {
-        fullName = "ApprovalPost"
-        isActive = true
-        label = "Approval Post"
-        default = false
-      },
-      {
-        fullName = "CaseCommentPost"
-        isActive = true
-        label = "Case Comment Feed"
-        default = false
-      },
-      {
-        fullName = "ReplyPost"
-        isActive = true
-        label = "Reply Post"
-        default = false
-      },
-      {
-        fullName = "EmailMessageEvent"
-        isActive = true
-        label = "Email Message Feed"
-        default = false
-      },
-      {
-        fullName = "CallLogPost"
-        isActive = true
-        label = "Call Log Feed"
-        default = false
-      },
-      {
-        fullName = "ChangeStatusPost"
-        isActive = true
-        label = "Change Status Feed"
-        default = false
-      },
-      {
-        fullName = "AttachArticleEvent"
-        isActive = true
-        label = "Attached Article"
-        default = false
-      },
-      {
-        fullName = "MilestoneEvent"
-        isActive = true
-        label = "Milestone Event"
-        default = false
-      },
-      {
-        fullName = "ActivityEvent"
-        isActive = true
-        label = "Activity Change"
-        default = false
-      },
-      {
-        fullName = "ChatTranscriptPost"
-        isActive = true
-        label = "Chat Transcript Post"
-        default = false
-      },
-      {
-        fullName = "CollaborationGroupCreated"
-        isActive = true
-        label = "Collaboration Group Created"
-        default = false
-      },
-      {
-        fullName = "CollaborationGroupUnarchived"
-        isActive = true
-        label = "Collaboration Group Reactivated"
-        default = false
-      },
-      {
-        fullName = "SocialPost"
-        isActive = true
-        label = "Social Post"
-        default = false
-      },
-      {
-        fullName = "QuestionPost"
-        isActive = true
-        label = "Question Post"
-        default = false
-      },
-      {
-        fullName = "FacebookPost"
-        isActive = true
-        label = "Facebook Post"
-        default = false
-      },
-      {
-        fullName = "BasicTemplateFeedItem"
-        isActive = true
-        label = "Basic Template Post"
-        default = false
-      },
-      {
-        fullName = "CreateRecordEvent"
-        isActive = true
-        label = "Created Record"
-        default = false
-      },
-      {
-        fullName = "CanvasPost"
-        isActive = true
-        label = "Canvas"
-        default = false
-      },
-      {
-        fullName = "AnnouncementPost"
-        isActive = true
-        label = "a"
-        default = false
-      },
-    ]
     restricted = true
     label = "Feed Item Type"
     createable = true
@@ -255,9 +25,6 @@ type salesforce.FeedItem {
   salesforce.Lookup CreatedById {
     apiName = "FeedItem.CreatedById"
     relationshipName = "CreatedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Created By ID"
     createable = true
     updateable = false
@@ -309,9 +76,6 @@ type salesforce.FeedItem {
   }
   salesforce.Lookup LastEditById {
     apiName = "FeedItem.LastEditById"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Last Edit By ID"
     createable = true
     updateable = false
@@ -383,9 +147,6 @@ type salesforce.FeedItem {
   }
   salesforce.Lookup RelatedRecordId {
     apiName = "FeedItem.RelatedRecordId"
-    referenceTo = [
-      salesforce.ContentVersion,
-    ]
     label = "Related Record ID"
     createable = true
     updateable = false
@@ -394,9 +155,6 @@ type salesforce.FeedItem {
   salesforce.Lookup InsertedById {
     apiName = "FeedItem.InsertedById"
     relationshipName = "InsertedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     _required = true
     label = "InsertedBy ID"
     createable = false
@@ -407,9 +165,6 @@ type salesforce.FeedItem {
   salesforce.Lookup BestCommentId {
     apiName = "FeedItem.BestCommentId"
     relationshipName = "BestComment"
-    referenceTo = [
-      "FeedComment",
-    ]
     label = "Best Comment ID"
     createable = false
     updateable = false
@@ -463,32 +218,6 @@ type salesforce.FeedItem {
   }
   salesforce.Picklist Status {
     apiName = "FeedItem.Status"
-    valueSet = [
-      {
-        fullName = "Published"
-        isActive = true
-        label = "Published"
-        default = false
-      },
-      {
-        fullName = "PendingReview"
-        isActive = true
-        label = "PendingReview"
-        default = false
-      },
-      {
-        fullName = "Draft"
-        isActive = true
-        label = "Draft"
-        default = false
-      },
-      {
-        fullName = "Isolated"
-        isActive = true
-        label = "Isolated"
-        default = false
-      },
-    ]
     restricted = true
     label = "Status"
     createable = true

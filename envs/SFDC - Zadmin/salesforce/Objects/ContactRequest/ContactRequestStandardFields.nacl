@@ -2,10 +2,6 @@ type salesforce.ContactRequest {
   salesforce.Lookup OwnerId {
     apiName = "ContactRequest.OwnerId"
     relationshipName = "Owner"
-    referenceTo = [
-      salesforce.Group,
-      salesforce.User,
-    ]
     label = "Owner ID"
     createable = true
     updateable = true
@@ -14,14 +10,6 @@ type salesforce.ContactRequest {
   }
   salesforce.Picklist PreferredChannel {
     apiName = "ContactRequest.PreferredChannel"
-    valueSet = [
-      {
-        fullName = "Phone"
-        isActive = true
-        label = "Phone"
-        default = true
-      },
-    ]
     restricted = false
     _required = true
     label = "Preferred Channel"
@@ -46,50 +34,6 @@ type salesforce.ContactRequest {
   }
   salesforce.Picklist RequestReason {
     apiName = "ContactRequest.RequestReason"
-    valueSet = [
-      {
-        fullName = "Account"
-        isActive = true
-        label = "Account"
-        default = true
-      },
-      {
-        fullName = "Billing"
-        isActive = true
-        label = "Billing"
-        default = false
-      },
-      {
-        fullName = "Case"
-        isActive = true
-        label = "Case"
-        default = false
-      },
-      {
-        fullName = "General"
-        isActive = true
-        label = "General"
-        default = false
-      },
-      {
-        fullName = "Order"
-        isActive = true
-        label = "Order"
-        default = false
-      },
-      {
-        fullName = "Product"
-        isActive = true
-        label = "Product"
-        default = false
-      },
-      {
-        fullName = "Other"
-        isActive = true
-        label = "Other"
-        default = false
-      },
-    ]
     restricted = false
     label = "Request Reason"
     createable = true
@@ -98,32 +42,6 @@ type salesforce.ContactRequest {
   }
   salesforce.Picklist Status {
     apiName = "ContactRequest.Status"
-    valueSet = [
-      {
-        fullName = "New"
-        isActive = true
-        label = "New"
-        default = true
-      },
-      {
-        fullName = "Attempted"
-        isActive = true
-        label = "Attempted"
-        default = false
-      },
-      {
-        fullName = "Contacted"
-        isActive = true
-        label = "Contacted"
-        default = false
-      },
-      {
-        fullName = "Abandoned"
-        isActive = true
-        label = "Abandoned"
-        default = false
-      },
-    ]
     restricted = false
     _required = true
     label = "Request Status"
@@ -134,13 +52,6 @@ type salesforce.ContactRequest {
   salesforce.Lookup WhatId {
     apiName = "ContactRequest.WhatId"
     relationshipName = "What"
-    referenceTo = [
-      salesforce.Account,
-      salesforce.Account__c,
-      salesforce.Case,
-      salesforce.Opportunity,
-      salesforce.Tier__c,
-    ]
     label = "Related To ID"
     createable = true
     updateable = true
@@ -149,11 +60,6 @@ type salesforce.ContactRequest {
   salesforce.Lookup WhoId {
     apiName = "ContactRequest.WhoId"
     relationshipName = "Who"
-    referenceTo = [
-      salesforce.Contact,
-      salesforce.Lead,
-      salesforce.User,
-    ]
     label = "Requestor ID"
     createable = true
     updateable = true
@@ -193,9 +99,6 @@ type salesforce.ContactRequest {
   salesforce.Lookup CreatedById {
     apiName = "ContactRequest.CreatedById"
     relationshipName = "CreatedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Created By ID"
     createable = false
     updateable = false
@@ -213,9 +116,6 @@ type salesforce.ContactRequest {
   salesforce.Lookup LastModifiedById {
     apiName = "ContactRequest.LastModifiedById"
     relationshipName = "LastModifiedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Last Modified By ID"
     createable = false
     updateable = false

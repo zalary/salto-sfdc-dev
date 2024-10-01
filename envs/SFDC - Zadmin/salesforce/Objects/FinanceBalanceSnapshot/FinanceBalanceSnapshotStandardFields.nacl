@@ -3,9 +3,6 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.AccountId"
     inlineHelpText = "Parent account of the reference entity"
     relationshipName = "Account"
-    referenceTo = [
-      salesforce.Account,
-    ]
     label = "Account ID"
     createable = false
     updateable = false
@@ -121,50 +118,6 @@ type salesforce.FinanceBalanceSnapshot {
   }
   salesforce.Picklist EventType {
     apiName = "FinanceBalanceSnapshot.EventType"
-    valueSet = [
-      {
-        fullName = "Allocated"
-        isActive = true
-        label = "Allocated"
-        default = false
-      },
-      {
-        fullName = "Unallocated"
-        isActive = true
-        label = "Unallocated"
-        default = false
-      },
-      {
-        fullName = "Posted"
-        isActive = true
-        label = "Posted"
-        default = false
-      },
-      {
-        fullName = "Canceled"
-        isActive = true
-        label = "Canceled"
-        default = false
-      },
-      {
-        fullName = "Changed"
-        isActive = true
-        label = "Changed"
-        default = false
-      },
-      {
-        fullName = "Void"
-        isActive = true
-        label = "Void"
-        default = false
-      },
-      {
-        fullName = "Other"
-        isActive = true
-        label = "Other"
-        default = false
-      },
-    ]
     restricted = false
     label = "Event Type"
     createable = false
@@ -185,50 +138,6 @@ type salesforce.FinanceBalanceSnapshot {
   }
   salesforce.Picklist FinanceSystemIntegrationStatus {
     apiName = "FinanceBalanceSnapshot.FinanceSystemIntegrationStatus"
-    valueSet = [
-      {
-        fullName = "Not Selected"
-        isActive = true
-        label = "Not Selected"
-        default = false
-      },
-      {
-        fullName = "Pending"
-        isActive = true
-        label = "Pending"
-        default = false
-      },
-      {
-        fullName = "In Process"
-        isActive = true
-        label = "In Process"
-        default = false
-      },
-      {
-        fullName = "Retry In Process"
-        isActive = true
-        label = "Retry In Process"
-        default = false
-      },
-      {
-        fullName = "Success"
-        isActive = true
-        label = "Success"
-        default = false
-      },
-      {
-        fullName = "Error"
-        isActive = true
-        label = "Error"
-        default = false
-      },
-      {
-        fullName = "Failed"
-        isActive = true
-        label = "Failed"
-        default = false
-      },
-    ]
     restricted = true
     label = "Finance System Integration Status"
     createable = false
@@ -260,9 +169,6 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.FinanceTransactionId"
     inlineHelpText = "Parent finance transaction for the snapshot. The snapshot's fields inherit the transaction's values only if the finance transaction's reference entity type is an invoice, payment, credit memo, debit memo, or refund."
     relationshipName = "FinanceTransaction"
-    referenceTo = [
-      salesforce.FinanceTransaction,
-    ]
     label = "Finance Transaction ID"
     createable = false
     updateable = false
@@ -284,11 +190,6 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.LegalEntityId"
     inlineHelpText = "Legal entity associated with the finance transaction. This is an optional lookup that you can add to associate the finance transaction to GL rules for external ledger processing."
     relationshipName = "LegalEntity"
-    referenceTo = [
-      salesforce.Account__c,
-      salesforce.LegalEntity,
-      salesforce.Tier__c,
-    ]
     label = "Legal Entity ID"
     createable = false
     updateable = false
@@ -322,10 +223,6 @@ type salesforce.FinanceBalanceSnapshot {
   salesforce.Lookup OwnerId {
     apiName = "FinanceBalanceSnapshot.OwnerId"
     relationshipName = "Owner"
-    referenceTo = [
-      salesforce.Group,
-      salesforce.User,
-    ]
     label = "Owner ID"
     createable = false
     updateable = true
@@ -336,19 +233,6 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.ReferenceEntityId"
     inlineHelpText = "The financial object that was created or updated as a result of a customer action"
     relationshipName = "ReferenceEntity"
-    referenceTo = [
-      salesforce.Account__c,
-      salesforce.CreditMemo,
-      salesforce.CreditMemoInvApplication,
-      salesforce.CreditMemoLine,
-      salesforce.Invoice,
-      salesforce.InvoiceLine,
-      salesforce.Payment,
-      salesforce.PaymentLineInvoice,
-      salesforce.Refund,
-      salesforce.RefundLinePayment,
-      salesforce.Tier__c,
-    ]
     label = "ReferenceEntity ID"
     createable = false
     updateable = false
@@ -357,170 +241,6 @@ type salesforce.FinanceBalanceSnapshot {
   }
   salesforce.Picklist ReferenceEntityType {
     apiName = "FinanceBalanceSnapshot.ReferenceEntityType"
-    valueSet = [
-      {
-        fullName = "Invoice"
-        isActive = true
-        label = "Invoice"
-        default = false
-      },
-      {
-        fullName = "Invoice line"
-        isActive = true
-        label = "Invoice line"
-        default = false
-      },
-      {
-        fullName = "Invoice line tax"
-        isActive = true
-        label = "Invoice line tax"
-        default = false
-      },
-      {
-        fullName = "Sub invoice line"
-        isActive = true
-        label = "Sub invoice line"
-        default = false
-      },
-      {
-        fullName = "Sub invoice line tax"
-        isActive = true
-        label = "Sub invoice line tax"
-        default = false
-      },
-      {
-        fullName = "Credit memo"
-        isActive = true
-        label = "Credit memo"
-        default = false
-      },
-      {
-        fullName = "Credit memo line"
-        isActive = true
-        label = "Credit memo line"
-        default = false
-      },
-      {
-        fullName = "Credit memo line tax"
-        isActive = true
-        label = "Credit memo line tax"
-        default = false
-      },
-      {
-        fullName = "Credit memo line invoice application"
-        isActive = true
-        label = "Credit memo line invoice application"
-        default = false
-      },
-      {
-        fullName = "Credit memo line invoice line application"
-        isActive = true
-        label = "Credit memo line invoice line application"
-        default = false
-      },
-      {
-        fullName = "Debit memo"
-        isActive = true
-        label = "Debit memo"
-        default = false
-      },
-      {
-        fullName = "Debit memo line"
-        isActive = true
-        label = "Debit memo line"
-        default = false
-      },
-      {
-        fullName = "Debit memo line tax"
-        isActive = true
-        label = "Debit memo line tax"
-        default = false
-      },
-      {
-        fullName = "Debit memo line credit memo application"
-        isActive = true
-        label = "Debit memo line credit memo application"
-        default = false
-      },
-      {
-        fullName = "Debit memo line credit memo line application"
-        isActive = true
-        label = "Debit memo line credit memo line application"
-        default = false
-      },
-      {
-        fullName = "Debit memo line invoice application"
-        isActive = true
-        label = "Debit memo line invoice application"
-        default = false
-      },
-      {
-        fullName = "Debit memo line invoice line application"
-        isActive = true
-        label = "Debit memo line invoice line application"
-        default = false
-      },
-      {
-        fullName = "Payment"
-        isActive = true
-        label = "Payment"
-        default = false
-      },
-      {
-        fullName = "Payment debit memo application"
-        isActive = true
-        label = "Payment debit memo application"
-        default = false
-      },
-      {
-        fullName = "Payment debit memo line application"
-        isActive = true
-        label = "Payment debit memo line application"
-        default = false
-      },
-      {
-        fullName = "Payment invoice application"
-        isActive = true
-        label = "Payment invoice application"
-        default = false
-      },
-      {
-        fullName = "Payment invoice line application"
-        isActive = true
-        label = "Payment invoice line application"
-        default = false
-      },
-      {
-        fullName = "Refund"
-        isActive = true
-        label = "Refund"
-        default = false
-      },
-      {
-        fullName = "Refund credit memo application"
-        isActive = true
-        label = "Refund credit memo application"
-        default = false
-      },
-      {
-        fullName = "Refund credit memo line application"
-        isActive = true
-        label = "Refund credit memo line application"
-        default = false
-      },
-      {
-        fullName = "Refund payment application"
-        isActive = true
-        label = "Refund payment application"
-        default = false
-      },
-      {
-        fullName = "Other"
-        isActive = true
-        label = "Other"
-        default = false
-      },
-    ]
     restricted = false
     label = "Reference Entity Type"
     createable = false
@@ -605,9 +325,6 @@ type salesforce.FinanceBalanceSnapshot {
   salesforce.Lookup CreatedById {
     apiName = "FinanceBalanceSnapshot.CreatedById"
     relationshipName = "CreatedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Created By ID"
     createable = false
     updateable = false
@@ -625,9 +342,6 @@ type salesforce.FinanceBalanceSnapshot {
   salesforce.Lookup LastModifiedById {
     apiName = "FinanceBalanceSnapshot.LastModifiedById"
     relationshipName = "LastModifiedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Last Modified By ID"
     createable = false
     updateable = false

@@ -24,7 +24,6 @@ type salesforce.Lead {
   }
   salesforce.Picklist Primary__c {
     apiName = "Lead.Primary__c"
-    externalId = false
     label = "Primary"
     valueSet = [
       {
@@ -46,7 +45,6 @@ type salesforce.Lead {
   }
   salesforce.Picklist ProductInterest__c {
     apiName = "Lead.ProductInterest__c"
-    externalId = false
     label = "Product Interest"
     valueSet = [
       {
@@ -99,7 +97,6 @@ type salesforce.Lead {
   salesforce.Checkbox isHot__c {
     apiName = "Lead.isHot__c"
     defaultValue = false
-    externalId = false
     label = "isHot"
     createable = true
     updateable = true
@@ -121,7 +118,6 @@ type salesforce.Lead {
     apiName = "Lead.webformLead__c"
     defaultValue = false
     description = "Is this lead from our webform?"
-    externalId = false
     inlineHelpText = "should be left unchecked when creating a Lead in SFDC.  Used to auto-convert leads from our webform into Contact, Account, Opportunity and Task"
     label = "Webform Lead"
     createable = true

@@ -5,4 +5,6 @@ salesforce.EncryptionKeySettings {
   enableReplayDetection = false
   _alias = "EncryptionKey"
   dataCloudEncryption = "false"
+  enableBringYourOwnkms = "false"
+  tenantLevelEncryption = "false"
 }

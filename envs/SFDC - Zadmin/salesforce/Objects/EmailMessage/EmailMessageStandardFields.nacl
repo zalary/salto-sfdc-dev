@@ -117,9 +117,6 @@ type salesforce.EmailMessage {
   salesforce.Lookup ParentId {
     apiName = "EmailMessage.ParentId"
     relationshipName = "Parent"
-    referenceTo = [
-      salesforce.Case,
-    ]
     label = "Case ID"
     createable = true
     updateable = false
@@ -128,30 +125,6 @@ type salesforce.EmailMessage {
   salesforce.Lookup RelatedToId {
     apiName = "EmailMessage.RelatedToId"
     relationshipName = "RelatedTo"
-    referenceTo = [
-      salesforce.Account,
-      salesforce.Account__c,
-      salesforce.Asset,
-      salesforce.AssetRelationship,
-      salesforce.Campaign,
-      salesforce.Case,
-      salesforce.CommSubscriptionConsent,
-      salesforce.ContactRequest,
-      salesforce.Contract,
-      salesforce.CreditMemo,
-      salesforce.Image,
-      salesforce.Invoice,
-      salesforce.LegalEntity,
-      "ListEmail",
-      salesforce.Location,
-      salesforce.Opportunity,
-      salesforce.Order,
-      salesforce.PartyConsent,
-      salesforce.PrivacyRTBFRequest,
-      salesforce.ProcessException,
-      salesforce.Product2,
-      salesforce.Solution,
-    ]
     label = "Related To ID"
     createable = true
     updateable = true
@@ -159,44 +132,6 @@ type salesforce.EmailMessage {
   }
   salesforce.Picklist Status {
     apiName = "EmailMessage.Status"
-    valueSet = [
-      {
-        fullName = "0"
-        isActive = true
-        label = "New"
-        default = false
-      },
-      {
-        fullName = "1"
-        isActive = true
-        label = "Read"
-        default = false
-      },
-      {
-        fullName = "2"
-        isActive = true
-        label = "Replied"
-        default = false
-      },
-      {
-        fullName = "3"
-        isActive = true
-        label = "Sent"
-        default = false
-      },
-      {
-        fullName = "4"
-        isActive = true
-        label = "Forwarded"
-        default = false
-      },
-      {
-        fullName = "5"
-        isActive = true
-        label = "Draft"
-        default = false
-      },
-    ]
     restricted = true
     _required = true
     label = "Status"
@@ -237,14 +172,6 @@ type salesforce.EmailMessage {
   }
   salesforce.Picklist ValidatedFromAddress {
     apiName = "EmailMessage.ValidatedFromAddress"
-    valueSet = [
-      {
-        fullName = "zalary@hotmail.com"
-        isActive = true
-        label = "Zalary Young <zalary@hotmail.com>"
-        default = false
-      },
-    ]
     restricted = true
     label = "From"
     createable = true
@@ -259,9 +186,6 @@ type salesforce.EmailMessage {
   }
   salesforce.Lookup ActivityId {
     apiName = "EmailMessage.ActivityId"
-    referenceTo = [
-      salesforce.Task,
-    ]
     label = "Activity ID"
     createable = true
     updateable = false
@@ -270,9 +194,6 @@ type salesforce.EmailMessage {
   salesforce.Lookup CreatedById {
     apiName = "EmailMessage.CreatedById"
     relationshipName = "CreatedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Created By ID"
     createable = false
     updateable = false
@@ -298,9 +219,6 @@ type salesforce.EmailMessage {
   salesforce.Lookup LastModifiedById {
     apiName = "EmailMessage.LastModifiedById"
     relationshipName = "LastModifiedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Last Modified By ID"
     createable = false
     updateable = false
@@ -339,9 +257,6 @@ type salesforce.EmailMessage {
   salesforce.Lookup ReplyToEmailMessageId {
     apiName = "EmailMessage.ReplyToEmailMessageId"
     relationshipName = "ReplyToEmailMessage"
-    referenceTo = [
-      salesforce.EmailMessage,
-    ]
     label = "Email Message ID"
     createable = true
     updateable = true
@@ -413,9 +328,6 @@ type salesforce.EmailMessage {
   salesforce.Lookup EmailTemplateId {
     apiName = "EmailMessage.EmailTemplateId"
     relationshipName = "EmailTemplate"
-    referenceTo = [
-      salesforce.EmailTemplate,
-    ]
     label = "Email Template ID"
     createable = true
     updateable = true
@@ -423,20 +335,6 @@ type salesforce.EmailMessage {
   }
   salesforce.Picklist AutomationType {
     apiName = "EmailMessage.AutomationType"
-    valueSet = [
-      {
-        fullName = "AiAssisted"
-        isActive = true
-        label = "AI-Assisted"
-        default = false
-      },
-      {
-        fullName = "AiAutomated"
-        isActive = true
-        label = "AI-Automated"
-        default = false
-      },
-    ]
     restricted = true
     label = "Automation Type"
     createable = true
@@ -445,11 +343,6 @@ type salesforce.EmailMessage {
   }
   salesforce.Lookup FromId {
     apiName = "EmailMessage.FromId"
-    referenceTo = [
-      salesforce.Contact,
-      salesforce.Lead,
-      salesforce.User,
-    ]
     label = "From ID"
     createable = true
     updateable = false

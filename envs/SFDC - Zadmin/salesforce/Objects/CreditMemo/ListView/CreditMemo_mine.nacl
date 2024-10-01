@@ -3,12 +3,12 @@ salesforce.ListView CreditMemo_mine {
   columns = [
     "Name",
     "BillingAccount",
-    "Status",
-    "TotalAmount",
-    "TotalChargeAmount",
-    "TotalAdjustmentAmount",
-    "TotalTaxAmount",
-    "CreditDate",
+    salesforce.CreditMemo.field.Status,
+    salesforce.CreditMemo.field.TotalAmount,
+    salesforce.CreditMemo.field.TotalChargeAmount,
+    salesforce.CreditMemo.field.TotalAdjustmentAmount,
+    salesforce.CreditMemo.field.TotalTaxAmount,
+    salesforce.CreditMemo.field.CreditDate,
   ]
   filterScope = "Mine"
   label = "My Credit Memos"

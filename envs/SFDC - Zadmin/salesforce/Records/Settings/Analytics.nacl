@@ -69,4 +69,5 @@ salesforce.AnalyticsSettings {
   _alias = "Analytics"
   concurrencyLimitSharing = "false"
   enableSummaryFilterOrgPref = "false"
+  enableReportSubOrgEmailPref = "false"
 }

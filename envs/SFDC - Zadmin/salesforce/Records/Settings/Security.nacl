@@ -6,7 +6,7 @@ salesforce.SecuritySettings {
   enableAuraSecureEvalPref = true
   enableCoepHeader = "false"
   enableCoopHeader = "false"
-  enableCrossOrgRedirects = "true"
+  enableCrossOrgRedirects = "false"
   enablePermissionsPolicy = "false"
   enableRequireHttpsConnection = true
   networkAccess = {

@@ -56,9 +56,6 @@ type salesforce.ContentVersion {
   salesforce.Lookup OwnerId {
     apiName = "ContentVersion.OwnerId"
     relationshipName = "Owner"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Owner ID"
     createable = true
     updateable = true
@@ -67,20 +64,6 @@ type salesforce.ContentVersion {
   }
   salesforce.Picklist SharingOption {
     apiName = "ContentVersion.SharingOption"
-    valueSet = [
-      {
-        fullName = "A"
-        isActive = true
-        label = "Freeze Sharing Off"
-        default = true
-      },
-      {
-        fullName = "R"
-        isActive = true
-        label = "Freeze Sharing On"
-        default = false
-      },
-    ]
     restricted = true
     _required = true
     label = "Prevent others from sharing and unsharing"
@@ -90,20 +73,6 @@ type salesforce.ContentVersion {
   }
   salesforce.Picklist SharingPrivacy {
     apiName = "ContentVersion.SharingPrivacy"
-    valueSet = [
-      {
-        fullName = "N"
-        isActive = true
-        label = "Visible to Anyone With Record Access"
-        default = true
-      },
-      {
-        fullName = "P"
-        isActive = true
-        label = "Private on Records"
-        default = false
-      },
-    ]
     restricted = true
     _required = true
     label = "File Privacy on Records"
@@ -139,9 +108,6 @@ type salesforce.ContentVersion {
   salesforce.Lookup ContentDocumentId {
     apiName = "ContentVersion.ContentDocumentId"
     relationshipName = "ContentDocument"
-    referenceTo = [
-      "ContentDocument",
-    ]
     _required = true
     label = "ContentDocument ID"
     createable = true
@@ -166,9 +132,6 @@ type salesforce.ContentVersion {
   salesforce.Lookup ContentBodyId {
     apiName = "ContentVersion.ContentBodyId"
     relationshipName = "ContentBody"
-    referenceTo = [
-      "ContentBody",
-    ]
     label = "Content Body ID"
     createable = true
     updateable = false
@@ -235,9 +198,6 @@ type salesforce.ContentVersion {
   salesforce.Lookup ContentModifiedById {
     apiName = "ContentVersion.ContentModifiedById"
     relationshipName = "ContentModifiedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "User ID"
     createable = false
     updateable = false
@@ -288,9 +248,6 @@ type salesforce.ContentVersion {
   salesforce.Lookup CreatedById {
     apiName = "ContentVersion.CreatedById"
     relationshipName = "CreatedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Created By ID"
     createable = false
     updateable = false
@@ -308,9 +265,6 @@ type salesforce.ContentVersion {
   salesforce.Lookup LastModifiedById {
     apiName = "ContentVersion.LastModifiedById"
     relationshipName = "LastModifiedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Last Modified By ID"
     createable = false
     updateable = false
@@ -335,26 +289,6 @@ type salesforce.ContentVersion {
   }
   salesforce.Picklist PublishStatus {
     apiName = "ContentVersion.PublishStatus"
-    valueSet = [
-      {
-        fullName = "U"
-        isActive = true
-        label = "Upload Interrupted"
-        default = true
-      },
-      {
-        fullName = "P"
-        isActive = true
-        label = "Public"
-        default = false
-      },
-      {
-        fullName = "R"
-        isActive = true
-        label = "Private Library"
-        default = false
-      },
-    ]
     restricted = true
     _required = true
     label = "Publish Status"
@@ -376,66 +310,6 @@ type salesforce.ContentVersion {
   salesforce.Lookup FirstPublishLocationId {
     apiName = "ContentVersion.FirstPublishLocationId"
     relationshipName = "FirstPublishLocation"
-    referenceTo = [
-      salesforce.Account,
-      salesforce.Account__c,
-      salesforce.ApiAnomalyEventStore,
-      salesforce.Asset,
-      salesforce.AssetRelationship,
-      salesforce.AuthorizationFormText,
-      salesforce.Campaign,
-      salesforce.Case,
-      salesforce.CollaborationGroup,
-      salesforce.CommSubscription,
-      salesforce.CommSubscriptionChannelType,
-      salesforce.CommSubscriptionConsent,
-      salesforce.CommSubscriptionTiming,
-      salesforce.ConsumptionSchedule,
-      salesforce.Contact,
-      "ContentWorkspace",
-      salesforce.Contract,
-      "ConversationEntry",
-      salesforce.CredentialStuffingEventStore,
-      salesforce.CreditMemo,
-      salesforce.CreditMemoInvApplication,
-      salesforce.CreditMemoLine,
-      "Dashboard",
-      "DashboardComponent",
-      salesforce.EmailMessage,
-      salesforce.EmailTemplate,
-      salesforce.EngagementChannelType,
-      "EnhancedLetterhead",
-      salesforce.Event,
-      salesforce.GuestUserAnomalyEventStore,
-      salesforce.Image,
-      salesforce.Invoice,
-      salesforce.InvoiceLine,
-      salesforce.Lead,
-      salesforce.LegalEntity,
-      "ListEmail",
-      salesforce.Location,
-      salesforce.LocationGroup,
-      salesforce.MessagingSession,
-      salesforce.Opportunity,
-      salesforce.Order,
-      salesforce.OrderItem,
-      "Organization",
-      "OutgoingEmail",
-      salesforce.PartyConsent,
-      salesforce.Payment,
-      salesforce.PrivacyRTBFRequest,
-      salesforce.Product2,
-      "Report",
-      salesforce.ReportAnomalyEventStore,
-      salesforce.SessionHijackingEventStore,
-      salesforce.Site,
-      salesforce.Solution,
-      salesforce.Task,
-      "ThreatDetectionFeedback",
-      salesforce.Tier__c,
-      salesforce.Topic,
-      salesforce.User,
-    ]
     label = "First Publish Location ID"
     createable = true
     updateable = false
@@ -443,20 +317,6 @@ type salesforce.ContentVersion {
   }
   salesforce.Picklist Origin {
     apiName = "ContentVersion.Origin"
-    valueSet = [
-      {
-        fullName = "C"
-        isActive = true
-        label = "Content"
-        default = true
-      },
-      {
-        fullName = "H"
-        isActive = true
-        label = "Chatter"
-        default = false
-      },
-    ]
     restricted = true
     _required = true
     label = "Content Origin"
@@ -466,26 +326,6 @@ type salesforce.ContentVersion {
   }
   salesforce.Picklist ContentLocation {
     apiName = "ContentVersion.ContentLocation"
-    valueSet = [
-      {
-        fullName = "S"
-        isActive = true
-        label = "Salesforce"
-        default = true
-      },
-      {
-        fullName = "E"
-        isActive = true
-        label = "External"
-        default = false
-      },
-      {
-        fullName = "L"
-        isActive = true
-        label = "Social Customer Service"
-        default = false
-      },
-    ]
     restricted = true
     _required = true
     label = "Content Location"
@@ -527,9 +367,6 @@ type salesforce.ContentVersion {
   salesforce.Lookup ExternalDataSourceId {
     apiName = "ContentVersion.ExternalDataSourceId"
     relationshipName = "ExternalDataSource"
-    referenceTo = [
-      salesforce.ExternalDataSource,
-    ]
     label = "External Data Source ID"
     createable = true
     updateable = true

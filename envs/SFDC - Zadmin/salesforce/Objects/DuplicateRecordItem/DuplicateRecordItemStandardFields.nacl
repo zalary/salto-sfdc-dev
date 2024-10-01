@@ -2,9 +2,6 @@ type salesforce.DuplicateRecordItem {
   salesforce.MasterDetail DuplicateRecordSetId {
     apiName = "DuplicateRecordItem.DuplicateRecordSetId"
     relationshipName = "DuplicateRecordSet"
-    referenceTo = [
-      salesforce.DuplicateRecordSet,
-    ]
     _required = true
     label = "Duplicate Record Set ID"
     createable = true
@@ -14,14 +11,6 @@ type salesforce.DuplicateRecordItem {
   salesforce.Lookup RecordId {
     apiName = "DuplicateRecordItem.RecordId"
     relationshipName = "Record"
-    referenceTo = [
-      salesforce.Account,
-      salesforce.Account__c,
-      salesforce.Contact,
-      salesforce.Individual,
-      salesforce.Lead,
-      salesforce.Tier__c,
-    ]
     _required = true
     label = "Record ID"
     createable = true
@@ -62,9 +51,6 @@ type salesforce.DuplicateRecordItem {
   salesforce.Lookup CreatedById {
     apiName = "DuplicateRecordItem.CreatedById"
     relationshipName = "CreatedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Created By ID"
     createable = false
     updateable = false
@@ -82,9 +68,6 @@ type salesforce.DuplicateRecordItem {
   salesforce.Lookup LastModifiedById {
     apiName = "DuplicateRecordItem.LastModifiedById"
     relationshipName = "LastModifiedBy"
-    referenceTo = [
-      salesforce.User,
-    ]
     label = "Last Modified By ID"
     createable = false
     updateable = false
