@@ -3,7 +3,6 @@ salesforce.ListView Lead_ViewColdLeads {
   columns = [
     "FULL_NAME",
     "LEAD.COMPANY",
-    "LEAD.STATE",
     "LEAD.EMAIL",
     "LEAD.STATUS",
     "LEAD.CREATED_DATE",
