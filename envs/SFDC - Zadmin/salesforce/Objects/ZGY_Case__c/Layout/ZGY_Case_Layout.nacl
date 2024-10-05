@@ -12,6 +12,10 @@ salesforce.Layout ZGY_Case__c_ZGY_Case_Layout@uuubus {
               behavior = "Required"
               field = salesforce.ZGY_Case__c.field.Name
             },
+            {
+              behavior = "Readonly"
+              field = salesforce.ZGY_Case__c.field.ZGY_AutoNumber__c
+            },
           ]
         },
         {
