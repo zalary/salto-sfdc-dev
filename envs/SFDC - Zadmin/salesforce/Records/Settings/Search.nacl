@@ -383,6 +383,12 @@ salesforce.SearchSettings {
         name = salesforce.User
         resultsPerPageCount = 25
       },
+      {
+        enhancedLookupEnabled = false
+        lookupAutoCompleteEnabled = false
+        name = salesforce.ZGY_Case__c
+        resultsPerPageCount = 0
+      },
     ]
   }
   sidebarAutoCompleteEnabled = true
