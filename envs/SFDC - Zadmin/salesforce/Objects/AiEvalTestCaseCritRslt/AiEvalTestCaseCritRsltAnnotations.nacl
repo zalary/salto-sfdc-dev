@@ -1,4 +1,4 @@
-type salesforce.DataKitDeploymentLog {
+type salesforce.AiEvalTestCaseCritRslt {
   annotations {
     serviceid apiName {
     }
@@ -55,9 +55,9 @@ type salesforce.DataKitDeploymentLog {
     hidden_string internalId {
     }
   }
-  apiName = "DataKitDeploymentLog"
+  apiName = "AiEvalTestCaseCritRslt"
   metadataType = "CustomObject"
-  label = "Data Kit Deployment Log"
+  label = "AiEvalTestCaseCritRslt"
   enableFeeds = false
-  _alias = "Data Kit Deployment Log"
+  _alias = "AiEvalTestCaseCritRslt"
 }

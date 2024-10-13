@@ -1,4 +1,4 @@
-type salesforce.PrivacyPolicy {
+type salesforce.AiEvaluation {
   annotations {
     serviceid apiName {
     }
@@ -55,68 +55,9 @@ type salesforce.PrivacyPolicy {
     hidden_string internalId {
     }
   }
-  apiName = "PrivacyPolicy"
+  apiName = "AiEvaluation"
   metadataType = "CustomObject"
-  label = "Privacy Policy"
-  actionOverrides = [
-    {
-      actionName = "CancelEdit"
-      type = "Default"
-    },
-    {
-      actionName = "CancelEdit"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "CancelEdit"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
-      actionName = "List"
-      type = "Default"
-    },
-    {
-      actionName = "List"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "List"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
-      actionName = "SaveEdit"
-      type = "Default"
-    },
-    {
-      actionName = "SaveEdit"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "SaveEdit"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
-      actionName = "Tab"
-      type = "Default"
-    },
-    {
-      actionName = "Tab"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "Tab"
-      formFactor = "Small"
-      type = "Default"
-    },
-  ]
-  compactLayoutAssignment = "SYSTEM"
+  label = "AiEvaluation"
   enableFeeds = false
-  _alias = "Privacy Policy"
+  _alias = "AiEvaluation"
 }
