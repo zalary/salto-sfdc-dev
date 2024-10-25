@@ -1,12 +1,23 @@
-type salesforce.ZGY_Case__c {
+type salesforce.PromotionSegment {
+  salesforce.Text Name {
+    apiName = "PromotionSegment.Name"
+    length = 255
+    _required = true
+    label = "Promotion Segment Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
   serviceid Id {
-    apiName = "ZGY_Case__c.Id"
-    label = "Record ID"
+    apiName = "PromotionSegment.Id"
+    label = "Promotion Segment ID"
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup OwnerId {
-    apiName = "ZGY_Case__c.OwnerId"
+    apiName = "PromotionSegment.OwnerId"
     relationshipName = "Owner"
     label = "Owner ID"
     createable = true
@@ -15,7 +26,7 @@ type salesforce.ZGY_Case__c {
     _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
-    apiName = "ZGY_Case__c.IsDeleted"
+    apiName = "PromotionSegment.IsDeleted"
     defaultValue = false
     label = "Deleted"
     createable = false
@@ -23,18 +34,8 @@ type salesforce.ZGY_Case__c {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Text Name {
-    apiName = "ZGY_Case__c.Name"
-    length = 80
-    label = "ZGY_Case Name"
-    createable = true
-    updateable = true
-    unique = false
-    caseSensitive = false
-    queryable = true
-  }
   salesforce.DateTime CreatedDate {
-    apiName = "ZGY_Case__c.CreatedDate"
+    apiName = "PromotionSegment.CreatedDate"
     label = "Created Date"
     createable = false
     updateable = false
@@ -42,7 +43,7 @@ type salesforce.ZGY_Case__c {
     _hidden_value = true
   }
   salesforce.Lookup CreatedById {
-    apiName = "ZGY_Case__c.CreatedById"
+    apiName = "PromotionSegment.CreatedById"
     relationshipName = "CreatedBy"
     label = "Created By ID"
     createable = false
@@ -51,7 +52,7 @@ type salesforce.ZGY_Case__c {
     _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
-    apiName = "ZGY_Case__c.LastModifiedDate"
+    apiName = "PromotionSegment.LastModifiedDate"
     label = "Last Modified Date"
     createable = false
     updateable = false
@@ -59,7 +60,7 @@ type salesforce.ZGY_Case__c {
     _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
-    apiName = "ZGY_Case__c.LastModifiedById"
+    apiName = "PromotionSegment.LastModifiedById"
     relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
     createable = false
@@ -68,16 +69,8 @@ type salesforce.ZGY_Case__c {
     _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
-    apiName = "ZGY_Case__c.SystemModstamp"
+    apiName = "PromotionSegment.SystemModstamp"
     label = "System Modstamp"
-    createable = false
-    updateable = false
-    queryable = true
-    _hidden_value = true
-  }
-  salesforce.Date LastActivityDate {
-    apiName = "ZGY_Case__c.LastActivityDate"
-    label = "Last Activity Date"
     createable = false
     updateable = false
     queryable = true

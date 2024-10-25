@@ -1,12 +1,10 @@
-type salesforce.ZGY_Case__c {
+type salesforce.ShiftEngagementChannel {
   annotations {
     serviceid apiName {
     }
     serviceid metadataType {
     }
     string label {
-    }
-    string pluralLabel {
     }
     hidden_string keyPrefix {
     }
@@ -56,60 +54,11 @@ type salesforce.ZGY_Case__c {
     }
     hidden_string internalId {
     }
-    boolean allowInChatterGroups {
-    }
-    string customHelp {
-    }
-    string customHelpPage {
-    }
-    string customSettingsType {
-    }
-    string deploymentStatus {
-    }
-    boolean deprecated {
-    }
-    boolean enableActivities {
-    }
-    boolean enableBulkApi {
-    }
-    boolean enableReports {
-    }
-    boolean enableSearch {
-    }
-    boolean enableSharing {
-    }
-    boolean enableStreamingApi {
-    }
-    string gender {
-    }
-    salesforce.CustomField nameField {
-    }
-    string sharingModel {
-    }
-    string startsWith {
-    }
-    string visibility {
-    }
   }
-  apiName = "ZGY_Case__c"
+  apiName = "ShiftEngagementChannel"
   metadataType = "CustomObject"
-  label = "ZGY_Case"
-  pluralLabel = "ZGY_Cases"
+  label = "Shift Engagement Channel"
   actionOverrides = [
-    {
-      actionName = "Accept"
-      type = "Default"
-    },
-    {
-      actionName = "Accept"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "Accept"
-      formFactor = "Small"
-      type = "Default"
-    },
     {
       actionName = "CancelEdit"
       type = "Default"
@@ -237,33 +186,38 @@ type salesforce.ZGY_Case__c {
       type = "Default"
     },
   ]
-  allowInChatterGroups = false
   compactLayoutAssignment = "SYSTEM"
-  deploymentStatus = "Deployed"
-  description = "something something"
-  enableActivities = true
-  enableBulkApi = true
   enableFeeds = false
-  enableHistory = true
-  enableLicensing = false
-  enableReports = true
-  enableSearch = true
-  enableSharing = true
-  enableStreamingApi = true
-  nameField = {
-    encryptionScheme = "None"
-    label = "ZGY_Case Name"
-    trackHistory = false
-    type = "Text"
-  }
+  externalSharingModel = "ControlledByParent"
   searchLayouts = {
+    customTabListAdditionalFields = [
+      "LastModifiedDate",
+      "LastModifiedBy",
+      "Shift",
+      "EngagementChannelType",
+      "AreAllEngmtChnlSupported",
+    ]
+    lookupDialogsAdditionalFields = [
+      "LastModifiedDate",
+      "LastModifiedBy",
+      "Shift",
+      "EngagementChannelType",
+      "AreAllEngmtChnlSupported",
+    ]
+    lookupPhoneDialogsAdditionalFields = [
+      "LastModifiedDate",
+      "LastModifiedBy",
+      "Shift",
+      "EngagementChannelType",
+      "AreAllEngmtChnlSupported",
+    ]
+    searchResultsAdditionalFields = [
+      "LastModifiedDate",
+      "LastModifiedBy",
+      "Shift",
+      "EngagementChannelType",
+      "AreAllEngmtChnlSupported",
+    ]
   }
-  sharingModel = "ReadWrite"
-  visibility = "Public"
-  _alias = "ZGY_Case"
-  topicsForObjects = {
-    enableTopics = false
-  }
-  historyTrackedFields = {
-  }
+  _alias = "Shift Engagement Channel"
 }
