@@ -1,0 +1,7 @@
+salesforce.ApexClass RestLeadConvert {
+  apiVersion = 44
+  status = "Active"
+  fullName = "RestLeadConvert"
+  content = file("salesforce/Records/ApexClass/RestLeadConvert.cls")
+  _alias = "RestLeadConvert"
+}

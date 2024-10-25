@@ -1,0 +1,10 @@
+envs {
+  envs = [
+    {
+      name = "SFDC - Zadmin"
+      accountToServiceName = {
+        salesforce = "salesforce"
+      }
+    },
+  ]
+}

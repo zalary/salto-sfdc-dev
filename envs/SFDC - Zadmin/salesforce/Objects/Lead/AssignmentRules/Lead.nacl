@@ -1,0 +1,65 @@
+salesforce.AssignmentRules Lead {
+  assignmentRule = [
+    {
+      fullName = "Score Assignment"
+      active = true
+      ruleEntry = [
+        {
+          assignedTo = salesforce.Queue.instance.Hot_leads
+          assignedToType = "Queue"
+          criteriaItems = [
+            {
+              field = salesforce.Lead.field.Score__c
+              operation = "greaterOrEqual"
+              value = "50"
+            },
+          ]
+        },
+        {
+          assignedTo = salesforce.Queue.instance.Cold_Leads
+          assignedToType = "Queue"
+          criteriaItems = [
+            {
+              field = salesforce.Lead.field.Score__c
+              operation = "lessThan"
+              value = "50"
+            },
+          ]
+        },
+      ]
+    },
+    {
+      fullName = "Standard"
+      active = false
+      ruleEntry = [
+        {
+          assignedTo = "zalary@hotmail.com"
+          assignedToType = "User"
+          criteriaItems = [
+            {
+              field = "Lead.Country"
+              operation = "equals"
+              value = "US,USA,United States,United States of America"
+            },
+          ]
+        },
+        {
+          assignedTo = "zalary@hotmail.com"
+          assignedToType = "User"
+          criteriaItems = [
+            {
+              field = "Lead.Country"
+              operation = "notEqual"
+              value = "US,USA,United States,United States of America"
+            },
+          ]
+        },
+      ]
+    },
+  ]
+  fullName = "Lead"
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "Lead"
+}

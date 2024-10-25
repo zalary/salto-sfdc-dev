@@ -1,0 +1,5 @@
+salesforce.CorsWhitelistOrigin https_localhost_8081 {
+  fullName = "https_localhost_8081"
+  urlPattern = "https://localhost:8081"
+  _alias = "https_localhost_8081"
+}

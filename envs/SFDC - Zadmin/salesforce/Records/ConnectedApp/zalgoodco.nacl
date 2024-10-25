@@ -1,0 +1,40 @@
+salesforce.ConnectedApp zalgoodco {
+  fullName = "zalgoodco"
+  contactEmail = "zalary@hotmail.com"
+  iconUrl = "https://login.salesforce.com/logos/Standard/calibration/icon.png"
+  label = "zalgoodco"
+  logoUrl = "https://login.salesforce.com/logos/Standard/calibration/logo.svg"
+  oauthConfig = {
+    callbackUrl = '''
+https://localhost:8081
+https://zandytech.com/articulate
+'''
+    consumerKey = "3MVG9zlTNB8o8BA1kb8drWCy.QmYaopAVhRkw50Of8yhJX50L7REurlVkHe.cGuXakt4hUyNv.XLfF.9RvSwH"
+    isAdminApproved = false
+    isClientCredentialEnabled = false
+    isCodeCredentialEnabled = false
+    isCodeCredentialPostOnly = false
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
+    isNamedUserJwtEnabled = false
+    isPkceRequired = false
+    isSecretRequiredForRefreshToken = false
+    scopes = [
+      "Basic",
+      "Api",
+      "Web",
+      "CustomApplications",
+      "RefreshToken",
+      "CustomPermissions",
+    ]
+    isRefreshTokenRotationEnabled = false
+    isSecretRequiredForTokenExchange = false
+    isTokenExchangeEnabled = false
+  }
+  oauthPolicy = {
+    ipRelaxation = "BYPASS"
+    refreshTokenPolicy = "infinite"
+    isTokenExchangeFlowEnabled = false
+  }
+  _alias = "zalgoodco"
+}
