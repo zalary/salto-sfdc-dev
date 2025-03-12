@@ -1,0 +1,164 @@
+salesforce.Profile Minimum_Access___Salesforce@ssbs {
+  layoutAssignments = {
+    AlternativePaymentMethod_Alternative_Payment_Method_Layout@bsss = [
+      {
+        layout = "AlternativePaymentMethod-Alternative Payment Method Layout"
+      },
+    ]
+    AssetAction_Asset_Action_Layout@bss = [
+      {
+        layout = "AssetAction-Asset Action Layout"
+      },
+    ]
+    AssetActionSource_Asset_Action_Source_Layout@bsss = [
+      {
+        layout = "AssetActionSource-Asset Action Source Layout"
+      },
+    ]
+    AssetStatePeriod_Asset_State_Period_Layout@bsss = [
+      {
+        layout = "AssetStatePeriod-Asset State Period Layout"
+      },
+    ]
+    BusinessBrand_Business_Brand_Layout@bss = [
+      {
+        layout = "BusinessBrand-Business Brand Layout"
+      },
+    ]
+    CardPaymentMethod_Card_Payment_Method_Layout@bsss = [
+      {
+        layout = "CardPaymentMethod-Card Payment Method Layout"
+      },
+    ]
+    ContactPointAddress_Contact_Point_Address_Layout@bsss = [
+      {
+        layout = "ContactPointAddress-Contact Point Address Layout"
+      },
+    ]
+    ContactPointEmail_Contact_Point_Email_Layout@bsss = [
+      {
+        layout = "ContactPointEmail-Contact Point Email Layout"
+      },
+    ]
+    ContactPointPhone_Contact_Point_Phone_Layout@bsss = [
+      {
+        layout = "ContactPointPhone-Contact Point Phone Layout"
+      },
+    ]
+    CreditMemo_Credit_Memo_Layout@bss = [
+      {
+        layout = "CreditMemo-Credit Memo Layout"
+      },
+    ]
+    CreditMemoLine_Credit_Memo_Line_Layout@bsss = [
+      {
+        layout = "CreditMemoLine-Credit Memo Line Layout"
+      },
+    ]
+    Customer_Customer_Layout@bs = [
+      {
+        layout = "Customer-Customer Layout"
+      },
+    ]
+    DigitalWallet_Digital_Wallet_Layout@bss = [
+      {
+        layout = "DigitalWallet-Digital Wallet Layout"
+      },
+    ]
+    FinanceBalanceSnapshot_Finance_Balance_Snapshot_Layout@bsss = [
+      {
+        layout = "FinanceBalanceSnapshot-Finance Balance Snapshot Layout"
+      },
+    ]
+    FinanceTransaction_Finance_Transaction_Layout@bss = [
+      {
+        layout = "FinanceTransaction-Finance Transaction Layout"
+      },
+    ]
+    Invoice_Invoice_Layout@bs = [
+      {
+        layout = "Invoice-Invoice Layout"
+      },
+    ]
+    InvoiceLine_Invoice_Line_Layout@bss = [
+      {
+        layout = "InvoiceLine-Invoice Line Layout"
+      },
+    ]
+    LegalEntity_Legal_Entity_Layout@bss = [
+      {
+        layout = "LegalEntity-Legal Entity Layout"
+      },
+    ]
+    Payment_Payment_Layout@bs = [
+      {
+        layout = "Payment-Payment Layout"
+      },
+    ]
+    PaymentAuthAdjustment_Payment_Authorization_Adjustment_Layout@bsss = [
+      {
+        layout = "PaymentAuthAdjustment-Payment Authorization Adjustment Layout"
+      },
+    ]
+    PaymentAuthorization_Payment_Authorization_Layout@bss = [
+      {
+        layout = "PaymentAuthorization-Payment Authorization Layout"
+      },
+    ]
+    PaymentGateway_Payment_Gateway_Layout@bss = [
+      {
+        layout = "PaymentGateway-Payment Gateway Layout"
+      },
+    ]
+    PaymentGatewayLog_Payment_Gateway_Log_Layout@bsss = [
+      {
+        layout = "PaymentGatewayLog-Payment Gateway Log Layout"
+      },
+    ]
+    PaymentGroup_Payment_Group_Layout@bss = [
+      {
+        layout = "PaymentGroup-Payment Group Layout"
+      },
+    ]
+    PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss = [
+      {
+        layout = "PaymentLineInvoice-Payment Line Invoice Layout"
+      },
+    ]
+    ProcessException_Process_Exception_Layout@bss = [
+      {
+        layout = "ProcessException-Process Exception Layout"
+      },
+    ]
+    Refund_Refund_Layout@bs = [
+      {
+        layout = "Refund-Refund Layout"
+      },
+    ]
+    RefundLinePayment_Refund_Line_Payment_Layout@bsss = [
+      {
+        layout = "RefundLinePayment-Refund Line Payment Layout"
+      },
+    ]
+    Seller_Seller_Layout@bs = [
+      {
+        layout = "Seller-Seller Layout"
+      },
+    ]
+    Tier__c_Tier_Layout@uubs = [
+      {
+        layout = "Tier__c-Tier Layout"
+      },
+    ]
+    UserAlt_User_Profile_Layout@bss = [
+      {
+        layout = "UserAlt-User Profile Layout"
+      },
+    ]
+    ZGY_Case__c_ZGY_Case_Layout@uuubus = [
+      {
+        layout = "ZGY_Case__c-ZGY_Case Layout"
+      },
+    ]
+  }
+}

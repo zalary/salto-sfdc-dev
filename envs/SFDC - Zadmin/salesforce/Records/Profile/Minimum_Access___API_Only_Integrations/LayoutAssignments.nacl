@@ -1,0 +1,9 @@
+salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
+  layoutAssignments = {
+    ZGY_Case__c_ZGY_Case_Layout@uuubus = [
+      {
+        layout = "ZGY_Case__c-ZGY_Case Layout"
+      },
+    ]
+  }
+}

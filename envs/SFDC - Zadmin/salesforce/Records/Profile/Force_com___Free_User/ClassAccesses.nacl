@@ -1,0 +1,12 @@
+salesforce.Profile Force_2Ecom___Free_User@psbss {
+  classAccesses = {
+    RestLeadConvert = {
+      apexClass = "RestLeadConvert"
+      enabled = false
+    }
+    WebLeadConvert = {
+      apexClass = "WebLeadConvert"
+      enabled = false
+    }
+  }
+}

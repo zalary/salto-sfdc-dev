@@ -1,0 +1,6 @@
+salesforce.Profile SystemAdminEmail {
+  custom = true
+  userLicense = "Salesforce"
+  fullName = "SystemAdminEmail"
+  _alias = "SystemAdminEmail"
+}

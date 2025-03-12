@@ -1,0 +1,7 @@
+salesforce.PermissionSet Custom_Perms_Set_01 {
+  hasActivationRequired = false
+  label = "Custom Perms Set 01"
+  license = "Salesforce"
+  fullName = "Custom_Perms_Set_01"
+  _alias = "Custom Perms Set 01"
+}

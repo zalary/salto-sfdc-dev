@@ -1,0 +1,12 @@
+salesforce.Profile Force_2Ecom___App_Subscription_User@psbsss {
+  classAccesses = {
+    RestLeadConvert = {
+      apexClass = "RestLeadConvert"
+      enabled = false
+    }
+    WebLeadConvert = {
+      apexClass = "WebLeadConvert"
+      enabled = false
+    }
+  }
+}

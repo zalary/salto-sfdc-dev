@@ -58,6 +58,7 @@ type salesforce.MacroInstruction {
   apiName = "MacroInstruction"
   metadataType = "CustomObject"
   label = "Macro Instruction"
+  description = ""
   enableFeeds = false
   _alias = "Macro Instruction"
 }

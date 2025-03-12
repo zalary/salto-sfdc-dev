@@ -58,6 +58,7 @@ type salesforce.MLModelFactor {
   apiName = "MLModelFactor"
   metadataType = "CustomObject"
   label = "ML Model Factor"
+  description = ""
   enableFeeds = false
   _alias = "ML Model Factor"
 }

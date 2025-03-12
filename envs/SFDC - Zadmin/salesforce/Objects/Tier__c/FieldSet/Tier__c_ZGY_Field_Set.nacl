@@ -1,0 +1,9 @@
+salesforce.FieldSet Tier__c_ZGY_Field_Set {
+  fullName = "Tier__c.ZGY_Field_Set"
+  description = "IDEK"
+  label = "ZGY Field Set"
+  _parent = [
+    salesforce.Tier__c,
+  ]
+  _alias = "ZGY Field Set"
+}

@@ -58,6 +58,7 @@ type salesforce.LeadCleanInfo {
   apiName = "LeadCleanInfo"
   metadataType = "CustomObject"
   label = "Lead Clean Info"
+  description = ""
   enableFeeds = false
   _alias = "Lead Clean Info"
 }

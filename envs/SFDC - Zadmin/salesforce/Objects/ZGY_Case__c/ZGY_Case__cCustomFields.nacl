@@ -9,4 +9,17 @@ type salesforce.ZGY_Case__c {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Text ext_id__c {
+    apiName = "ZGY_Case__c.ext_id__c"
+    caseSensitive = false
+    encryptionScheme = "None"
+    externalId = true
+    label = "ext_id"
+    length = 25
+    trackTrending = false
+    unique = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
 }

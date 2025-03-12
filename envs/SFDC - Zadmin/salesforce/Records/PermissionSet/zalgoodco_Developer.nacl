@@ -1,0 +1,19 @@
+salesforce.PermissionSet zalgoodco_Developer {
+  description = "Permission Set generated for access to custom object Account for the app zalgoodco"
+  hasActivationRequired = false
+  label = "zalgoodco Developer"
+  license = "Salesforce"
+  objectPermissions = {
+    Account__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Account__c"
+      viewAllRecords = true
+    }
+  }
+  fullName = "zalgoodco_Developer"
+  _alias = "zalgoodco Developer"
+}

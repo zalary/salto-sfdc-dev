@@ -58,6 +58,7 @@ type salesforce.AssistantProgress {
   apiName = "AssistantProgress"
   metadataType = "CustomObject"
   label = "AssistantProgress"
+  description = ""
   enableFeeds = false
   _alias = "AssistantProgress"
 }

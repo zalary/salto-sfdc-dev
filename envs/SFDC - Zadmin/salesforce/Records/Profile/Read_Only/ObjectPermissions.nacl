@@ -1,0 +1,247 @@
+salesforce.Profile Read_Only@s {
+  objectPermissions = {
+    Account = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Account"
+      viewAllRecords = false
+    }
+    Asset = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Asset"
+      viewAllRecords = false
+    }
+    AuthorizationForm = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "AuthorizationForm"
+      viewAllRecords = false
+    }
+    AuthorizationFormConsent = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "AuthorizationFormConsent"
+      viewAllRecords = false
+    }
+    AuthorizationFormDataUse = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "AuthorizationFormDataUse"
+      viewAllRecords = false
+    }
+    AuthorizationFormText = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "AuthorizationFormText"
+      viewAllRecords = false
+    }
+    Campaign = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Campaign"
+      viewAllRecords = false
+    }
+    Case = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Case"
+      viewAllRecords = false
+    }
+    Contact = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Contact"
+      viewAllRecords = false
+    }
+    ContactPointConsent = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "ContactPointConsent"
+      viewAllRecords = false
+    }
+    ContactPointTypeConsent = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "ContactPointTypeConsent"
+      viewAllRecords = false
+    }
+    Contract = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Contract"
+      viewAllRecords = false
+    }
+    DandBCompany = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "DandBCompany"
+      viewAllRecords = false
+    }
+    DataUseLegalBasis = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "DataUseLegalBasis"
+      viewAllRecords = false
+    }
+    DataUsePurpose = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "DataUsePurpose"
+      viewAllRecords = false
+    }
+    Idea = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Idea"
+      viewAllRecords = false
+    }
+    Individual = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Individual"
+      viewAllRecords = false
+    }
+    Lead = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Lead"
+      viewAllRecords = false
+    }
+    Location = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Location"
+      viewAllRecords = false
+    }
+    Macro = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Macro"
+      viewAllRecords = false
+    }
+    Opportunity = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Opportunity"
+      viewAllRecords = false
+    }
+    Order = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Order"
+      viewAllRecords = false
+    }
+    Pricebook2 = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Pricebook2"
+      viewAllRecords = false
+    }
+    Product2 = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Product2"
+      viewAllRecords = false
+    }
+    QuickText = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "QuickText"
+      viewAllRecords = false
+    }
+    SocialPersona = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "SocialPersona"
+      viewAllRecords = false
+    }
+    Solution = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Solution"
+      viewAllRecords = false
+    }
+  }
+}

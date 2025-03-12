@@ -1,0 +1,12 @@
+salesforce.Profile Z_Custom_Support_Profile@s {
+  classAccesses = {
+    RestLeadConvert = {
+      apexClass = "RestLeadConvert"
+      enabled = false
+    }
+    WebLeadConvert = {
+      apexClass = "WebLeadConvert"
+      enabled = false
+    }
+  }
+}

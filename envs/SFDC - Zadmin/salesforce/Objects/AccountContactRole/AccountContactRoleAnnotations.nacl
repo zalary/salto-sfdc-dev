@@ -58,6 +58,7 @@ type salesforce.AccountContactRole {
   apiName = "AccountContactRole"
   metadataType = "CustomObject"
   label = "Account Contact Role"
+  description = ""
   enableFeeds = false
   _alias = "Account Contact Role"
 }

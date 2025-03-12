@@ -94,6 +94,7 @@ type salesforce.Tier__c {
   apiName = "Tier__c"
   metadataType = "CustomObject"
   label = "Tier"
+  description = ""
   pluralLabel = "Tiers"
   actionOverrides = [
     {

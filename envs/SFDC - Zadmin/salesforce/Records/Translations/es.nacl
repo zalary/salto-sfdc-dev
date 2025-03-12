@@ -1,0 +1,177 @@
+salesforce.Translations es {
+  fullName = "es"
+  customApplications = [
+    {
+      label = ""
+      name = "ZGY"
+    },
+    {
+      label = ""
+      name = "zalgoodco"
+    },
+  ]
+  flowDefinitions = [
+    {
+      flows = {
+      }
+      fullName = "OppTask"
+    },
+    {
+      flows = {
+      }
+      fullName = "ZGY_Flow_1"
+    },
+    {
+      flows = {
+      }
+      fullName = "ZGY_Flow_2"
+    },
+  ]
+  quickActions = [
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.LogACall
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewAccount
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewCase
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewContact
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewEvent
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewGroup
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewLead
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewNote
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewOpportunity
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewTask
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.SendEmail
+    },
+  ]
+  reportTypes = [
+    {
+      description = ""
+      label = ""
+      name = "flow_orchestration_log_ootb_crt_two_four_eight"
+      sections = [
+        {
+          label = ""
+          name = "Orchestration Run Log"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "flow_orchestration_run_ootb_crt_two_four_eight"
+      sections = [
+        {
+          label = ""
+          name = "Orchestration Runs"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "flow_orchestration_stage_run_ootb_crt_two_four_eight"
+      sections = [
+        {
+          label = ""
+          name = "Orchestration Stage Runs"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "flow_orchestration_step_run_ootb_crt_two_four_eight"
+      sections = [
+        {
+          label = ""
+          name = "Orchestration Step Runs"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "flow_orchestration_work_item_ootb_crt_two_four_eight"
+      sections = [
+        {
+          columns = [
+            {
+              label = ""
+              name = "Orchestration Step Run: Label"
+            },
+            {
+              label = ""
+              name = "Orchestration Step Run: Name"
+            },
+            {
+              label = ""
+              name = "Orchestration Step Run: Status"
+            },
+          ]
+          label = ""
+          name = "Orchestration Step Runs"
+        },
+        {
+          columns = [
+            {
+              label = ""
+              name = "Assigned Group or Queue"
+            },
+            {
+              label = ""
+              name = "Assigned User"
+            },
+          ]
+          label = ""
+          name = "Orchestration Work Items"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "screen_flows_prebuilt_crt"
+      sections = [
+        {
+          label = ""
+          name = "Flow Interview Log Entries"
+        },
+        {
+          label = ""
+          name = "Flow Interview Logs"
+        },
+      ]
+    },
+  ]
+  _alias = "es"
+}

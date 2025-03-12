@@ -1,0 +1,29 @@
+salesforce.CustomApplication ZGY {
+  brand = {
+    headerColor = "#727F8B"
+    shouldOverrideOrgTheme = true
+  }
+  formFactors = [
+    "Small",
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "ZGY_LWA"
+  navType = "Standard"
+  tabs = [
+    "standard-Asset",
+    "standard-Event",
+  ]
+  uiType = "Lightning"
+  utilityBar = "ZGY_LWA_UtilityBar"
+  fullName = "ZGY"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.ZGY_LWA_UtilityBar
+    },
+  ]
+  _alias = "ZGY_LWA"
+}

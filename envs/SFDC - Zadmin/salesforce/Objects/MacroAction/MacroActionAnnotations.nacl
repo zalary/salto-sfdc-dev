@@ -58,6 +58,7 @@ type salesforce.MacroAction {
   apiName = "MacroAction"
   metadataType = "CustomObject"
   label = "MacroAction"
+  description = ""
   enableFeeds = false
   _alias = "MacroAction"
 }

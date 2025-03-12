@@ -1,0 +1,12 @@
+salesforce.PermissionSet ManageKeys {
+  hasActivationRequired = false
+  label = "Manage Encryption Keys"
+  userPermissions = {
+    ManageEncryptionKeys = {
+      enabled = true
+      name = "ManageEncryptionKeys"
+    }
+  }
+  fullName = "ManageKeys"
+  _alias = "Manage Encryption Keys"
+}

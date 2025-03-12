@@ -1,0 +1,99 @@
+salesforce.CustomObjectTranslation Account_es@b {
+  fullName = "Account-es"
+  fields = [
+    {
+      label = "Activo"
+      name = salesforce.Account.field.Active__c
+      picklistValues = [
+        {
+          masterLabel = "No"
+          translation = ""
+        },
+        {
+          masterLabel = "Yes"
+          translation = ""
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Account.field.CustomerPriority__c
+      picklistValues = [
+        {
+          masterLabel = "High"
+          translation = ""
+        },
+        {
+          masterLabel = "Low"
+          translation = ""
+        },
+        {
+          masterLabel = "Medium"
+          translation = ""
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Account.field.NumberofLocations__c
+    },
+    {
+      label = ""
+      name = salesforce.Account.field.SLAExpirationDate__c
+    },
+    {
+      label = ""
+      name = salesforce.Account.field.SLASerialNumber__c
+    },
+    {
+      label = ""
+      name = salesforce.Account.field.SLA__c
+      picklistValues = [
+        {
+          masterLabel = "Bronze"
+          translation = ""
+        },
+        {
+          masterLabel = "Gold"
+          translation = ""
+        },
+        {
+          masterLabel = "Platinum"
+          translation = ""
+        },
+        {
+          masterLabel = "Silver"
+          translation = ""
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Account.field.UpsellOpportunity__c
+      picklistValues = [
+        {
+          masterLabel = "Maybe"
+          translation = ""
+        },
+        {
+          masterLabel = "No"
+          translation = ""
+        },
+        {
+          masterLabel = "Yes"
+          translation = ""
+        },
+      ]
+    },
+  ]
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_Billing
+    },
+  ]
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "Account-es"
+}

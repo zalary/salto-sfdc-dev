@@ -1,0 +1,42 @@
+salesforce.StandardValueSetTranslation AccountContactRole_es@b {
+  fullName = "AccountContactRole-es"
+  valueTranslation = [
+    {
+      masterLabel = "Business User"
+      translation = "negocio"
+    },
+    {
+      masterLabel = "Decision Maker"
+      translation = ""
+    },
+    {
+      masterLabel = "Economic Buyer"
+      translation = ""
+    },
+    {
+      masterLabel = "Economic Decision Maker"
+      translation = ""
+    },
+    {
+      masterLabel = "Evaluator"
+      translation = ""
+    },
+    {
+      masterLabel = "Executive Sponsor"
+      translation = ""
+    },
+    {
+      masterLabel = "Influencer"
+      translation = ""
+    },
+    {
+      masterLabel = "Other"
+      translation = ""
+    },
+    {
+      masterLabel = "Technical Buyer"
+      translation = ""
+    },
+  ]
+  _alias = "AccountContactRole-es"
+}

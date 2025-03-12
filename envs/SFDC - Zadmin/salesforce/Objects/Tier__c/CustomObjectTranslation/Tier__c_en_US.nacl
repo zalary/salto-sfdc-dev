@@ -1,0 +1,24 @@
+salesforce.CustomObjectTranslation Tier__c_en_US@uubu {
+  fullName = "Tier__c-en_US"
+  caseValues = [
+    {
+      plural = false
+      value = "Tier"
+    },
+    {
+      plural = true
+      value = "Tiers"
+    },
+  ]
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Tier__c_ZGY_Field_Set
+    },
+  ]
+  startsWith = "Consonant"
+  _parent = [
+    salesforce.Tier__c,
+  ]
+  _alias = "Tier__c-en_US"
+}

@@ -1,0 +1,6 @@
+salesforce.Profile Platform_Test@s {
+  custom = true
+  userLicense = "Salesforce Platform"
+  fullName = "Platform Test"
+  _alias = "Platform Test"
+}

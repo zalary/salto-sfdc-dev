@@ -1,0 +1,12 @@
+salesforce.Profile Work_2Ecom_Only_User@pss {
+  classAccesses = {
+    RestLeadConvert = {
+      apexClass = "RestLeadConvert"
+      enabled = false
+    }
+    WebLeadConvert = {
+      apexClass = "WebLeadConvert"
+      enabled = false
+    }
+  }
+}

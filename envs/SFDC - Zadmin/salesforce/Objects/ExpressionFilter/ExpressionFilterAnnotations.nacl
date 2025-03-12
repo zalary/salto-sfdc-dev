@@ -58,6 +58,7 @@ type salesforce.ExpressionFilter {
   apiName = "ExpressionFilter"
   metadataType = "CustomObject"
   label = "ExpressionFilter"
+  description = ""
   enableFeeds = false
   _alias = "ExpressionFilter"
 }

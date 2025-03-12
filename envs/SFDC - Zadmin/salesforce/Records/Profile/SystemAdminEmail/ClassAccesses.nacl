@@ -1,0 +1,12 @@
+salesforce.Profile SystemAdminEmail {
+  classAccesses = {
+    RestLeadConvert = {
+      apexClass = "RestLeadConvert"
+      enabled = true
+    }
+    WebLeadConvert = {
+      apexClass = "WebLeadConvert"
+      enabled = true
+    }
+  }
+}

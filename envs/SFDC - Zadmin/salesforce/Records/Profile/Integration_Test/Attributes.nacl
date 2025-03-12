@@ -1,0 +1,6 @@
+salesforce.Profile Integration_Test@s {
+  custom = true
+  userLicense = "Salesforce Integration"
+  fullName = "Integration Test"
+  _alias = "Integration Test"
+}

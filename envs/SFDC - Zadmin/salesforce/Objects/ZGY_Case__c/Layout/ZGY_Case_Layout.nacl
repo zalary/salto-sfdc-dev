@@ -16,6 +16,10 @@ salesforce.Layout ZGY_Case__c_ZGY_Case_Layout@uuubus {
               behavior = "Readonly"
               field = salesforce.ZGY_Case__c.field.ZGY_AutoNumber__c
             },
+            {
+              behavior = "Edit"
+              field = salesforce.ZGY_Case__c.field.ext_id__c
+            },
           ]
         },
         {

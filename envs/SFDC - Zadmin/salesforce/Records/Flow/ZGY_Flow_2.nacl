@@ -21,7 +21,6 @@ salesforce.Flow ZGY_Flow_2 {
       },
     ]
     nameSegment = "NewNote"
-    versionSegment = 1
   }
   apiVersion = 60
   description = "v3"

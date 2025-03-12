@@ -1,0 +1,11 @@
+salesforce.Profile ZCustomSupportAgain {
+  recordTypeVisibilities = {
+    Idea = {
+      InternalIdeasIdeaRecordType = {
+        default = false
+        recordType = "Idea.InternalIdeasIdeaRecordType"
+        visible = false
+      }
+    }
+  }
+}

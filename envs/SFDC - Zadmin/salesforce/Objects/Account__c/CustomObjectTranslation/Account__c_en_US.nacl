@@ -1,0 +1,24 @@
+salesforce.CustomObjectTranslation Account__c_en_US@uubu {
+  fullName = "Account__c-en_US"
+  caseValues = [
+    {
+      plural = false
+      value = "Account"
+    },
+    {
+      plural = true
+      value = "Accounts"
+    },
+  ]
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Account__c_Field_Set_1
+    },
+  ]
+  startsWith = "Consonant"
+  _parent = [
+    salesforce.Account__c,
+  ]
+  _alias = "Account__c-en_US"
+}

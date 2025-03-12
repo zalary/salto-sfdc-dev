@@ -1,0 +1,36 @@
+salesforce.PermissionSet Lightening_Emails {
+  hasActivationRequired = false
+  label = "Lightening Emails"
+  userPermissions = {
+    AccessContentBuilder = {
+      enabled = true
+      name = "AccessContentBuilder"
+    }
+    CreateLtngTempFolder = {
+      enabled = true
+      name = "CreateLtngTempFolder"
+    }
+    CreateLtngTempInPub = {
+      enabled = true
+      name = "CreateLtngTempInPub"
+    }
+    EditTask = {
+      enabled = true
+      name = "EditTask"
+    }
+    EmailMass = {
+      enabled = true
+      name = "EmailMass"
+    }
+    EmailSingle = {
+      enabled = true
+      name = "EmailSingle"
+    }
+    ListEmailSend = {
+      enabled = true
+      name = "ListEmailSend"
+    }
+  }
+  fullName = "Lightening_Emails"
+  _alias = "Lightening Emails"
+}

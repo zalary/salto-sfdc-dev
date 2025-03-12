@@ -14,11 +14,21 @@ salesforce {
         }
       ]
       exclude = [
+        
         {
           metadataType = "Automations"
         },
         {
-          metadataType = "Translations"
+          metadataType = "Bot"
+        },
+        {
+          metadataType = "GenAiFunction"
+        },
+        {
+          metadataType = "GenAiPlanner"
+        },
+        {
+          metadataType = "GenAiPlugin"
         },
         {
           metadataType = "SharingRules"
@@ -44,21 +54,14 @@ salesforce {
         {
           metadataType = "DocumentFolder"
         },
-        {
-          metadataType =  "Profile"
-        },
-        {
-          metadataType = "PermissionSet"
-        },
+       
         {
           metadataType = "SiteDotCom"
         },
         {
           metadataType = "ContentAsset"
         },
-        {
-          metadataType = "CustomObjectTranslation"
-        },
+    
         {
           metadataType = "AnalyticSnapshot"
         },
@@ -92,13 +95,32 @@ salesforce {
         },
       ]
     }
-    fetchAllCustomSettings = false
-    maxInstancesPerType = 5000
-  }
-  maxItemsInRetrieveRequest = 1500
-  client = {
-    polling = {
-      fetchTimeout = 2400000
+    data =  {
+        includeObjects = [
+        "SBQQ__.*",
+        "sbaa__ApprovalChain__c",
+        "sbaa__ApprovalCondition__c",
+        "sbaa__ApprovalRule__c",
+        "sbaa__ApprovalVariable__c",
+        "sbaa__Approver__c",
+        "sbaa__EmailTemplate__c",
+        "sbaa__TrackedField__c",
+      ]
+       saltoIDSettings =  {
+        defaultIdFields = [
+          "Id"
+        ]
+        overrides =  [
+          {
+            objectsRegex = ".*SBQQBlockPriceName.*"
+            idFields =  [
+              "SaltoExtId__c"
+            ]
+          },
+        ]
+       }
     }
   }
+    maxItemsInRetrieveRequest = 2500
 }
+

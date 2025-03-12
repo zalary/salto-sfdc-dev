@@ -1,0 +1,31 @@
+salesforce.LightningPage ZGY_LWA_UtilityBar {
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "notes:utilityBarNoteList"
+            identifier = "notes_utilityBarNoteList"
+          }
+        },
+      ]
+      name = "utilityItems"
+      type = "Region"
+    },
+    {
+      name = "backgroundComponents"
+      type = "Background"
+    },
+  ]
+  masterLabel = "ZGY_LWA UtilityBar"
+  template = {
+    name = "one:utilityBarTemplateDesktop"
+    properties = {
+      name = "isLeftAligned"
+      value = "true"
+    }
+  }
+  type = "UtilityBar"
+  fullName = "ZGY_LWA_UtilityBar"
+  _alias = "ZGY_LWA_UtilityBar"
+}
